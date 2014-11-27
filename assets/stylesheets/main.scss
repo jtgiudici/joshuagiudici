@@ -1,0 +1,557 @@
+@mixin clear { &:after { content: "."; display: block; height:0; clear: both; visibility: hidden; }}
+@import "bourbon/bourbon";
+
+$main: #61737e; // rgba(97, 115, 126, 1)
+$mainLight: lighten($main, 50%); // rgba(237 ,240 ,241 , 1), #edf0f1
+$mainDark: darken($main, 10%); // rgba(75, 89, 97, 1), #4b5961
+$mainDarker: darken($main, 20%); // rgba(53, 62, 68, 1) #353e44
+$action: #b9b1a2; // rgba(184, 165, 131, 1)
+
+* {
+	border: none;
+	border-radius: 0;
+	font-family: Helvetica, sans-serif;
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: none;
+	-webkit-touch-callout: none;
+	user-select: none;
+}
+.column { float: left; }
+.span1 { width: 8.3333333%; }
+.span2 { width: 16.666666%; }
+.span3 { width: 25%; }
+.span4 { width: 33.333333%; }
+.span5 { width: 41.666666%; }
+.span6 { width: 50%; }
+.span7 { width: 58.333333%; }
+.span8 { width: 66.666666%; }
+.span9 { width: 75%; }
+.span10 { width: 83.333333%; }
+.span11 { width: 91.666666%; }
+.span12 { width: 100%; }
+body { min-width: 320px; }
+#header {
+	@include position(fixed, 0 null null 0);
+	min-width: 320px;
+	width: 100%;
+	z-index: 3;
+	.icon {
+		background-image: url("../images/icon_sprite.png");
+		background-size: 250px 100px;
+		background-repeat: no-repeat;
+		cursor: pointer;
+		display: block;
+		height: 50px;
+		position: absolute;
+		width: 50px;
+		z-index: 3;
+		&.logo {
+			background-position: 0 0;
+			&.dark { background-position: 0 -50px; }
+		}
+		&.menu {
+			right: 0;
+			&.open { background-position: -50px 0;
+				&.dark { background-position: -50px -50px; }
+			}
+			&.close { background-position: -100px 0;
+				&.dark { background-position: -100px -50px; }
+			}
+		}
+	}
+	#nav {
+		background-color: $mainLight;
+		box-shadow: rgba(0, 0, 0, 0.0470588) 0px 5px 0px;
+		height: 0;
+		overflow: hidden;
+		@include transition(height, 0.25s, ease-in-out);
+		width: 100%;
+		ul {
+			padding: 75px 0;
+			li {
+				a {
+					color: $action;
+					display: block;
+					font-size: 24px;
+					height: 30px;
+					margin: 0 auto;
+					max-width: 300px;
+					padding: 10px 0;
+					text-align: center;
+					text-decoration: none;
+					@include transition(all, 0.1s, ease-in-out);
+					&:hover {
+						background-color: $action;
+						color: $mainLight;
+					}
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 500px) {
+		#nav { ul { li { a { max-width: 100%; }}}}
+	} 
+}
+
+#welcome {
+	background-color: $main;
+	padding: 75px 50px;
+	.logo {
+		background-color: $mainLight;
+		background-image: url("../images/logo_main_dark.png");
+		background-repeat: no-repeat;
+		background-position: 50%;
+		background-size: 100px;
+		border-radius: 200px;
+		height: 200px;
+		margin: 0 auto;
+		width: 200px;
+	}
+}
+#work {
+	background-color: $action;
+	.content {
+		@include clear;
+		margin: 0 auto;
+		width: 450px;
+	}
+	.thumb {
+		background-image: url("../images/logo_projects_sprite.png");
+		background-repeat: no-repeat;
+		background-size: 900px 450px;
+		float: left;
+		height: 150px;
+		width: 150px;
+		&:nth-child(4) { margin: 0 0 0 75px; }
+		&.rayban { background-position: 0 0;
+			&:hover { background-position: 0 -150px; }}
+		&.courseadvisor { background-position: -150px 0;
+			&:hover { background-position: -150px -150px; }}
+		&.studentadvisor { background-position: -300px 0;
+			&:hover { background-position: -300px -150px; }}
+		&.kaplan { background-position: -450px 0;
+			&:hover { background-position: -450px -150px; }}
+		&.couponhound { background-position: -600px 0;
+			&:hover { background-position: -600px -150px; }}
+		&.homefindify { background-position: -750px 0;
+			&:hover { background-position: -750px -150px; }}
+		&:hover { background-color: $mainLight; }
+		&.inactive {opacity: 0.25;
+			&:hover { background-color: transparent; 
+				&.rayban { background-position: 0 0;
+					&:hover { background-position: 0 0; }}
+				&.courseadvisor { background-position: -150px 0;
+					&:hover { background-position: -150px 0; }}
+				&.studentadvisor { background-position: -300px 0;
+					&:hover { background-position: -300px 0; }}
+				&.kaplan { background-position: -450px 0;
+					&:hover { background-position: -450px 0; }}
+				&.couponhound { background-position: -600px 0;
+					&:hover { background-position: -600px 0; }}
+				&.homefindify { background-position: -750px 0;
+					&:hover { background-position: -750px 0; }}
+			}
+		}
+	}
+	&.project {
+		.content:after { height: auto; }
+	}
+	@media screen and (max-width: 500px) {
+		.content { 
+			padding: 50px 0;
+			width: 300px;
+		}
+		.thumb {
+			background-size: 600px 300px;
+			height: 100px;
+			width: 100px;
+			&:nth-child(4) { margin: 0 0 0 37.5px; }
+			&.rayban { background-position: 0 0;
+				&:hover { background-position: 0 -100px; }}
+			&.courseadvisor { background-position: -100px 0;
+				&:hover { background-position: -100px -100px; }}
+			&.studentadvisor { background-position: -200px 0;
+				&:hover { background-position: -200px -100px; }}
+			&.kaplan { background-position: -300px 0;
+				&:hover { background-position: -300px -100px; }}
+			&.couponhound { background-position: -400px 0;
+				&:hover { background-position: -400px -100px; }}
+			&.homefindify { background-position: -500px 0;
+				&:hover { background-position: -500px -100px; }}
+			&:hover { background-color: $mainLight; }
+		}
+	}
+}
+#about {
+	background-color: $mainLight;
+	h1.hero {
+		color: $main;
+		display: block;
+		font-size: 35px;
+		font-weight: 500;
+		height: 35px;
+		padding: 50px 0;
+		text-align: center;
+	}
+	.content {
+		margin: 0 auto;
+		max-width: 750px;
+		padding: 0 25px 50px 25px	
+	}
+	.image {
+		background-color: $mainDark;
+		background-image: url("../images/image_about.jpg");
+		background-size: 100px;
+		background-repeat: no-repeat;
+		border-radius: 100px;
+		height: 100px;
+		margin: 0 auto 50px auto;
+		width: 100px;
+	}
+	h2 {
+		color: $main;
+		font-size: 24px;
+		margin: 0 25px 25px 25px;
+		text-align: center;
+	}
+	h3 {
+		color: $main;
+		font-size: 22px;
+		margin: 0 25px 50px 25px;
+		text-align: center;
+	}
+	p {
+		color: #777777;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		margin: 0 25px 25px 25px;
+		span {
+			color: $main;
+			font-weight: bold;
+		}
+	}
+	@media screen and (max-width: 500px) {
+		h2 { font-size: 20px; }
+		h3 { font-size: 18px; }
+		p {
+			font-size: 14px;
+			line-height: 22px;
+		}
+	}
+	@media screen and (max-width: 400px) {
+		h2 { font-size: 16px; }
+		h3 { font-size: 14px; }
+		p {
+			font-size: 12px;
+			line-height: 20px;
+		}
+	}
+}
+#skills {
+	background-color: $main;
+	h1.hero {
+		color: $mainLight;
+		display: block;
+		font-size: 35px;
+		font-weight: 500;
+		height: 35px;
+		padding: 50px 0;
+		text-align: center;
+	}
+	.content {
+		@include clear;
+		margin: 0 auto;
+		max-width: 750px;
+		padding: 0 25px 50px 25px;
+	}
+	.column {
+		float: left;
+		width: 20%;
+		.block {
+			margin: 0 auto;
+			max-width: 100px;
+			padding: 0 25px 50px 25px;
+			.thumb {
+				background-color: $mainDark;
+				height: 0;
+				padding: 0 0 100%;
+				position: relative;
+				.logo {
+					background-image: url("../images/icon_skills_sprite.png");
+					background-size: 1500% 200%;
+					height: 100%;
+					@include position(absolute, 0 null null 0);
+					width: 100%;
+					z-index: 1;
+				}
+				.overlay {
+					background-color: $mainDarker;
+					height: 100%;
+					@include position(absolute, 0 null null 0);
+				}
+				&:hover {
+					h3 { opacity: 1; }
+				}
+				h3 {
+					color: $mainDarker;
+					bottom: -30px;
+					font-size: 11px;
+					opacity: 0;
+					position: absolute;
+					text-align: center;
+					@include transition(opacity, 0.25s, ease-in-out);
+					width: 100%;
+				}
+				&.photoshop {
+					.logo { background-position: 0 0; }
+					.overlay { width: 95%; }
+				}
+				&.illustrator {
+					.logo { background-position: -100% 0; }
+					.overlay { width: 90%; }
+				}
+				&.indesign {
+					.logo { background-position: -200% 0; }
+					.overlay { width: 75%; }
+				}
+				&.sketch {
+					.logo { background-position: -300% 0; }
+					.overlay { width: 70%; }
+				}
+				&.html {
+					.logo { background-position: -400% 0; }
+					.overlay { width: 90%; }
+				}
+				&.css {
+					.logo { background-position: -500% 0; }
+					.overlay { width: 95%; }
+				}
+				&.sass {
+					.logo { background-position: -600% 0; }
+					.overlay { width: 85%; }
+				}
+				&.jquery {
+					.logo { background-position: -700% 0; }
+					.overlay { width: 65%; }
+				}
+				&.javascript {
+					.logo { background-position: -800% 0; }
+					.overlay { width: 35%; }
+				}
+				&.rails {
+					.logo { background-position: -900% 0; }
+					.overlay { width: 25%; }
+				}
+				&.swift {
+					.logo { background-position: -1000% 0; }
+					.overlay { width: 10%; }
+				}
+				&.mobiledesign {
+					.logo { background-position: -1100% 0; }
+					.overlay { width: 75%; }
+				}
+				&.responsivedesign {
+					.logo { background-position: -1200% 0; }
+					.overlay { width: 90%; }
+				}
+			}
+		}
+	}
+	.skillLevel {
+		clear: both;
+		.wrap {
+			@include clear;
+			margin: 0 auto;
+			width: 130px;
+		}
+		.icon {
+			background-color: $mainDark;
+			float: left;
+			height: 25px;
+			margin: 0 10px 0 0;
+			position: relative;
+			width: 25px;
+			.overlay {
+				background-color: $mainDarker;
+				height: 25px;
+				width: 75%;
+			}
+		}
+		span {
+			color: $mainDarker;
+			display: block;
+			float: left;
+			font-weight: bold;
+			font-size: 14px;
+			padding: 3px 0 0 0;
+			height: 22px;
+		}
+	}
+	@media screen and (max-width: 800px) {
+		.column { width: 25%; }
+	}
+	@media screen and (max-width: 650px) {
+		.column { width: 33.333334%; }
+	}
+	@media screen and (max-width: 500px) {
+		.content { padding: 0 37.5px 50px 37.5px ; }
+		.column {
+			.block { padding: 0 12.5px 25px 12.5px; }
+		}
+		.skillLevel { padding: 25px 0 0 0; }
+	}
+	@media screen and (max-width: 400px) {
+		.column {
+			.block {
+				.thumb {
+					h3 { bottom: -20px; font-size: 8px; }
+				}
+			}
+		}
+	}
+}
+#contact {
+	background-color: $mainDark;
+	h1.hero {
+		color: $mainLight;
+		display: block;
+		font-size: 35px;
+		font-weight: 500;
+		height: 35px;
+		padding: 50px 0;
+		text-align: center;
+	}
+	.block { margin: 0 25px; }
+	button {
+		background: $action;
+		color: $mainLight;
+		cursor: pointer;
+		display: block;
+		font-size: 24px;
+		font-weight: 600;
+		margin: 0 auto 25px auto;
+		max-width: 300px;
+		padding: 25px;
+		@include transition(background-color, 0.25s, ease-in-out);
+		width: 100%;
+		&:hover { background-color: lighten($action, 5%); }
+	}
+	.content { padding: 0 25px 50px 25px; }
+	.social {
+		@include clear;
+		margin: 0 auto;
+		max-width: 200px;
+		.icon {
+			background-image: url("../images/icon_social_sprite.png");
+			background-size: 150px;
+			cursor: pointer;
+			float: left;
+			height: 50px;
+			margin: 0 25px 0 0;
+			width: 50px;
+			&.linkedin { background-position: 0 0;
+				&:hover { background-position: 0 -100px; }
+			}
+			&.twitter { background-position: -50px 0 ;
+				&:hover { background-position: -50px -100px; }
+			}
+			&.github { background-position: -100px 0;
+				&:hover { background-position: -100px -100px; }
+			}
+			&:last-child { margin: 0; }
+		}
+	}
+}
+#summary {
+	background-color: $main;
+	height: 350px;
+	.content {
+		margin: 0 auto;
+		max-width: 750px;
+		padding: 50px 25px;
+	}
+	.block { margin: 0 25px; }
+	.logo {
+		background-color: $mainLight;
+		background-image: url("../images/logo_projects_sprite.png");
+		background-size: 600px 300px;
+		border-radius: 100px;
+		height: 100px;
+		margin: 0 auto 25px auto;
+		width: 100px;
+		&.rayban { background-position: 0 -200px; }
+		&.courseadvisor { background-position: -100px -200px; }
+		&.studentadvisor { background-position: -200px -200px; }
+		&.kaplan { background-position: -300px -200px; }
+		&.couponhound { background-position: -400px -200px; }
+		&.homefindify { background-position: -500px -200px; }
+	}
+	h1 {
+		color: $mainLight;
+		display: block;
+		font-size: 24px;
+		font-weight: 500;
+		margin: 0 0 10px 0;
+		text-align: center;
+	}
+	p {
+		color: $mainLight;
+		font-size: 14px;
+		margin: 0 auto;
+	}
+	@media screen and (max-width: 750px) {
+		.logo {
+			background-size: 450px 225px;
+			height: 75px;
+			width: 75px;
+			&.rayban { background-position: 0 -150px; }
+			&.courseadvisor { background-position: -75px -150px; }
+			&.studentadvisor { background-position: -150px -150px; }
+			&.kaplan { background-position: -225px -150px; }
+			&.couponhound { background-position: -300px -150px; }
+			&.homefindify { background-position: -375px -150px; }
+		}
+		h1 { font-size: 22px; }
+		p { font-size: 13px; }
+	}
+	@media screen and (max-width: 500px) {
+		.logo {
+			background-size: 300px 150px;
+			height: 50px;
+			width: 50px;
+			&.rayban { background-position: 0 -100px; }
+			&.courseadvisor { background-position: -50px -100px; }
+			&.studentadvisor { background-position: -100px -100px; }
+			&.kaplan { background-position: -150px -100px; }
+			&.couponhound { background-position: -200px -100px; }
+			&.homefindify { background-position: -250px -100px; }		}
+		h1 { font-size: 18px; }
+		p { font-size: 12px; }
+	}
+}
+#viewer {
+	background-color: $mainDarker;
+	@include clear;
+	.content {
+		margin: 0 auto;
+		max-width: 750px;
+		padding: 50px 25px;
+	}
+	.block {
+		margin: 0 25px 50px 25px;
+	}
+	img {
+		display: block;
+		width: 100%;
+	}
+	@media screen and (max-width: 500px) {
+				.column {
+					width: 100%;
+				}
+	}
+}

@@ -1,0 +1,630 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: Helvetica, sans-serif;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: none;
+  -webkit-touch-callout: none;
+  user-select: none; }
+
+.column {
+  float: left; }
+
+.span1 {
+  width: 8.3333333%; }
+
+.span2 {
+  width: 16.666666%; }
+
+.span3 {
+  width: 25%; }
+
+.span4 {
+  width: 33.333333%; }
+
+.span5 {
+  width: 41.666666%; }
+
+.span6 {
+  width: 50%; }
+
+.span7 {
+  width: 58.333333%; }
+
+.span8 {
+  width: 66.666666%; }
+
+.span9 {
+  width: 75%; }
+
+.span10 {
+  width: 83.333333%; }
+
+.span11 {
+  width: 91.666666%; }
+
+.span12 {
+  width: 100%; }
+
+body {
+  min-width: 320px; }
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 320px;
+  width: 100%;
+  z-index: 3; }
+  #header .icon {
+    background-image: url("../images/icon_sprite.png");
+    background-size: 250px 100px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+    z-index: 3; }
+    #header .icon.logo {
+      background-position: 0 0; }
+      #header .icon.logo.dark {
+        background-position: 0 -50px; }
+    #header .icon.menu {
+      right: 0; }
+      #header .icon.menu.open {
+        background-position: -50px 0; }
+        #header .icon.menu.open.dark {
+          background-position: -50px -50px; }
+      #header .icon.menu.close {
+        background-position: -100px 0; }
+        #header .icon.menu.close.dark {
+          background-position: -100px -50px; }
+  #header #nav {
+    background-color: #edf0f1;
+    box-shadow: rgba(0, 0, 0, 0.04706) 0px 5px 0px;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height, 0.25s, ease-in-out;
+    -moz-transition: height, 0.25s, ease-in-out;
+    transition: height, 0.25s, ease-in-out;
+    width: 100%; }
+    #header #nav ul {
+      padding: 75px 0; }
+      #header #nav ul li a {
+        color: #b9b1a2;
+        display: block;
+        font-size: 24px;
+        height: 30px;
+        margin: 0 auto;
+        max-width: 300px;
+        padding: 10px 0;
+        text-align: center;
+        text-decoration: none;
+        -webkit-transition: all, 0.1s, ease-in-out;
+        -moz-transition: all, 0.1s, ease-in-out;
+        transition: all, 0.1s, ease-in-out; }
+        #header #nav ul li a:hover {
+          background-color: #b9b1a2;
+          color: #edf0f1; }
+  @media screen and (max-width: 500px) {
+    #header #nav ul li a {
+      max-width: 100%; } }
+
+#welcome {
+  background-color: #61737e;
+  padding: 75px 50px; }
+  #welcome .logo {
+    background-color: #edf0f1;
+    background-image: url("../images/logo_main_dark.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100px;
+    border-radius: 200px;
+    height: 200px;
+    margin: 0 auto;
+    width: 200px; }
+
+#work {
+  background-color: #b9b1a2; }
+  #work .content {
+    margin: 0 auto;
+    width: 450px; }
+    #work .content:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+  #work .thumb {
+    background-image: url("../images/logo_projects_sprite.png");
+    background-repeat: no-repeat;
+    background-size: 900px 450px;
+    float: left;
+    height: 150px;
+    width: 150px; }
+    #work .thumb:nth-child(4) {
+      margin: 0 0 0 75px; }
+    #work .thumb.rayban {
+      background-position: 0 0; }
+      #work .thumb.rayban:hover {
+        background-position: 0 -150px; }
+    #work .thumb.courseadvisor {
+      background-position: -150px 0; }
+      #work .thumb.courseadvisor:hover {
+        background-position: -150px -150px; }
+    #work .thumb.studentadvisor {
+      background-position: -300px 0; }
+      #work .thumb.studentadvisor:hover {
+        background-position: -300px -150px; }
+    #work .thumb.kaplan {
+      background-position: -450px 0; }
+      #work .thumb.kaplan:hover {
+        background-position: -450px -150px; }
+    #work .thumb.couponhound {
+      background-position: -600px 0; }
+      #work .thumb.couponhound:hover {
+        background-position: -600px -150px; }
+    #work .thumb.homefindify {
+      background-position: -750px 0; }
+      #work .thumb.homefindify:hover {
+        background-position: -750px -150px; }
+    #work .thumb:hover {
+      background-color: #edf0f1; }
+    #work .thumb.inactive {
+      opacity: 0.25; }
+      #work .thumb.inactive:hover {
+        background-color: transparent; }
+        #work .thumb.inactive:hover.rayban {
+          background-position: 0 0; }
+          #work .thumb.inactive:hover.rayban:hover {
+            background-position: 0 0; }
+        #work .thumb.inactive:hover.courseadvisor {
+          background-position: -150px 0; }
+          #work .thumb.inactive:hover.courseadvisor:hover {
+            background-position: -150px 0; }
+        #work .thumb.inactive:hover.studentadvisor {
+          background-position: -300px 0; }
+          #work .thumb.inactive:hover.studentadvisor:hover {
+            background-position: -300px 0; }
+        #work .thumb.inactive:hover.kaplan {
+          background-position: -450px 0; }
+          #work .thumb.inactive:hover.kaplan:hover {
+            background-position: -450px 0; }
+        #work .thumb.inactive:hover.couponhound {
+          background-position: -600px 0; }
+          #work .thumb.inactive:hover.couponhound:hover {
+            background-position: -600px 0; }
+        #work .thumb.inactive:hover.homefindify {
+          background-position: -750px 0; }
+          #work .thumb.inactive:hover.homefindify:hover {
+            background-position: -750px 0; }
+  #work.project .content:after {
+    height: auto; }
+  @media screen and (max-width: 500px) {
+    #work .content {
+      padding: 50px 0;
+      width: 300px; }
+    #work .thumb {
+      background-size: 600px 300px;
+      height: 100px;
+      width: 100px; }
+      #work .thumb:nth-child(4) {
+        margin: 0 0 0 37.5px; }
+      #work .thumb.rayban {
+        background-position: 0 0; }
+        #work .thumb.rayban:hover {
+          background-position: 0 -100px; }
+      #work .thumb.courseadvisor {
+        background-position: -100px 0; }
+        #work .thumb.courseadvisor:hover {
+          background-position: -100px -100px; }
+      #work .thumb.studentadvisor {
+        background-position: -200px 0; }
+        #work .thumb.studentadvisor:hover {
+          background-position: -200px -100px; }
+      #work .thumb.kaplan {
+        background-position: -300px 0; }
+        #work .thumb.kaplan:hover {
+          background-position: -300px -100px; }
+      #work .thumb.couponhound {
+        background-position: -400px 0; }
+        #work .thumb.couponhound:hover {
+          background-position: -400px -100px; }
+      #work .thumb.homefindify {
+        background-position: -500px 0; }
+        #work .thumb.homefindify:hover {
+          background-position: -500px -100px; }
+      #work .thumb:hover {
+        background-color: #edf0f1; } }
+
+#about {
+  background-color: #edf0f1; }
+  #about h1.hero {
+    color: #61737e;
+    display: block;
+    font-size: 35px;
+    font-weight: 500;
+    height: 35px;
+    padding: 50px 0;
+    text-align: center; }
+  #about .content {
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 0 25px 50px 25px; }
+  #about .image {
+    background-color: #4b5961;
+    background-image: url("../images/image_about.jpg");
+    background-size: 100px;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+    height: 100px;
+    margin: 0 auto 50px auto;
+    width: 100px; }
+  #about h2 {
+    color: #61737e;
+    font-size: 24px;
+    margin: 0 25px 25px 25px;
+    text-align: center; }
+  #about h3 {
+    color: #61737e;
+    font-size: 22px;
+    margin: 0 25px 50px 25px;
+    text-align: center; }
+  #about p {
+    color: #777777;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 25px 25px 25px; }
+    #about p span {
+      color: #61737e;
+      font-weight: bold; }
+  @media screen and (max-width: 500px) {
+    #about h2 {
+      font-size: 20px; }
+    #about h3 {
+      font-size: 18px; }
+    #about p {
+      font-size: 14px;
+      line-height: 22px; } }
+  @media screen and (max-width: 400px) {
+    #about h2 {
+      font-size: 16px; }
+    #about h3 {
+      font-size: 14px; }
+    #about p {
+      font-size: 12px;
+      line-height: 20px; } }
+
+#skills {
+  background-color: #61737e; }
+  #skills h1.hero {
+    color: #edf0f1;
+    display: block;
+    font-size: 35px;
+    font-weight: 500;
+    height: 35px;
+    padding: 50px 0;
+    text-align: center; }
+  #skills .content {
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 0 25px 50px 25px; }
+    #skills .content:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+  #skills .column {
+    float: left;
+    width: 20%; }
+    #skills .column .block {
+      margin: 0 auto;
+      max-width: 100px;
+      padding: 0 25px 50px 25px; }
+      #skills .column .block .thumb {
+        background-color: #4b5961;
+        height: 0;
+        padding: 0 0 100%;
+        position: relative; }
+        #skills .column .block .thumb .logo {
+          background-image: url("../images/icon_skills_sprite.png");
+          background-size: 1500% 200%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 1; }
+        #skills .column .block .thumb .overlay {
+          background-color: #353e44;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0; }
+        #skills .column .block .thumb:hover h3 {
+          opacity: 1; }
+        #skills .column .block .thumb h3 {
+          color: #353e44;
+          bottom: -30px;
+          font-size: 11px;
+          opacity: 0;
+          position: absolute;
+          text-align: center;
+          -webkit-transition: opacity, 0.25s, ease-in-out;
+          -moz-transition: opacity, 0.25s, ease-in-out;
+          transition: opacity, 0.25s, ease-in-out;
+          width: 100%; }
+        #skills .column .block .thumb.photoshop .logo {
+          background-position: 0 0; }
+        #skills .column .block .thumb.photoshop .overlay {
+          width: 95%; }
+        #skills .column .block .thumb.illustrator .logo {
+          background-position: -100% 0; }
+        #skills .column .block .thumb.illustrator .overlay {
+          width: 90%; }
+        #skills .column .block .thumb.indesign .logo {
+          background-position: -200% 0; }
+        #skills .column .block .thumb.indesign .overlay {
+          width: 75%; }
+        #skills .column .block .thumb.sketch .logo {
+          background-position: -300% 0; }
+        #skills .column .block .thumb.sketch .overlay {
+          width: 70%; }
+        #skills .column .block .thumb.html .logo {
+          background-position: -400% 0; }
+        #skills .column .block .thumb.html .overlay {
+          width: 90%; }
+        #skills .column .block .thumb.css .logo {
+          background-position: -500% 0; }
+        #skills .column .block .thumb.css .overlay {
+          width: 95%; }
+        #skills .column .block .thumb.sass .logo {
+          background-position: -600% 0; }
+        #skills .column .block .thumb.sass .overlay {
+          width: 85%; }
+        #skills .column .block .thumb.jquery .logo {
+          background-position: -700% 0; }
+        #skills .column .block .thumb.jquery .overlay {
+          width: 65%; }
+        #skills .column .block .thumb.javascript .logo {
+          background-position: -800% 0; }
+        #skills .column .block .thumb.javascript .overlay {
+          width: 35%; }
+        #skills .column .block .thumb.rails .logo {
+          background-position: -900% 0; }
+        #skills .column .block .thumb.rails .overlay {
+          width: 25%; }
+        #skills .column .block .thumb.swift .logo {
+          background-position: -1000% 0; }
+        #skills .column .block .thumb.swift .overlay {
+          width: 10%; }
+        #skills .column .block .thumb.mobiledesign .logo {
+          background-position: -1100% 0; }
+        #skills .column .block .thumb.mobiledesign .overlay {
+          width: 75%; }
+        #skills .column .block .thumb.responsivedesign .logo {
+          background-position: -1200% 0; }
+        #skills .column .block .thumb.responsivedesign .overlay {
+          width: 90%; }
+  #skills .skillLevel {
+    clear: both; }
+    #skills .skillLevel .wrap {
+      margin: 0 auto;
+      width: 130px; }
+      #skills .skillLevel .wrap:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden; }
+    #skills .skillLevel .icon {
+      background-color: #4b5961;
+      float: left;
+      height: 25px;
+      margin: 0 10px 0 0;
+      position: relative;
+      width: 25px; }
+      #skills .skillLevel .icon .overlay {
+        background-color: #353e44;
+        height: 25px;
+        width: 75%; }
+    #skills .skillLevel span {
+      color: #353e44;
+      display: block;
+      float: left;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 3px 0 0 0;
+      height: 22px; }
+  @media screen and (max-width: 800px) {
+    #skills .column {
+      width: 25%; } }
+  @media screen and (max-width: 650px) {
+    #skills .column {
+      width: 33.333334%; } }
+  @media screen and (max-width: 500px) {
+    #skills .content {
+      padding: 0 37.5px 50px 37.5px; }
+    #skills .column .block {
+      padding: 0 12.5px 25px 12.5px; }
+    #skills .skillLevel {
+      padding: 25px 0 0 0; } }
+  @media screen and (max-width: 400px) {
+    #skills .column .block .thumb h3 {
+      bottom: -20px;
+      font-size: 8px; } }
+
+#contact {
+  background-color: #4b5961; }
+  #contact h1.hero {
+    color: #edf0f1;
+    display: block;
+    font-size: 35px;
+    font-weight: 500;
+    height: 35px;
+    padding: 50px 0;
+    text-align: center; }
+  #contact .block {
+    margin: 0 25px; }
+  #contact button {
+    background: #b9b1a2;
+    color: #edf0f1;
+    cursor: pointer;
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 auto 25px auto;
+    max-width: 300px;
+    padding: 25px;
+    -webkit-transition: background-color, 0.25s, ease-in-out;
+    -moz-transition: background-color, 0.25s, ease-in-out;
+    transition: background-color, 0.25s, ease-in-out;
+    width: 100%; }
+    #contact button:hover {
+      background-color: #c4bdb1; }
+  #contact .content {
+    padding: 0 25px 50px 25px; }
+  #contact .social {
+    margin: 0 auto;
+    max-width: 200px; }
+    #contact .social:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden; }
+    #contact .social .icon {
+      background-image: url("../images/icon_social_sprite.png");
+      background-size: 150px;
+      cursor: pointer;
+      float: left;
+      height: 50px;
+      margin: 0 25px 0 0;
+      width: 50px; }
+      #contact .social .icon.linkedin {
+        background-position: 0 0; }
+        #contact .social .icon.linkedin:hover {
+          background-position: 0 -100px; }
+      #contact .social .icon.twitter {
+        background-position: -50px 0; }
+        #contact .social .icon.twitter:hover {
+          background-position: -50px -100px; }
+      #contact .social .icon.github {
+        background-position: -100px 0; }
+        #contact .social .icon.github:hover {
+          background-position: -100px -100px; }
+      #contact .social .icon:last-child {
+        margin: 0; }
+
+#summary {
+  background-color: #61737e;
+  height: 350px; }
+  #summary .content {
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 50px 25px; }
+  #summary .block {
+    margin: 0 25px; }
+  #summary .logo {
+    background-color: #edf0f1;
+    background-image: url("../images/logo_projects_sprite.png");
+    background-size: 600px 300px;
+    border-radius: 100px;
+    height: 100px;
+    margin: 0 auto 25px auto;
+    width: 100px; }
+    #summary .logo.rayban {
+      background-position: 0 -200px; }
+    #summary .logo.courseadvisor {
+      background-position: -100px -200px; }
+    #summary .logo.studentadvisor {
+      background-position: -200px -200px; }
+    #summary .logo.kaplan {
+      background-position: -300px -200px; }
+    #summary .logo.couponhound {
+      background-position: -400px -200px; }
+    #summary .logo.homefindify {
+      background-position: -500px -200px; }
+  #summary h1 {
+    color: #edf0f1;
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+    text-align: center; }
+  #summary p {
+    color: #edf0f1;
+    font-size: 14px;
+    margin: 0 auto; }
+  @media screen and (max-width: 750px) {
+    #summary .logo {
+      background-size: 450px 225px;
+      height: 75px;
+      width: 75px; }
+      #summary .logo.rayban {
+        background-position: 0 -150px; }
+      #summary .logo.courseadvisor {
+        background-position: -75px -150px; }
+      #summary .logo.studentadvisor {
+        background-position: -150px -150px; }
+      #summary .logo.kaplan {
+        background-position: -225px -150px; }
+      #summary .logo.couponhound {
+        background-position: -300px -150px; }
+      #summary .logo.homefindify {
+        background-position: -375px -150px; }
+    #summary h1 {
+      font-size: 22px; }
+    #summary p {
+      font-size: 13px; } }
+  @media screen and (max-width: 500px) {
+    #summary .logo {
+      background-size: 300px 150px;
+      height: 50px;
+      width: 50px; }
+      #summary .logo.rayban {
+        background-position: 0 -100px; }
+      #summary .logo.courseadvisor {
+        background-position: -50px -100px; }
+      #summary .logo.studentadvisor {
+        background-position: -100px -100px; }
+      #summary .logo.kaplan {
+        background-position: -150px -100px; }
+      #summary .logo.couponhound {
+        background-position: -200px -100px; }
+      #summary .logo.homefindify {
+        background-position: -250px -100px; }
+    #summary h1 {
+      font-size: 18px; }
+    #summary p {
+      font-size: 12px; } }
+
+#viewer {
+  background-color: #353e44; }
+  #viewer:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  #viewer .content {
+    margin: 0 auto;
+    max-width: 750px;
+    padding: 50px 25px; }
+  #viewer .block {
+    margin: 0 25px 50px 25px; }
+  #viewer img {
+    display: block;
+    width: 100%; }
+  @media screen and (max-width: 500px) {
+    #viewer .column {
+      width: 100%; } }
+
+/*# sourceMappingURL=main.css.map */
