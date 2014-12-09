@@ -473,7 +473,7 @@ body {
     text-align: center; }
   #contact .block {
     margin: 0 25px; }
-  #contact button {
+  #contact .button {
     background: #b9b1a2;
     color: #edf0f1;
     cursor: pointer;
@@ -481,13 +481,15 @@ body {
     font-size: 24px;
     font-weight: 600;
     margin: 0 auto 25px auto;
-    max-width: 300px;
+    max-width: 250px;
     padding: 25px;
+    text-align: center;
+    text-decoration: none;
     -webkit-transition: background-color, 0.25s, ease-in-out;
     -moz-transition: background-color, 0.25s, ease-in-out;
     transition: background-color, 0.25s, ease-in-out;
     width: 100%; }
-    #contact button:hover {
+    #contact .button:hover {
       background-color: #c4bdb1; }
   #contact .content {
     padding: 0 25px 50px 25px; }

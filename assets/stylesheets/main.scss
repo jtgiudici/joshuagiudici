@@ -427,7 +427,7 @@ body { min-width: 320px; }
 		text-align: center;
 	}
 	.block { margin: 0 25px; }
-	button {
+	.button {
 		background: $action;
 		color: $mainLight;
 		cursor: pointer;
@@ -435,8 +435,10 @@ body { min-width: 320px; }
 		font-size: 24px;
 		font-weight: 600;
 		margin: 0 auto 25px auto;
-		max-width: 300px;
+		max-width: 250px;
 		padding: 25px;
+		text-align: center;
+		text-decoration: none;
 		@include transition(background-color, 0.25s, ease-in-out);
 		width: 100%;
 		&:hover { background-color: lighten($action, 5%); }
