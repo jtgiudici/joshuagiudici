@@ -1,194 +1,95 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
-	<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
-	<link href='http://fonts.googleapis.com/css?family=Raleway:500,300,200,400,100' rel='stylesheet' type='text/css'></head>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="assets/javascripts/main.js"></script>
-<body class="home">
-	<header id="header">
-		<a class="icon logo" href="#"></a>
-		<div class="icon menu open"></div>
-		<nav id="nav">
-			<ul>
-				<li><a href="#work" class="work">Work</a></li>
-				<li><a href="#about" class="about">About</a></li>
-				<li><a href="#skills" class="skills">Skills</a></li>
-				<li><a href="#contact" class="contact">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<section id="welcome">
-		<div class="content">
+	<head>
+		<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
+		<link href='http://fonts.googleapis.com/css?family=Raleway:500,300,200,400,100' rel='stylesheet' type='text/css'></head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="assets/javascripts/main.js"></script>
+	</head>
+	<body>
+		<header>
+			<a class="icon logo" href="/"></a>
+			<div class="icon menu open"></div>
+			<nav id="nav">
+				<ul>
+					<li><a href="#work" class="work">Work</a></li>
+					<li><a href="about.html" class="about">About</a></li>
+					<li><a href="about.html#skills" class="skills">Skills</a></li>
+					<li><a href="about.html#contact" class="contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="hero" class="home bgDark">
 			<div class="logo"></div>
 		</div>
-	</section>
-	<section id="work">
-		<div class="content">
-			<a href="projects/rayban.html" class="thumb rayban"></a>
-			<a href="projects/courseadvisor.html" class="thumb courseadvisor"></a>
-			<a href="projects/studentadvisor.html" class="thumb studentadvisor"></a>
-			<!--<a href="projects/kaplan.html" class="thumb kaplan"></a>-->
-			<a href="projects/couponhound.html" class="thumb couponhound"></a>
-			<a href="projects/homefindify.html" class="thumb homefindify"></a>
-		</div>
-	</section>
-	<section id="about">
-		<h1 class="hero">About Me</h1>
-		<div class="content">
-			<div class="image"></div>
-			<h2>My name is Joshua Giudici.</h2>
-			<p><span>Design is Paramount.</span> I consider myself an artist first. I am constantly thinking on the creative side of things, viewing the world through creative glasses. I surround myself with creative endeavors at all times. I play guitar, I'm an improv actor, I carry a sketch/notebook, I'm a music junkie and a movie addict. I truly believe this fuels good design/development in my work. The creative process doesn't only exist at the office. It isn't dependent on a desk and a cup of coffee. Creativity and inspiration strikes all day. The difference for me is that I actually write down the ideas that come to me in the shower and put them into action.</p>
+		<section id="hgroup" class="home bgLight">
+			<div class="content">
+				<div class="block">
+					<h1><span>My name is</span>Joshua Giudici</h1>
+					<div class="spacer"></div>
+					<p>I design, develop, and create experiences on the web.</p>
+				</div>
+			</div>
+		</section>
+		<section id="work" class="bgDark">
+			<div class="column">
+				<a class="thumb rayban" href="projects/rayban.html">
+					<div class="overlay"></div>
+					<h2>Ray Ban</h2>
+				</a>
+			</div>
+			<div class="column">
+				<a class="thumb courseadvisor" href="projects/courseadvisor.html">
+					<div class="overlay"></div>
+					<h2>CourseAdvisor</h2>
+				</a>
+			</div>
+			<div class="column">
+				<a class="thumb homefindify" href="projects/homefindify.html">
+					<div class="overlay"></div>
+					<h2>HomeFindify</h2>
+				</a>
+			</div>
+			<div class="column">
+				<a class="thumb mcc" href="projects/mcc.html">
+					<div class="overlay"></div>
+					<h2>Massachusetts Citizens for Children</h2>
+				</a>
+			</div>
+			<div class="column">
+				<a class="thumb couponhound" href="projects/couponhound.html">
+					<div class="overlay"></div>
+					<h2>CouponHound</h2>
+				</a>
+			</div>
+			<div class="column">
+				<a class="thumb studentadvisor" href="projects/studentadvisor.html">
+					<div class="overlay"></div>
+					<h2>StudentAdvisor</h2>
+				</a>
+			</div>
+			<div class="column">
+				<a class="thumb movieposters" href="projects/movieposters.html">
+					<div class="overlay"></div>
+					<h2>Movie Posters</h2>
+				</a>
+			</div>
+			<div class="column">
+				<a class="thumb top100" href="projects/top100.html">
+					<div class="overlay"></div>
+					<h2>Top 100 Social Media Colleges</h2>
+				</a>
+			</div>
+		</section>
+		<section id="about">
 			
-			<p><span>Plays Well With Developers.</span> I'm not going to produce a bunch of photoshop mockups and hand them over to a developer to build. Instead, I prefer do the front-end development myself, and I've been doing so for quite some time. There's just way to much that gets lost in translation once you hand your design over to someone else to publish. That's why I work side by side with developers and code directly in to the framework, whether it be Ruby on Rails or something else I have to learn. No problem. I make my own commits and take responsibility for my work. That said, I love working on a team of smart, innovative, and creative people. In fact I thrive on it and believe in the mantra that the whole is greater than the sum of it's parts.</p>
+		</section>
+		<section id="skills">
 			
-			<p><span>A Student of Life.</span> I'm just not content with what I already know. I'm not happy being boxed in as a photoshop designer, or a mobile designer, or print designer, or whatever. Of course, I am all of those things, but my educational pursuits span much farther than that. I love to learn new things in all areas of my life. Personal growth is very important to me, which is why you'll often find me taking up another hobby or skill. Learning is highly motivating and above all, it's fun. (I'd love to see my grade school teachers faces after reading that nugget)</p>
-			<h3>That's me.</h3>
-		</div>
-	</section>
-	<section id="skills">
-		<h1 class="hero">Skills</h1>
-		<div class="content">
-			<div class="column">
-				<div class="block">
-					<div class="thumb html">
-						<div class="logo"></div>
-						<div class="overlay"></div>
-						<h3>HTML/HTML5</h3>
-					</div>
-				</div>
-			</div>
-			<div class="column">
-				<div class="block">
-					<div class="thumb css">
-						<div class="logo"></div>
-						<div class="overlay"></div>
-						<h3>CSS/CSS3</h3>
-					</div>
-				</div>
-			</div>
-			<div class="column">
-				<div class="block">
-					<div class="thumb sass">
-						<div class="logo"></div>
-						<div class="overlay"></div>
-						<h3>SASS</h3>
-					</div>
-				</div>
-			</div>
-			<div class="column">
-				<div class="block">
-					<div class="thumb jquery">
-						<div class="logo"></div>
-						<div class="overlay"></div>
-						<h3>Jquery</h3>
-					</div>
-				</div>
-			</div>
-			<div class="column">
-				<div class="block">
-					<div class="thumb photoshop">
-						<div class="logo"></div>
-						<div class="overlay"></div>
-						<h3>Photoshop</h3>
-					</div>
-				</div>
-			</div>
-			<div class="column">
-				<div class="block">
-					<div class="thumb illustrator">
-						<div class="logo"></div>
-						<div class="overlay"></div>
-						<h3>Illustrator</h3>
-					</div>
-				</div>
-			</div>
-			<div class="column">
-				<div class="block">
-					<div class="thumb responsivedesign">
-						<div class="logo"></div>
-						<div class="overlay"></div>
-						<h3>Responsive Design</h3>
-					</div>
-				</div>
-			</div>
-			<div class="column">
-				<div class="block">
-					<div class="thumb mobiledesign">
-						<div class="logo"></div>
-						<div class="overlay"></div>
-						<h3>Mobile Design</h3>
-					</div>
-				</div>
-			</div>
-			<div class="column">
-				<div class="block">
-					<div class="thumb javascript">
-						<div class="logo"></div>
-						<div class="overlay"></div>
-						<h3>Javascript</h3>
-					</div>
-				</div>
-			</div>
-			<div class="column">
-				<div class="block">
-					<div class="thumb rails">
-						<div class="logo"></div>
-						<div class="overlay"></div>
-						<h3>Ruby on Rails</h3>
-					</div>
-				</div>
-			</div>
-			<div class="column">
-				<div class="block">
-					<div class="thumb sketch">
-						<div class="logo"></div>
-						<div class="overlay"></div>
-						<h3>Sketch</h3>
-					</div>
-				</div>
-			</div>
-			<div class="column">
-				<div class="block">
-					<div class="thumb indesign">
-						<div class="logo"></div>
-						<div class="overlay"></div>
-						<h3>InDesign</h3>
-					</div>
-				</div>
-			</div>
-			<div class="column">
-				<div class="block">
-					<div class="thumb swift">
-						<div class="logo"></div>
-						<div class="overlay"></div>
-						<h3>Swift</h3>
-					</div>
-				</div>
-			</div>
-			<div class="skillLevel">
-				<div class="wrap">
-					<div class="icon">
-						<div class="overlay"></div>
-					</div>
-					<span>= Skill Level</span>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section id="contact">
-		<h1 class="hero">Contact</h1>
-		<div class="content">
-			<div class="block">
-				<a class="button" href="mailto:jtgiudici@gmail.com" target="_top">Messege Me</a>
-			</div>
-			<div class="social">
-				<a href="http://www.linkedin.com/in/joshuagiudici/" target="_blank" class="icon linkedin"></a>
-				<a href="https://twitter.com/joshuagiudici" target="_blank" class="icon twitter"></a>
-				<a href="https://github.com/jtgiudici" target="_blank" class="icon github"></a>
-			</div>
-		</div>
-	</section>
-</body>
+		</section>
+		<section id="contact">
+			
+		</section>
+	</body>
 </html>

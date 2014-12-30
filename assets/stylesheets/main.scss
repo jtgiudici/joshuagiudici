@@ -1,11 +1,9 @@
 @mixin clear { &:after { content: "."; display: block; height:0; clear: both; visibility: hidden; }}
 @import "bourbon/bourbon";
 
-$main: #61737e; // rgba(97, 115, 126, 1)
+$main: #61737e; // rgba(97, 115, 126, 1);
 $mainLight: lighten($main, 50%); // rgba(237 ,240 ,241 , 1), #edf0f1
-$mainDark: darken($main, 10%); // rgba(75, 89, 97, 1), #4b5961
-$mainDarker: darken($main, 20%); // rgba(53, 62, 68, 1) #353e44
-$action: #b9b1a2; // rgba(184, 165, 131, 1)
+$action: #579bae; // rgba(184, 165, 131, 1)
 
 * {
 	border: none;
@@ -20,6 +18,7 @@ $action: #b9b1a2; // rgba(184, 165, 131, 1)
 	-webkit-touch-callout: none;
 	user-select: none;
 }
+
 .column { float: left; }
 .span1 { width: 8.3333333%; }
 .span2 { width: 16.666666%; }
@@ -34,7 +33,8 @@ $action: #b9b1a2; // rgba(184, 165, 131, 1)
 .span11 { width: 91.666666%; }
 .span12 { width: 100%; }
 body { min-width: 320px; }
-#header {
+
+header {
 	@include position(fixed, 0 null null 0);
 	min-width: 320px;
 	width: 100%;
@@ -64,8 +64,8 @@ body { min-width: 320px; }
 		}
 	}
 	#nav {
-		background-color: $mainLight;
-		box-shadow: rgba(0, 0, 0, 0.0470588) 0px 5px 0px;
+		background-color: #F7F7F7;
+		//box-shadow: rgba(97, 115, 126, 0.25) 0px 5px 0px;
 		height: 0;
 		overflow: hidden;
 		@include transition(height, 0.25s, ease-in-out);
@@ -74,7 +74,7 @@ body { min-width: 320px; }
 			padding: 75px 0;
 			li {
 				a {
-					color: $action;
+					color: $main;
 					display: block;
 					font-size: 24px;
 					height: 30px;
@@ -85,8 +85,8 @@ body { min-width: 320px; }
 					text-decoration: none;
 					@include transition(all, 0.1s, ease-in-out);
 					&:hover {
-						background-color: $action;
-						color: $mainLight;
+						background-color: $main;
+						color: #F7F7F7;
 					}
 				}
 			}
@@ -96,178 +96,229 @@ body { min-width: 320px; }
 		#nav { ul { li { a { max-width: 100%; }}}}
 	} 
 }
-
-#welcome {
-	background-color: $main;
-	padding: 75px 50px;
-	.logo {
-		background-color: $mainLight;
-		background-image: url("../images/logo_main_dark.png");
-		background-repeat: no-repeat;
-		background-position: 50%;
-		background-size: 100px;
-		border-radius: 200px;
-		height: 200px;
-		margin: 0 auto;
-		width: 200px;
+#hero {
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	background-size: 1200px;
+	height: 350px;
+	position: relative;
+	&.home {
+		background-color: $main;
+		//background-image: url("../images/hero_home.jpg");
+		background-attachment: fixed;
+		.logo {
+			background-image: url("../images/logo_main.png");
+			background-repeat: no-repeat;
+			background-position: 50% 75px;
+			background-size: 200px;
+			background-attachment: fixed;
+			height: 100%;
+			width: 100%;
+		}
 	}
-}
-#work {
-	background-color: $action;
-	.content {
-		@include clear;
-		margin: 0 auto;
-		width: 450px;
+	&.about {
+		background-color: $main;
+		.logo {
+			background-image: url("../images/about_profile.png");
+			background-repeat: no-repeat;
+			background-position: 50% 75px;
+			background-size: 200px;
+			background-attachment: fixed;
+			height: 100%;
+			width: 100%;
+		}
 	}
-	.thumb {
-		background-image: url("../images/logo_projects_sprite.png");
-		background-repeat: no-repeat;
-		background-size: 900px 450px;
-		float: left;
-		height: 150px;
-		width: 150px;
-		&:nth-child(4) { margin: 0 0 0 75px; }
-		&.rayban { background-position: 0 0;
-			&:hover { background-position: 0 -150px; }}
-		&.courseadvisor { background-position: -150px 0;
-			&:hover { background-position: -150px -150px; }}
-		&.studentadvisor { background-position: -300px 0;
-			&:hover { background-position: -300px -150px; }}
-		&.kaplan { background-position: -450px 0;
-			&:hover { background-position: -450px -150px; }}
-		&.couponhound { background-position: -600px 0;
-			&:hover { background-position: -600px -150px; }}
-		&.homefindify { background-position: -750px 0;
-			&:hover { background-position: -750px -150px; }}
-		&:hover { background-color: $mainLight; }
-		&.inactive {opacity: 0.25;
-			&:hover { background-color: transparent; 
-				&.rayban { background-position: 0 0;
-					&:hover { background-position: 0 0; }}
-				&.courseadvisor { background-position: -150px 0;
-					&:hover { background-position: -150px 0; }}
-				&.studentadvisor { background-position: -300px 0;
-					&:hover { background-position: -300px 0; }}
-				&.kaplan { background-position: -450px 0;
-					&:hover { background-position: -450px 0; }}
-				&.couponhound { background-position: -600px 0;
-					&:hover { background-position: -600px 0; }}
-				&.homefindify { background-position: -750px 0;
-					&:hover { background-position: -750px 0; }}
+	&.rayban {
+		background-color: #f29cc1;
+		background-image: url("../images/hero_rayban.jpg");
+		background-attachment: fixed;
+	}
+	&.courseadvisor {
+		background-color: #95C664;
+		background-image: url("../images/hero_courseadvisor.jpg");
+		background-attachment: fixed;
+	}
+	&.homefindify {
+		background-color: #85b7d8;
+		background-image: url("../images/hero_homefindify.jpg");
+		background-attachment: fixed;
+	}
+	&.mcc {
+		background-color: #252525;
+		background-image: url("../images/hero_mcc.jpg");
+		background-attachment: fixed;
+	}
+	&.couponhound {
+		background-color: #92C3E1;
+		background-image: url("../images/hero_couponhound.jpg");
+		background-attachment: fixed;
+	}
+	&.studentadvisor {
+		background-color: #BD2D24;
+		background-image: url("../images/hero_studentadvisor.jpg");
+		background-attachment: fixed;
+	}
+	&.movieposters {
+		background-color: #2e4161;
+		background-image: url("../images/hero_movieposters.jpg");
+		background-attachment: fixed;
+	}
+	&.top100 {
+		background-color: #facf0a;
+		background-image: url("../images/hero_top100.jpg");
+		background-attachment: fixed;
+	}
+	@media screen and (min-width: 1200px) {
+		background-size: 100%;
+	}
+	@media screen and (max-width: 900px) {
+		background-size: 900px;
+		height: 262.5px;
+		&.home,
+		&.about {
+			.logo {
+				background-position: 50% 56.25px;
+				background-size: 150px;
 			}
 		}
 	}
-	&.project {
-		.content:after { height: auto; }
-	}
-	@media screen and (max-width: 500px) {
-		.content { 
-			padding: 50px 0;
-			width: 300px;
-		}
-		.thumb {
-			background-size: 600px 300px;
-			height: 100px;
-			width: 100px;
-			&:nth-child(4) { margin: 0 0 0 37.5px; }
-			&.rayban { background-position: 0 0;
-				&:hover { background-position: 0 -100px; }}
-			&.courseadvisor { background-position: -100px 0;
-				&:hover { background-position: -100px -100px; }}
-			&.studentadvisor { background-position: -200px 0;
-				&:hover { background-position: -200px -100px; }}
-			&.kaplan { background-position: -300px 0;
-				&:hover { background-position: -300px -100px; }}
-			&.couponhound { background-position: -400px 0;
-				&:hover { background-position: -400px -100px; }}
-			&.homefindify { background-position: -500px 0;
-				&:hover { background-position: -500px -100px; }}
-			&:hover { background-color: $mainLight; }
+	@media screen and (max-width: 600px) {
+		background-size: 600px;
+		height: 175px;
+		&.home,
+		&.about {
+			.logo {
+				background-position: 50% 37.5px;
+				background-size: 100px;
+			}
 		}
 	}
 }
-#about {
-	background-color: $mainLight;
-	h1.hero {
-		color: $main;
-		display: block;
-		font-size: 35px;
-		font-weight: 500;
-		height: 35px;
-		padding: 50px 0;
-		text-align: center;
-	}
+#hgroup {
+	background-color: #FFFFFF;
 	.content {
-		margin: 0 auto;
-		max-width: 750px;
-		padding: 0 25px 50px 25px	
+		padding: 100px 25px;
+		@media screen and (max-width: 900px) { padding: 75px 25px; }
+		@media screen and (max-width: 600px) { padding: 50px 25px; }
 	}
-	.image {
-		background-color: $mainDark;
-		background-image: url("../images/image_about.jpg");
-		background-size: 100px;
-		background-repeat: no-repeat;
-		border-radius: 100px;
-		height: 100px;
-		margin: 0 auto 50px auto;
-		width: 100px;
-	}
-	h2 {
-		color: $main;
-		font-size: 24px;
-		margin: 0 25px 25px 25px;
+	.block { margin: 0 25px; }
+	h1 {
+		font-size: 30px;
+		font-weight: 400;
+		letter-spacing: 5px;
+		margin: 0 0 10px 0;
 		text-align: center;
+		text-transform: uppercase;
+		@media screen and (max-width: 900px) { font-size: 24px; }
+		@media screen and (max-width: 600px) { font-size: 18px; }
+		span {
+			display: block;
+			font-size: 16px;
+			margin: 0 0 20px;
+			text-transform: none;
+			@media screen and (max-width: 900px) { font-size: 14px; margin: 0 0 15px; }
+			@media screen and (max-width: 600px) { font-size: 12px; margin: 0 0 10px; }
+		}
 	}
-	h3 {
-		color: $main;
-		font-size: 22px;
-		margin: 0 25px 50px 25px;
-		text-align: center;
+	.group {
+		//margin: 0 0 50px 0;
+		h2 {
+			color: $main;
+			font-size: 24px;
+			font-weight: 500;
+			margin: 0 0 25px 0;
+			text-align: center;
+			text-transform: lowercase;
+			@media screen and (max-width: 900px) { font-size: 22px; }
+			@media screen and (max-width: 600px) { font-size: 20px; margin: 0 0 15px 0; }
+		}
+		p {
+			font-size: 16px;
+			line-height: 24px;
+			@media screen and (max-width: 900px) { font-size: 16px; line-height: 20px; }
+			@media screen and (max-width: 600px) { font-size: 14px; line-height: 18px; }
+		}
+	}
+	.spacer {
+		border-bottom: 1px solid $main;
+		margin: 50px auto;
+		max-width: 200px;
+		@media screen and (max-width: 900px) { margin: 37.5px auto; max-width: 150px; }
+		@media screen and (max-width: 600px) { margin: 25px auto; max-width: 100px; }
+	}
+	.dot {
+		background-color: #EAEAEA;
+		border-radius: 10px;
+		height: 10px;
+		margin: 25px auto;
+		width: 10px;
 	}
 	p {
-		color: #777777;
-		font-size: 16px;
-		font-weight: 400;
-		line-height: 24px;
-		margin: 0 25px 25px 25px;
+		font-size: 18px;
+		margin: 0 auto;
+		max-width: 600px;
+		@media screen and (max-width: 900px) { font-size: 16px; }
+		@media screen and (max-width: 600px) { font-size: 14px; }
 		span {
-			color: $main;
-			font-weight: bold;
-		}
-	}
-	@media screen and (max-width: 500px) {
-		h2 { font-size: 20px; }
-		h3 { font-size: 18px; }
-		p {
+			display: block;
 			font-size: 14px;
-			line-height: 22px;
+			font-style: italic;
+			padding: 10px 0;
+			text-align: center;
 		}
 	}
-	@media screen and (max-width: 400px) {
-		h2 { font-size: 16px; }
-		h3 { font-size: 14px; }
-		p {
-			font-size: 12px;
-			line-height: 20px;
-		}
+	&.home {
+		p { text-align: center; }
+	}
+	&.rayban {
+		.spacer { border-color: #f29cc1; }
+	}
+	&.courseadvisor {
+		.spacer { border-color: #95C664; }
+	}
+	&.homefindify {
+		.spacer { border-color: #85b7d8; }
+	}
+	&.mcc {
+		.spacer { border-color: #252525; }
+	}
+	&.couponhound {
+		.spacer { border-color: #92C3E1; }
+	}
+	&.studentadvisor {
+		.spacer { border-color: #BD2D24; }
+	}
+	&.movieposters {
+		.spacer { border-color: #2e4161; }
+	}
+	&.top100 {
+		.spacer { border-color: #facf0a; }
 	}
 }
 #skills {
 	background-color: $main;
-	h1.hero {
-		color: $mainLight;
-		display: block;
-		font-size: 35px;
-		font-weight: 500;
-		height: 35px;
-		padding: 50px 0;
-		text-align: center;
-	}
 	.content {
-		@include clear;
-		margin: 0 auto;
-		max-width: 750px;
-		padding: 0 25px 50px 25px;
+		padding: 100px 25px;
+		@media screen and (max-width: 900px) { padding: 75px 25px; }
+		@media screen and (max-width: 600px) { padding: 50px 25px; }
+	}
+	h1 {
+		color: #FFFFFF;
+		font-size: 30px;
+		font-weight: 400;
+		letter-spacing: 5px;
+		margin: 0 0 10px 0;
+		text-align: center;
+		text-transform: uppercase;
+		@media screen and (max-width: 900px) { font-size: 24px; }
+		@media screen and (max-width: 600px) { font-size: 18px; }
+	}
+	.spacer {
+		border-bottom: 1px solid #FFFFFF;
+		margin: 50px auto;
+		max-width: 200px;
+		@media screen and (max-width: 900px) { margin: 37.5px auto; max-width: 150px; }
+		@media screen and (max-width: 600px) { margin: 25px auto; max-width: 100px; }
 	}
 	.column {
 		float: left;
@@ -277,7 +328,7 @@ body { min-width: 320px; }
 			max-width: 100px;
 			padding: 0 25px 50px 25px;
 			.thumb {
-				background-color: $mainDark;
+				background-color: lighten($main, 10%);
 				height: 0;
 				padding: 0 0 100%;
 				position: relative;
@@ -290,7 +341,7 @@ body { min-width: 320px; }
 					z-index: 1;
 				}
 				.overlay {
-					background-color: $mainDarker;
+					background-color: lighten($main, 20%);
 					height: 100%;
 					@include position(absolute, 0 null null 0);
 				}
@@ -298,7 +349,7 @@ body { min-width: 320px; }
 					h3 { opacity: 1; }
 				}
 				h3 {
-					color: $mainDarker;
+					color: lighten($main, 25%);
 					bottom: -30px;
 					font-size: 11px;
 					opacity: 0;
@@ -370,20 +421,20 @@ body { min-width: 320px; }
 			width: 130px;
 		}
 		.icon {
-			background-color: $mainDark;
+			background-color: lighten($main, 10%);
 			float: left;
 			height: 25px;
 			margin: 0 10px 0 0;
 			position: relative;
 			width: 25px;
 			.overlay {
-				background-color: $mainDarker;
+				background-color: lighten($main, 20%);
 				height: 25px;
 				width: 75%;
 			}
 		}
 		span {
-			color: $mainDarker;
+			color: lighten($main, 25%);
 			display: block;
 			float: left;
 			font-weight: bold;
@@ -392,14 +443,13 @@ body { min-width: 320px; }
 			height: 22px;
 		}
 	}
-	@media screen and (max-width: 800px) {
+	@media screen and (max-width: 900px) {
 		.column { width: 25%; }
 	}
-	@media screen and (max-width: 650px) {
+	@media screen and (max-width: 600px) {
 		.column { width: 33.333334%; }
 	}
-	@media screen and (max-width: 500px) {
-		.content { padding: 0 37.5px 50px 37.5px ; }
+	@media screen and (max-width: 400px) {
 		.column {
 			.block { padding: 0 12.5px 25px 12.5px; }
 		}
@@ -416,34 +466,52 @@ body { min-width: 320px; }
 	}
 }
 #contact {
-	background-color: $mainDark;
-	h1.hero {
-		color: $mainLight;
-		display: block;
-		font-size: 35px;
-		font-weight: 500;
-		height: 35px;
-		padding: 50px 0;
+	background-color: darken($main, 10%);
+	.content {
+		padding: 100px 25px;
+		@media screen and (max-width: 900px) { padding: 75px 25px; }
+		@media screen and (max-width: 600px) { padding: 50px 25px; }
+	}
+	h1 {
+		color: #FFFFFF;
+		font-size: 30px;
+		font-weight: 400;
+		letter-spacing: 5px;
+		margin: 0 0 10px 0;
 		text-align: center;
+		text-transform: uppercase;
+		@media screen and (max-width: 900px) { font-size: 24px; }
+		@media screen and (max-width: 600px) { font-size: 18px; }
+	}
+	.spacer {
+		border-bottom: 1px solid #FFFFFF;
+		margin: 50px auto;
+		max-width: 200px;
+		@media screen and (max-width: 900px) { margin: 37.5px auto; max-width: 150px; }
+		@media screen and (max-width: 600px) { margin: 25px auto; max-width: 100px; }
 	}
 	.block { margin: 0 25px; }
 	.button {
-		background: $action;
-		color: $mainLight;
+		background-color: $main;
+		border: 3px solid #FFFFFF;
+		border-radius: 10px;
+		color: #FFFFFF;
 		cursor: pointer;
 		display: block;
-		font-size: 24px;
+		font-size: 20px;
 		font-weight: 600;
 		margin: 0 auto 25px auto;
-		max-width: 250px;
-		padding: 25px;
+		max-width: 180px;
+		padding: 20px;
 		text-align: center;
 		text-decoration: none;
 		@include transition(background-color, 0.25s, ease-in-out);
 		width: 100%;
-		&:hover { background-color: lighten($action, 5%); }
+		&:hover {
+			background-color: #FFFFFF;
+			color: $main;
+		}
 	}
-	.content { padding: 0 25px 50px 25px; }
 	.social {
 		@include clear;
 		margin: 0 auto;
@@ -455,105 +523,246 @@ body { min-width: 320px; }
 			float: left;
 			height: 50px;
 			margin: 0 25px 0 0;
+			position: relative;
 			width: 50px;
-			&.linkedin { background-position: 0 0;
-				&:hover { background-position: 0 -100px; }
+			.overlay {
+				background-image: url("../images/icon_social_sprite.png");
+				background-size: 150px;
+				height: 100%;
+				opacity: 0;
+				position: absolute;
+				@include transition(opacity, 0.25s, ease-in-out);
+				width: 100%;
+				&:hover { opacity: 1; }
 			}
-			&.twitter { background-position: -50px 0 ;
-				&:hover { background-position: -50px -100px; }
+			&.linkedin { background-position: 0 0;
+				.overlay { background-position: 0 -50px; }
+			}
+			&.twitter { background-position: -50px 0;
+				.overlay { background-position: -50px -50px; }
 			}
 			&.github { background-position: -100px 0;
-				&:hover { background-position: -100px -100px; }
+				.overlay { background-position: -100px -50px; }
 			}
 			&:last-child { margin: 0; }
 		}
 	}
 }
-#summary {
-	background-color: $main;
-	height: 350px;
-	.content {
-		margin: 0 auto;
-		max-width: 750px;
-		padding: 50px 25px;
-	}
-	.block { margin: 0 25px; }
-	.logo {
-		background-color: $mainLight;
-		background-image: url("../images/logo_projects_sprite.png");
-		background-size: 600px 300px;
-		border-radius: 100px;
-		height: 100px;
-		margin: 0 auto 25px auto;
-		width: 100px;
-		&.rayban { background-position: 0 -200px; }
-		&.courseadvisor { background-position: -100px -200px; }
-		&.studentadvisor { background-position: -200px -200px; }
-		&.kaplan { background-position: -300px -200px; }
-		&.couponhound { background-position: -400px -200px; }
-		&.homefindify { background-position: -500px -200px; }
-	}
-	h1 {
-		color: $mainLight;
-		display: block;
-		font-size: 24px;
-		font-weight: 500;
-		margin: 0 0 10px 0;
-		text-align: center;
-	}
-	p {
-		color: $mainLight;
-		font-size: 14px;
-		margin: 0 auto;
-	}
-	@media screen and (max-width: 750px) {
-		.logo {
-			background-size: 450px 225px;
-			height: 75px;
-			width: 75px;
-			&.rayban { background-position: 0 -150px; }
-			&.courseadvisor { background-position: -75px -150px; }
-			&.studentadvisor { background-position: -150px -150px; }
-			&.kaplan { background-position: -225px -150px; }
-			&.couponhound { background-position: -300px -150px; }
-			&.homefindify { background-position: -375px -150px; }
+#work {
+	background: #AEAEAE;
+	//@include clear;
+	.column {
+		width: 25%;
+		.thumb {
+			background-size: 101%;
+			cursor: pointer;
+			display: block;
+			height: 0;
+			overflow: hidden;
+			padding-bottom: 75%;
+			position: relative;
+			&.rayban { background-image: url("../images/thumb_rayban_bw.jpg");
+				.overlay { background-image: url("../images/thumb_rayban_color.jpg"); }
+			}
+			&.courseadvisor { background-image: url("../images/thumb_courseadvisor_bw.jpg");
+				.overlay { background-image: url("../images/thumb_courseadvisor_color.jpg"); }
+			}
+			&.homefindify { background-image: url("../images/thumb_homefindify_bw.jpg");
+				.overlay { background-image: url("../images/thumb_homefindify_color.jpg"); }
+			}
+			&.mcc { background-image: url("../images/thumb_mcc_bw.jpg");
+				.overlay { background-image: url("../images/thumb_mcc_color.jpg"); }
+			}
+			&.couponhound { background-image: url("../images/thumb_couponhound_bw.jpg");
+				.overlay { background-image: url("../images/thumb_couponhound_color.jpg"); }
+			}
+			&.studentadvisor { background-image: url("../images/thumb_studentadvisor_bw.jpg");
+				.overlay { background-image: url("../images/thumb_studentadvisor_color.jpg"); }
+			}
+			&.movieposters { background-image: url("../images/thumb_movieposters_bw.jpg");
+				.overlay { background-image: url("../images/thumb_movieposters_color.jpg"); }
+			}
+			&.top100 { background-image: url("../images/thumb_top100_bw.jpg");
+				.overlay { background-image: url("../images/thumb_top100_color.jpg"); }
+			}
+			&:hover {
+				.overlay { opacity: 1; }
+				h2 { margin-bottom: 0; }
+			}
+			.overlay {
+				background-size: 101%;
+				height: 100%;
+				opacity: 0;
+				position: absolute;
+				@include transition(opacity 0.25s ease-in-out);
+				width: 100%;
+			}
+			h2 {
+				background-color: rgba(255,255,255,0.9);
+				color: $action;
+				font-weight: 400;
+				display: none;
+				height: 15%;
+				font-size: 20px;
+				margin-bottom: -25%;
+				padding: 5%;
+					position: absolute;
+					bottom: 0;
+				text-align: center;
+				@include transition(margin 0.25s ease-in-out);
+				width: 95%;
+			}
 		}
-		h1 { font-size: 22px; }
-		p { font-size: 13px; }
 	}
-	@media screen and (max-width: 500px) {
-		.logo {
-			background-size: 300px 150px;
-			height: 50px;
-			width: 50px;
-			&.rayban { background-position: 0 -100px; }
-			&.courseadvisor { background-position: -50px -100px; }
-			&.studentadvisor { background-position: -100px -100px; }
-			&.kaplan { background-position: -150px -100px; }
-			&.couponhound { background-position: -200px -100px; }
-			&.homefindify { background-position: -250px -100px; }		}
-		h1 { font-size: 18px; }
-		p { font-size: 12px; }
+	@media screen and (max-width: 900px) {
+		.column { width: 33.33334%; }
+	}
+	@media screen and (max-width: 600px) {
+		.column { width: 50%; }
+	}
+}
+#work {
+	h1 {
+		background-color: #FFFFFF;
+		display: block;
+		font-weight: 400;
+		padding: 50px;
+		text-align: center;
 	}
 }
 #viewer {
-	background-color: $mainDarker;
-	@include clear;
-	.content {
-		margin: 0 auto;
-		max-width: 750px;
-		padding: 50px 25px;
+	.content { padding: 100px 25px; }
+	.block { margin: 0 25px; }
+	.screenshot {
+		img {
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 50px;
+			max-width: 800px;
+			width: 100%;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
 	}
-	.block {
-		margin: 0 25px 50px 25px;
+	.logoMain {
+		img {
+			display: block;
+			margin: 0 auto;
+			max-width: 400px;
+			width: 100%;
+		}
 	}
+}
+#viewer.rayban {
+	@include clear;	
 	img {
+		float: left;
 		display: block;
-		width: 100%;
+		width: 33.33333%;
+		@media screen and (max-width: 900px) { width: 50%; }
+		@media screen and (max-width: 600px) { width: 100%; }
 	}
-	@media screen and (max-width: 500px) {
-				.column {
-					width: 100%;
-				}
+}
+#viewer.courseadvisor {
+	.screenshot { background-color: #AEAEAE; }
+}
+#viewer.homefindify {
+	.fixedImage.logoTrace {
+		background-image: url("../images/projects/homefindify_logo_trace.png");
+		background-color: #EAEAEA;
+		background-position: 50%;
+		background-repeat: no-repeat;
+		background-size: 800px;
+		background-attachment: fixed;
+		height: 300px;
+		@media screen and (max-width: 900px) { background-size: 600px; height: 225px; }
+		@media screen and (max-width: 600px) { background-size: 400px; height: 150px; }
+		@media screen and (max-width: 400px) { background-size: 100%; }
 	}
+	.colorPalette {
+		@include clear;
+		.column {
+			height: 25px;
+			width: 25%;
+			&.blue { background-color: #85B7D8; }
+			&.green { background-color: #A6CE75; }
+			&.pink { background-color: #DB7DB1; }
+			&.purple { background-color: #8D6391; }
+		}
+	}
+	.fixedImage.bgHouse {
+		background-image: url("../images/projects/homefindify_bg_house.jpg");
+		background-color: #777777;
+		background-position: 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		height: 400px;
+	}
+	.screenshot { background-color: #AEAEAE; }
+}
+#viewer.mcc {
+	.ad {
+		background-color: #252525;
+		img {
+			display: block;
+			margin: 0 auto;
+			width: 100%;
+		}
+	}
+	.ad.poster,
+	.ad.busterminal {
+		img { max-width: 600px; }
+	}
+	.ad.subway {
+		img { max-width: 800px; }
+	}
+	.fixedImage.env {
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: 50%;
+		height: 500px;
+		&.poster { background-image: url("../images/projects/mcc_env_poster.jpg"); }
+		&.subway { background-image: url("../images/projects/mcc_env_subway.jpg"); }
+		&.busterminal { background-image: url("../images/projects/mcc_env_busterminal.jpg"); }
+	}
+}
+#viewer.couponhound {
+	.screenshot { background-color: #EAEAEA; }
+}
+#viewer.studentadvisor {
+	.screenshot { background-color: #cac3bb; }
+}
+#viewer.movieposters {
+	@include clear;	
+	img {
+		float: left;
+		display: block;
+		width: 33.33333%;
+		@media screen and (max-width: 900px) { width: 50%; }
+		@media screen and (max-width: 600px) { width: 100%; }
+	}
+}
+#viewer.top100 {
+	.imageFixed.iconStar {
+		background-color: #EAEAEA;
+		background-image: url("../images/projects/top100_icon_star.png");
+		background-attachment: fixed;
+		background-position: 50% 0;
+		background-repeat: no-repeat;
+		background-size: 1200px;
+		height: 350px;
+		position: relative;
+		@media screen and (min-width: 1200px) { background-size: 100%; }
+		@media screen and (max-width: 900px) {
+			background-size: 900px;
+			height: 262.5px;
+		}
+		@media screen and (max-width: 600px) {
+			background-size: 600px;
+			height: 175px;
+		}
+	}
+	.screenshot { background-color: #AEAEAE; }
 }

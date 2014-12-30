@@ -1,65 +1,99 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
-	<link rel="stylesheet" type="text/css" href="../assets/stylesheets/main.css">
-	<link href='http://fonts.googleapis.com/css?family=Raleway:500,300,200,400,100' rel='stylesheet' type='text/css'></head>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="../assets/javascripts/main.js"></script>
-<body class="courseadvisor">
-	<header id="header">
-		<a class="icon logo" href="/"></a>
-		<div class="icon menu open"></div>
-		<nav id="nav">
-			<ul>
-				<li><a href="../index.html#work">Work</a></li>
-				<li><a href="../index.html#about">About</a></li>
-				<li><a href="../index.html#skills" >Skills</a></li>
-				<li><a href="../index.html#contact" >Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<section id="summary">
-		<div class="content">
-			<div class="block">
-				<div class="logo courseadvisor"></div>
-				<h1>CourseAdvisor</h1>
-				<p>My first adventure in front-end web development. I had been designing for years, but these landing pages for CourseAdvisor.com were an opportunity for me to learn how to turn my mockups into my own handcrafted HTML and CSS.</p>
-			</div>
+	<head>
+		<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+		<link rel="stylesheet" type="text/css" href="../assets/stylesheets/main.css">
+		<link href='http://fonts.googleapis.com/css?family=Raleway:500,300,200,400,100' rel='stylesheet' type='text/css'></head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="../assets/javascripts/main.js"></script>
+	</head>
+	<body>
+		<header>
+			<a class="icon logo" href="/"></a>
+			<div class="icon menu open"></div>
+			<nav id="nav">
+				<ul>
+					<li><a href="#work" class="work">Work</a></li>
+					<li><a href="../about.html" class="about">About</a></li>
+					<li><a href="../about.html#skills" class="skills">Skills</a></li>
+					<li><a href="../about.html#contact" class="contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="hero" class="courseadvisor">
+			<div class="logo"></div>
 		</div>
-	</section>
-	<section id="viewer" class="courseadvisor">
-		<div class="content">
-			<div class="column span6">
+		<section id="hgroup" class="courseadvisor">
+			<div class="content">
 				<div class="block">
-					<img src="../assets/images/projects/project_courseadvisor_landingpage01.jpg" />
+					<h1>CourseAdvisor</h1>
+					<div class="spacer"></div>
+					<p>Landing page design and front-end development for CourseAdvisor.com, a for-profit education website that connects potential students with schools that fit their needs. These pages were built to dynamically change elements (text, images, colors) based on a user's SEM keyword parameters.</p>
 				</div>
 			</div>
-			<div class="column span6">
-				<div class="block">
-					<img src="../assets/images/projects/project_courseadvisor_landingpage02.jpg" />
+		</section>
+		<section id="viewer" class="courseadvisor">
+			<section class="screenshot">
+				<div class="content">
+					<div class="block">
+						<img src="../assets/images/projects/courseadvisor_screenshot_landingpage01.jpg">
+						<img src="../assets/images/projects/courseadvisor_screenshot_landingpage02.jpg">
+						<img src="../assets/images/projects/courseadvisor_screenshot_landingpage03.jpg">
+						<img src="../assets/images/projects/courseadvisor_screenshot_landingpage04.jpg">
+					</div>
 				</div>
+			</section>
+		</section>
+		<section id="work">
+			<h1>View More Projects</h1>
+			<div class="column">
+				<a class="thumb rayban" href="rayban.html">
+					<div class="overlay"></div>
+					<h2>Ray Ban</h2>
+				</a>
 			</div>
-			<div class="column span6">
-				<div class="block">
-					<img src="../assets/images/projects/project_courseadvisor_landingpage03.jpg" />
-				</div>
+			<div class="column">
+				<a class="thumb courseadvisor" href="courseadvisor.html">
+					<div class="overlay"></div>
+					<h2>CourseAdvisor</h2>
+				</a>
 			</div>
-			<div class="column span6">
-				<div class="block">
-					<img src="../assets/images/projects/project_courseadvisor_landingpage04.jpg" />
-				</div>
+			<div class="column">
+				<a class="thumb homefindify" href="homefindify.html">
+					<div class="overlay"></div>
+					<h2>HomeFindify</h2>
+				</a>
 			</div>
-		</div>
-	</section>
-	<section id="work" class="project">
-		<div class="content">
-			<a href="rayban.html" class="thumb rayban"></a>
-			<a class="thumb courseadvisor inactive"></a>
-			<a href="studentadvisor.html" class="thumb studentadvisor"></a>
-			<!-- <a href="kaplan.html" class="thumb kaplan"></a> -->
-			<a href="couponhound.html" class="thumb couponhound"></a>
-			<a href="homefindify.html" class="thumb homefindify"></a>
-		</div>
-	</section>
-</body>
+			<div class="column">
+				<a class="thumb mcc" href="mcc.html">
+					<div class="overlay"></div>
+					<h2>Massachusetts Citizens for Children</h2>
+				</a>
+			</div>
+			<div class="column">
+				<a class="thumb couponhound" href="couponhound.html">
+					<div class="overlay"></div>
+					<h2>CouponHound</h2>
+				</a>
+			</div>
+			<div class="column">
+				<a class="thumb studentadvisor" href="studentadvisor.html">
+					<div class="overlay"></div>
+					<h2>StudentAdvisor</h2>
+				</a>
+			</div>
+			<div class="column">
+				<a class="thumb movieposters" href="movieposters.html">
+					<div class="overlay"></div>
+					<h2>Movie Posters</h2>
+				</a>
+			</div>
+			<div class="column">
+				<a class="thumb top100" href="top100.html">
+					<div class="overlay"></div>
+					<h2>Top 100 Social Media Colleges</h2>
+				</a>
+			</div>
+		</section>
+	</body>
+</html>

@@ -53,14 +53,14 @@
 body {
   min-width: 320px; }
 
-#header {
+header {
   position: fixed;
   top: 0;
   left: 0;
   min-width: 320px;
   width: 100%;
   z-index: 3; }
-  #header .icon {
+  header .icon {
     background-image: url("../images/icon_sprite.png");
     background-size: 250px 100px;
     background-repeat: no-repeat;
@@ -70,33 +70,32 @@ body {
     position: absolute;
     width: 50px;
     z-index: 3; }
-    #header .icon.logo {
+    header .icon.logo {
       background-position: 0 0; }
-      #header .icon.logo.dark {
+      header .icon.logo.dark {
         background-position: 0 -50px; }
-    #header .icon.menu {
+    header .icon.menu {
       right: 0; }
-      #header .icon.menu.open {
+      header .icon.menu.open {
         background-position: -50px 0; }
-        #header .icon.menu.open.dark {
+        header .icon.menu.open.dark {
           background-position: -50px -50px; }
-      #header .icon.menu.close {
+      header .icon.menu.close {
         background-position: -100px 0; }
-        #header .icon.menu.close.dark {
+        header .icon.menu.close.dark {
           background-position: -100px -50px; }
-  #header #nav {
-    background-color: #edf0f1;
-    box-shadow: rgba(0, 0, 0, 0.04706) 0px 5px 0px;
+  header #nav {
+    background-color: #F7F7F7;
     height: 0;
     overflow: hidden;
     -webkit-transition: height, 0.25s, ease-in-out;
     -moz-transition: height, 0.25s, ease-in-out;
     transition: height, 0.25s, ease-in-out;
     width: 100%; }
-    #header #nav ul {
+    header #nav ul {
       padding: 75px 0; }
-      #header #nav ul li a {
-        color: #b9b1a2;
+      header #nav ul li a {
+        color: #61737e;
         display: block;
         font-size: 24px;
         height: 30px;
@@ -108,219 +107,242 @@ body {
         -webkit-transition: all, 0.1s, ease-in-out;
         -moz-transition: all, 0.1s, ease-in-out;
         transition: all, 0.1s, ease-in-out; }
-        #header #nav ul li a:hover {
-          background-color: #b9b1a2;
-          color: #edf0f1; }
+        header #nav ul li a:hover {
+          background-color: #61737e;
+          color: #F7F7F7; }
   @media screen and (max-width: 500px) {
-    #header #nav ul li a {
+    header #nav ul li a {
       max-width: 100%; } }
 
-#welcome {
-  background-color: #61737e;
-  padding: 75px 50px; }
-  #welcome .logo {
-    background-color: #edf0f1;
-    background-image: url("../images/logo_main_dark.png");
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 100px;
-    border-radius: 200px;
-    height: 200px;
-    margin: 0 auto;
-    width: 200px; }
+#hero {
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: 1200px;
+  height: 350px;
+  position: relative; }
+  #hero.home {
+    background-color: #61737e;
+    background-attachment: fixed; }
+    #hero.home .logo {
+      background-image: url("../images/logo_main.png");
+      background-repeat: no-repeat;
+      background-position: 50% 75px;
+      background-size: 200px;
+      background-attachment: fixed;
+      height: 100%;
+      width: 100%; }
+  #hero.about {
+    background-color: #61737e; }
+    #hero.about .logo {
+      background-image: url("../images/about_profile.png");
+      background-repeat: no-repeat;
+      background-position: 50% 75px;
+      background-size: 200px;
+      background-attachment: fixed;
+      height: 100%;
+      width: 100%; }
+  #hero.rayban {
+    background-color: #f29cc1;
+    background-image: url("../images/hero_rayban.jpg");
+    background-attachment: fixed; }
+  #hero.courseadvisor {
+    background-color: #95C664;
+    background-image: url("../images/hero_courseadvisor.jpg");
+    background-attachment: fixed; }
+  #hero.homefindify {
+    background-color: #85b7d8;
+    background-image: url("../images/hero_homefindify.jpg");
+    background-attachment: fixed; }
+  #hero.mcc {
+    background-color: #252525;
+    background-image: url("../images/hero_mcc.jpg");
+    background-attachment: fixed; }
+  #hero.couponhound {
+    background-color: #92C3E1;
+    background-image: url("../images/hero_couponhound.jpg");
+    background-attachment: fixed; }
+  #hero.studentadvisor {
+    background-color: #BD2D24;
+    background-image: url("../images/hero_studentadvisor.jpg");
+    background-attachment: fixed; }
+  #hero.movieposters {
+    background-color: #2e4161;
+    background-image: url("../images/hero_movieposters.jpg");
+    background-attachment: fixed; }
+  #hero.top100 {
+    background-color: #facf0a;
+    background-image: url("../images/hero_top100.jpg");
+    background-attachment: fixed; }
+  @media screen and (min-width: 1200px) {
+    #hero {
+      background-size: 100%; } }
+  @media screen and (max-width: 900px) {
+    #hero {
+      background-size: 900px;
+      height: 262.5px; }
+      #hero.home .logo, #hero.about .logo {
+        background-position: 50% 56.25px;
+        background-size: 150px; } }
+  @media screen and (max-width: 600px) {
+    #hero {
+      background-size: 600px;
+      height: 175px; }
+      #hero.home .logo, #hero.about .logo {
+        background-position: 50% 37.5px;
+        background-size: 100px; } }
 
-#work {
-  background-color: #b9b1a2; }
-  #work .content {
-    margin: 0 auto;
-    width: 450px; }
-    #work .content:after {
-      content: ".";
+#hgroup {
+  background-color: #FFFFFF; }
+  #hgroup .content {
+    padding: 100px 25px; }
+    @media screen and (max-width: 900px) {
+      #hgroup .content {
+        padding: 75px 25px; } }
+    @media screen and (max-width: 600px) {
+      #hgroup .content {
+        padding: 50px 25px; } }
+  #hgroup .block {
+    margin: 0 25px; }
+  #hgroup h1 {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin: 0 0 10px 0;
+    text-align: center;
+    text-transform: uppercase; }
+    @media screen and (max-width: 900px) {
+      #hgroup h1 {
+        font-size: 24px; } }
+    @media screen and (max-width: 600px) {
+      #hgroup h1 {
+        font-size: 18px; } }
+    #hgroup h1 span {
       display: block;
-      height: 0;
-      clear: both;
-      visibility: hidden; }
-  #work .thumb {
-    background-image: url("../images/logo_projects_sprite.png");
-    background-repeat: no-repeat;
-    background-size: 900px 450px;
-    float: left;
-    height: 150px;
-    width: 150px; }
-    #work .thumb:nth-child(4) {
-      margin: 0 0 0 75px; }
-    #work .thumb.rayban {
-      background-position: 0 0; }
-      #work .thumb.rayban:hover {
-        background-position: 0 -150px; }
-    #work .thumb.courseadvisor {
-      background-position: -150px 0; }
-      #work .thumb.courseadvisor:hover {
-        background-position: -150px -150px; }
-    #work .thumb.studentadvisor {
-      background-position: -300px 0; }
-      #work .thumb.studentadvisor:hover {
-        background-position: -300px -150px; }
-    #work .thumb.kaplan {
-      background-position: -450px 0; }
-      #work .thumb.kaplan:hover {
-        background-position: -450px -150px; }
-    #work .thumb.couponhound {
-      background-position: -600px 0; }
-      #work .thumb.couponhound:hover {
-        background-position: -600px -150px; }
-    #work .thumb.homefindify {
-      background-position: -750px 0; }
-      #work .thumb.homefindify:hover {
-        background-position: -750px -150px; }
-    #work .thumb:hover {
-      background-color: #edf0f1; }
-    #work .thumb.inactive {
-      opacity: 0.25; }
-      #work .thumb.inactive:hover {
-        background-color: transparent; }
-        #work .thumb.inactive:hover.rayban {
-          background-position: 0 0; }
-          #work .thumb.inactive:hover.rayban:hover {
-            background-position: 0 0; }
-        #work .thumb.inactive:hover.courseadvisor {
-          background-position: -150px 0; }
-          #work .thumb.inactive:hover.courseadvisor:hover {
-            background-position: -150px 0; }
-        #work .thumb.inactive:hover.studentadvisor {
-          background-position: -300px 0; }
-          #work .thumb.inactive:hover.studentadvisor:hover {
-            background-position: -300px 0; }
-        #work .thumb.inactive:hover.kaplan {
-          background-position: -450px 0; }
-          #work .thumb.inactive:hover.kaplan:hover {
-            background-position: -450px 0; }
-        #work .thumb.inactive:hover.couponhound {
-          background-position: -600px 0; }
-          #work .thumb.inactive:hover.couponhound:hover {
-            background-position: -600px 0; }
-        #work .thumb.inactive:hover.homefindify {
-          background-position: -750px 0; }
-          #work .thumb.inactive:hover.homefindify:hover {
-            background-position: -750px 0; }
-  #work.project .content:after {
-    height: auto; }
-  @media screen and (max-width: 500px) {
-    #work .content {
-      padding: 50px 0;
-      width: 300px; }
-    #work .thumb {
-      background-size: 600px 300px;
-      height: 100px;
-      width: 100px; }
-      #work .thumb:nth-child(4) {
-        margin: 0 0 0 37.5px; }
-      #work .thumb.rayban {
-        background-position: 0 0; }
-        #work .thumb.rayban:hover {
-          background-position: 0 -100px; }
-      #work .thumb.courseadvisor {
-        background-position: -100px 0; }
-        #work .thumb.courseadvisor:hover {
-          background-position: -100px -100px; }
-      #work .thumb.studentadvisor {
-        background-position: -200px 0; }
-        #work .thumb.studentadvisor:hover {
-          background-position: -200px -100px; }
-      #work .thumb.kaplan {
-        background-position: -300px 0; }
-        #work .thumb.kaplan:hover {
-          background-position: -300px -100px; }
-      #work .thumb.couponhound {
-        background-position: -400px 0; }
-        #work .thumb.couponhound:hover {
-          background-position: -400px -100px; }
-      #work .thumb.homefindify {
-        background-position: -500px 0; }
-        #work .thumb.homefindify:hover {
-          background-position: -500px -100px; }
-      #work .thumb:hover {
-        background-color: #edf0f1; } }
-
-#about {
-  background-color: #edf0f1; }
-  #about h1.hero {
-    color: #61737e;
-    display: block;
-    font-size: 35px;
-    font-weight: 500;
-    height: 35px;
-    padding: 50px 0;
-    text-align: center; }
-  #about .content {
-    margin: 0 auto;
-    max-width: 750px;
-    padding: 0 25px 50px 25px; }
-  #about .image {
-    background-color: #4b5961;
-    background-image: url("../images/image_about.jpg");
-    background-size: 100px;
-    background-repeat: no-repeat;
-    border-radius: 100px;
-    height: 100px;
-    margin: 0 auto 50px auto;
-    width: 100px; }
-  #about h2 {
+      font-size: 16px;
+      margin: 0 0 20px;
+      text-transform: none; }
+      @media screen and (max-width: 900px) {
+        #hgroup h1 span {
+          font-size: 14px;
+          margin: 0 0 15px; } }
+      @media screen and (max-width: 600px) {
+        #hgroup h1 span {
+          font-size: 12px;
+          margin: 0 0 10px; } }
+  #hgroup .group h2 {
     color: #61737e;
     font-size: 24px;
-    margin: 0 25px 25px 25px;
-    text-align: center; }
-  #about h3 {
-    color: #61737e;
-    font-size: 22px;
-    margin: 0 25px 50px 25px;
-    text-align: center; }
-  #about p {
-    color: #777777;
+    font-weight: 500;
+    margin: 0 0 25px 0;
+    text-align: center;
+    text-transform: lowercase; }
+    @media screen and (max-width: 900px) {
+      #hgroup .group h2 {
+        font-size: 22px; } }
+    @media screen and (max-width: 600px) {
+      #hgroup .group h2 {
+        font-size: 20px;
+        margin: 0 0 15px 0; } }
+  #hgroup .group p {
     font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    margin: 0 25px 25px 25px; }
-    #about p span {
-      color: #61737e;
-      font-weight: bold; }
-  @media screen and (max-width: 500px) {
-    #about h2 {
-      font-size: 20px; }
-    #about h3 {
-      font-size: 18px; }
-    #about p {
+    line-height: 24px; }
+    @media screen and (max-width: 900px) {
+      #hgroup .group p {
+        font-size: 16px;
+        line-height: 20px; } }
+    @media screen and (max-width: 600px) {
+      #hgroup .group p {
+        font-size: 14px;
+        line-height: 18px; } }
+  #hgroup .spacer {
+    border-bottom: 1px solid #61737e;
+    margin: 50px auto;
+    max-width: 200px; }
+    @media screen and (max-width: 900px) {
+      #hgroup .spacer {
+        margin: 37.5px auto;
+        max-width: 150px; } }
+    @media screen and (max-width: 600px) {
+      #hgroup .spacer {
+        margin: 25px auto;
+        max-width: 100px; } }
+  #hgroup .dot {
+    background-color: #EAEAEA;
+    border-radius: 10px;
+    height: 10px;
+    margin: 25px auto;
+    width: 10px; }
+  #hgroup p {
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 600px; }
+    @media screen and (max-width: 900px) {
+      #hgroup p {
+        font-size: 16px; } }
+    @media screen and (max-width: 600px) {
+      #hgroup p {
+        font-size: 14px; } }
+    #hgroup p span {
+      display: block;
       font-size: 14px;
-      line-height: 22px; } }
-  @media screen and (max-width: 400px) {
-    #about h2 {
-      font-size: 16px; }
-    #about h3 {
-      font-size: 14px; }
-    #about p {
-      font-size: 12px;
-      line-height: 20px; } }
+      font-style: italic;
+      padding: 10px 0;
+      text-align: center; }
+  #hgroup.home p {
+    text-align: center; }
+  #hgroup.rayban .spacer {
+    border-color: #f29cc1; }
+  #hgroup.courseadvisor .spacer {
+    border-color: #95C664; }
+  #hgroup.homefindify .spacer {
+    border-color: #85b7d8; }
+  #hgroup.mcc .spacer {
+    border-color: #252525; }
+  #hgroup.couponhound .spacer {
+    border-color: #92C3E1; }
+  #hgroup.studentadvisor .spacer {
+    border-color: #BD2D24; }
+  #hgroup.movieposters .spacer {
+    border-color: #2e4161; }
+  #hgroup.top100 .spacer {
+    border-color: #facf0a; }
 
 #skills {
   background-color: #61737e; }
-  #skills h1.hero {
-    color: #edf0f1;
-    display: block;
-    font-size: 35px;
-    font-weight: 500;
-    height: 35px;
-    padding: 50px 0;
-    text-align: center; }
   #skills .content {
-    margin: 0 auto;
-    max-width: 750px;
-    padding: 0 25px 50px 25px; }
-    #skills .content:after {
-      content: ".";
-      display: block;
-      height: 0;
-      clear: both;
-      visibility: hidden; }
+    padding: 100px 25px; }
+    @media screen and (max-width: 900px) {
+      #skills .content {
+        padding: 75px 25px; } }
+    @media screen and (max-width: 600px) {
+      #skills .content {
+        padding: 50px 25px; } }
+  #skills h1 {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin: 0 0 10px 0;
+    text-align: center;
+    text-transform: uppercase; }
+    @media screen and (max-width: 900px) {
+      #skills h1 {
+        font-size: 24px; } }
+    @media screen and (max-width: 600px) {
+      #skills h1 {
+        font-size: 18px; } }
+  #skills .spacer {
+    border-bottom: 1px solid #FFFFFF;
+    margin: 50px auto;
+    max-width: 200px; }
+    @media screen and (max-width: 900px) {
+      #skills .spacer {
+        margin: 37.5px auto;
+        max-width: 150px; } }
+    @media screen and (max-width: 600px) {
+      #skills .spacer {
+        margin: 25px auto;
+        max-width: 100px; } }
   #skills .column {
     float: left;
     width: 20%; }
@@ -329,7 +351,7 @@ body {
       max-width: 100px;
       padding: 0 25px 50px 25px; }
       #skills .column .block .thumb {
-        background-color: #4b5961;
+        background-color: #7a8d98;
         height: 0;
         padding: 0 0 100%;
         position: relative; }
@@ -343,7 +365,7 @@ body {
           width: 100%;
           z-index: 1; }
         #skills .column .block .thumb .overlay {
-          background-color: #353e44;
+          background-color: #96a5af;
           height: 100%;
           position: absolute;
           top: 0;
@@ -351,7 +373,7 @@ body {
         #skills .column .block .thumb:hover h3 {
           opacity: 1; }
         #skills .column .block .thumb h3 {
-          color: #353e44;
+          color: #a5b2ba;
           bottom: -30px;
           font-size: 11px;
           opacity: 0;
@@ -425,33 +447,31 @@ body {
         clear: both;
         visibility: hidden; }
     #skills .skillLevel .icon {
-      background-color: #4b5961;
+      background-color: #7a8d98;
       float: left;
       height: 25px;
       margin: 0 10px 0 0;
       position: relative;
       width: 25px; }
       #skills .skillLevel .icon .overlay {
-        background-color: #353e44;
+        background-color: #96a5af;
         height: 25px;
         width: 75%; }
     #skills .skillLevel span {
-      color: #353e44;
+      color: #a5b2ba;
       display: block;
       float: left;
       font-weight: bold;
       font-size: 14px;
       padding: 3px 0 0 0;
       height: 22px; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 900px) {
     #skills .column {
       width: 25%; } }
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 600px) {
     #skills .column {
       width: 33.333334%; } }
-  @media screen and (max-width: 500px) {
-    #skills .content {
-      padding: 0 37.5px 50px 37.5px; }
+  @media screen and (max-width: 400px) {
     #skills .column .block {
       padding: 0 12.5px 25px 12.5px; }
     #skills .skillLevel {
@@ -463,26 +483,54 @@ body {
 
 #contact {
   background-color: #4b5961; }
-  #contact h1.hero {
-    color: #edf0f1;
-    display: block;
-    font-size: 35px;
-    font-weight: 500;
-    height: 35px;
-    padding: 50px 0;
-    text-align: center; }
+  #contact .content {
+    padding: 100px 25px; }
+    @media screen and (max-width: 900px) {
+      #contact .content {
+        padding: 75px 25px; } }
+    @media screen and (max-width: 600px) {
+      #contact .content {
+        padding: 50px 25px; } }
+  #contact h1 {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin: 0 0 10px 0;
+    text-align: center;
+    text-transform: uppercase; }
+    @media screen and (max-width: 900px) {
+      #contact h1 {
+        font-size: 24px; } }
+    @media screen and (max-width: 600px) {
+      #contact h1 {
+        font-size: 18px; } }
+  #contact .spacer {
+    border-bottom: 1px solid #FFFFFF;
+    margin: 50px auto;
+    max-width: 200px; }
+    @media screen and (max-width: 900px) {
+      #contact .spacer {
+        margin: 37.5px auto;
+        max-width: 150px; } }
+    @media screen and (max-width: 600px) {
+      #contact .spacer {
+        margin: 25px auto;
+        max-width: 100px; } }
   #contact .block {
     margin: 0 25px; }
   #contact .button {
-    background: #b9b1a2;
-    color: #edf0f1;
+    background-color: #61737e;
+    border: 3px solid #FFFFFF;
+    border-radius: 10px;
+    color: #FFFFFF;
     cursor: pointer;
     display: block;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     margin: 0 auto 25px auto;
-    max-width: 250px;
-    padding: 25px;
+    max-width: 180px;
+    padding: 20px;
     text-align: center;
     text-decoration: none;
     -webkit-transition: background-color, 0.25s, ease-in-out;
@@ -490,9 +538,8 @@ body {
     transition: background-color, 0.25s, ease-in-out;
     width: 100%; }
     #contact .button:hover {
-      background-color: #c4bdb1; }
-  #contact .content {
-    padding: 0 25px 50px 25px; }
+      background-color: #FFFFFF;
+      color: #61737e; }
   #contact .social {
     margin: 0 auto;
     max-width: 200px; }
@@ -509,124 +556,274 @@ body {
       float: left;
       height: 50px;
       margin: 0 25px 0 0;
+      position: relative;
       width: 50px; }
+      #contact .social .icon .overlay {
+        background-image: url("../images/icon_social_sprite.png");
+        background-size: 150px;
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        -webkit-transition: opacity, 0.25s, ease-in-out;
+        -moz-transition: opacity, 0.25s, ease-in-out;
+        transition: opacity, 0.25s, ease-in-out;
+        width: 100%; }
+        #contact .social .icon .overlay:hover {
+          opacity: 1; }
       #contact .social .icon.linkedin {
         background-position: 0 0; }
-        #contact .social .icon.linkedin:hover {
-          background-position: 0 -100px; }
+        #contact .social .icon.linkedin .overlay {
+          background-position: 0 -50px; }
       #contact .social .icon.twitter {
         background-position: -50px 0; }
-        #contact .social .icon.twitter:hover {
-          background-position: -50px -100px; }
+        #contact .social .icon.twitter .overlay {
+          background-position: -50px -50px; }
       #contact .social .icon.github {
         background-position: -100px 0; }
-        #contact .social .icon.github:hover {
-          background-position: -100px -100px; }
+        #contact .social .icon.github .overlay {
+          background-position: -100px -50px; }
       #contact .social .icon:last-child {
         margin: 0; }
 
-#summary {
-  background-color: #61737e;
-  height: 350px; }
-  #summary .content {
-    margin: 0 auto;
-    max-width: 750px;
-    padding: 50px 25px; }
-  #summary .block {
-    margin: 0 25px; }
-  #summary .logo {
-    background-color: #edf0f1;
-    background-image: url("../images/logo_projects_sprite.png");
-    background-size: 600px 300px;
-    border-radius: 100px;
-    height: 100px;
-    margin: 0 auto 25px auto;
-    width: 100px; }
-    #summary .logo.rayban {
-      background-position: 0 -200px; }
-    #summary .logo.courseadvisor {
-      background-position: -100px -200px; }
-    #summary .logo.studentadvisor {
-      background-position: -200px -200px; }
-    #summary .logo.kaplan {
-      background-position: -300px -200px; }
-    #summary .logo.couponhound {
-      background-position: -400px -200px; }
-    #summary .logo.homefindify {
-      background-position: -500px -200px; }
-  #summary h1 {
-    color: #edf0f1;
-    display: block;
-    font-size: 24px;
-    font-weight: 500;
-    margin: 0 0 10px 0;
-    text-align: center; }
-  #summary p {
-    color: #edf0f1;
-    font-size: 14px;
-    margin: 0 auto; }
-  @media screen and (max-width: 750px) {
-    #summary .logo {
-      background-size: 450px 225px;
-      height: 75px;
-      width: 75px; }
-      #summary .logo.rayban {
-        background-position: 0 -150px; }
-      #summary .logo.courseadvisor {
-        background-position: -75px -150px; }
-      #summary .logo.studentadvisor {
-        background-position: -150px -150px; }
-      #summary .logo.kaplan {
-        background-position: -225px -150px; }
-      #summary .logo.couponhound {
-        background-position: -300px -150px; }
-      #summary .logo.homefindify {
-        background-position: -375px -150px; }
-    #summary h1 {
-      font-size: 22px; }
-    #summary p {
-      font-size: 13px; } }
-  @media screen and (max-width: 500px) {
-    #summary .logo {
-      background-size: 300px 150px;
-      height: 50px;
-      width: 50px; }
-      #summary .logo.rayban {
-        background-position: 0 -100px; }
-      #summary .logo.courseadvisor {
-        background-position: -50px -100px; }
-      #summary .logo.studentadvisor {
-        background-position: -100px -100px; }
-      #summary .logo.kaplan {
-        background-position: -150px -100px; }
-      #summary .logo.couponhound {
-        background-position: -200px -100px; }
-      #summary .logo.homefindify {
-        background-position: -250px -100px; }
-    #summary h1 {
-      font-size: 18px; }
-    #summary p {
-      font-size: 12px; } }
+#work {
+  background: #AEAEAE; }
+  #work .column {
+    width: 25%; }
+    #work .column .thumb {
+      background-size: 101%;
+      cursor: pointer;
+      display: block;
+      height: 0;
+      overflow: hidden;
+      padding-bottom: 75%;
+      position: relative; }
+      #work .column .thumb.rayban {
+        background-image: url("../images/thumb_rayban_bw.jpg"); }
+        #work .column .thumb.rayban .overlay {
+          background-image: url("../images/thumb_rayban_color.jpg"); }
+      #work .column .thumb.courseadvisor {
+        background-image: url("../images/thumb_courseadvisor_bw.jpg"); }
+        #work .column .thumb.courseadvisor .overlay {
+          background-image: url("../images/thumb_courseadvisor_color.jpg"); }
+      #work .column .thumb.homefindify {
+        background-image: url("../images/thumb_homefindify_bw.jpg"); }
+        #work .column .thumb.homefindify .overlay {
+          background-image: url("../images/thumb_homefindify_color.jpg"); }
+      #work .column .thumb.mcc {
+        background-image: url("../images/thumb_mcc_bw.jpg"); }
+        #work .column .thumb.mcc .overlay {
+          background-image: url("../images/thumb_mcc_color.jpg"); }
+      #work .column .thumb.couponhound {
+        background-image: url("../images/thumb_couponhound_bw.jpg"); }
+        #work .column .thumb.couponhound .overlay {
+          background-image: url("../images/thumb_couponhound_color.jpg"); }
+      #work .column .thumb.studentadvisor {
+        background-image: url("../images/thumb_studentadvisor_bw.jpg"); }
+        #work .column .thumb.studentadvisor .overlay {
+          background-image: url("../images/thumb_studentadvisor_color.jpg"); }
+      #work .column .thumb.movieposters {
+        background-image: url("../images/thumb_movieposters_bw.jpg"); }
+        #work .column .thumb.movieposters .overlay {
+          background-image: url("../images/thumb_movieposters_color.jpg"); }
+      #work .column .thumb.top100 {
+        background-image: url("../images/thumb_top100_bw.jpg"); }
+        #work .column .thumb.top100 .overlay {
+          background-image: url("../images/thumb_top100_color.jpg"); }
+      #work .column .thumb:hover .overlay {
+        opacity: 1; }
+      #work .column .thumb:hover h2 {
+        margin-bottom: 0; }
+      #work .column .thumb .overlay {
+        background-size: 101%;
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        -webkit-transition: opacity 0.25s ease-in-out;
+        -moz-transition: opacity 0.25s ease-in-out;
+        transition: opacity 0.25s ease-in-out;
+        width: 100%; }
+      #work .column .thumb h2 {
+        background-color: rgba(255, 255, 255, 0.9);
+        color: #579bae;
+        font-weight: 400;
+        display: none;
+        height: 15%;
+        font-size: 20px;
+        margin-bottom: -25%;
+        padding: 5%;
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        -webkit-transition: margin 0.25s ease-in-out;
+        -moz-transition: margin 0.25s ease-in-out;
+        transition: margin 0.25s ease-in-out;
+        width: 95%; }
+  @media screen and (max-width: 900px) {
+    #work .column {
+      width: 33.33334%; } }
+  @media screen and (max-width: 600px) {
+    #work .column {
+      width: 50%; } }
 
-#viewer {
-  background-color: #353e44; }
-  #viewer:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden; }
-  #viewer .content {
-    margin: 0 auto;
-    max-width: 750px;
-    padding: 50px 25px; }
-  #viewer .block {
-    margin: 0 25px 50px 25px; }
-  #viewer img {
-    display: block;
-    width: 100%; }
-  @media screen and (max-width: 500px) {
-    #viewer .column {
+#work h1 {
+  background-color: #FFFFFF;
+  display: block;
+  font-weight: 400;
+  padding: 50px;
+  text-align: center; }
+
+#viewer .content {
+  padding: 100px 25px; }
+#viewer .block {
+  margin: 0 25px; }
+#viewer .screenshot img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  max-width: 800px;
+  width: 100%; }
+  #viewer .screenshot img:last-child {
+    margin-bottom: 0; }
+#viewer .logoMain img {
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%; }
+
+#viewer.rayban:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+#viewer.rayban img {
+  float: left;
+  display: block;
+  width: 33.33333%; }
+  @media screen and (max-width: 900px) {
+    #viewer.rayban img {
+      width: 50%; } }
+  @media screen and (max-width: 600px) {
+    #viewer.rayban img {
       width: 100%; } }
+
+#viewer.courseadvisor .screenshot {
+  background-color: #AEAEAE; }
+
+#viewer.homefindify .fixedImage.logoTrace {
+  background-image: url("../images/projects/homefindify_logo_trace.png");
+  background-color: #EAEAEA;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-attachment: fixed;
+  height: 300px; }
+  @media screen and (max-width: 900px) {
+    #viewer.homefindify .fixedImage.logoTrace {
+      background-size: 600px;
+      height: 225px; } }
+  @media screen and (max-width: 600px) {
+    #viewer.homefindify .fixedImage.logoTrace {
+      background-size: 400px;
+      height: 150px; } }
+  @media screen and (max-width: 400px) {
+    #viewer.homefindify .fixedImage.logoTrace {
+      background-size: 100%; } }
+#viewer.homefindify .colorPalette:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+#viewer.homefindify .colorPalette .column {
+  height: 25px;
+  width: 25%; }
+  #viewer.homefindify .colorPalette .column.blue {
+    background-color: #85B7D8; }
+  #viewer.homefindify .colorPalette .column.green {
+    background-color: #A6CE75; }
+  #viewer.homefindify .colorPalette .column.pink {
+    background-color: #DB7DB1; }
+  #viewer.homefindify .colorPalette .column.purple {
+    background-color: #8D6391; }
+#viewer.homefindify .fixedImage.bgHouse {
+  background-image: url("../images/projects/homefindify_bg_house.jpg");
+  background-color: #777777;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px; }
+#viewer.homefindify .screenshot {
+  background-color: #AEAEAE; }
+
+#viewer.mcc .ad {
+  background-color: #252525; }
+  #viewer.mcc .ad img {
+    display: block;
+    margin: 0 auto;
+    width: 100%; }
+#viewer.mcc .ad.poster img,
+#viewer.mcc .ad.busterminal img {
+  max-width: 600px; }
+#viewer.mcc .ad.subway img {
+  max-width: 800px; }
+#viewer.mcc .fixedImage.env {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50%;
+  height: 500px; }
+  #viewer.mcc .fixedImage.env.poster {
+    background-image: url("../images/projects/mcc_env_poster.jpg"); }
+  #viewer.mcc .fixedImage.env.subway {
+    background-image: url("../images/projects/mcc_env_subway.jpg"); }
+  #viewer.mcc .fixedImage.env.busterminal {
+    background-image: url("../images/projects/mcc_env_busterminal.jpg"); }
+
+#viewer.couponhound .screenshot {
+  background-color: #EAEAEA; }
+
+#viewer.studentadvisor .screenshot {
+  background-color: #cac3bb; }
+
+#viewer.movieposters:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+#viewer.movieposters img {
+  float: left;
+  display: block;
+  width: 33.33333%; }
+  @media screen and (max-width: 900px) {
+    #viewer.movieposters img {
+      width: 50%; } }
+  @media screen and (max-width: 600px) {
+    #viewer.movieposters img {
+      width: 100%; } }
+
+#viewer.top100 .imageFixed.iconStar {
+  background-color: #EAEAEA;
+  background-image: url("../images/projects/top100_icon_star.png");
+  background-attachment: fixed;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: 1200px;
+  height: 350px;
+  position: relative; }
+  @media screen and (min-width: 1200px) {
+    #viewer.top100 .imageFixed.iconStar {
+      background-size: 100%; } }
+  @media screen and (max-width: 900px) {
+    #viewer.top100 .imageFixed.iconStar {
+      background-size: 900px;
+      height: 262.5px; } }
+  @media screen and (max-width: 600px) {
+    #viewer.top100 .imageFixed.iconStar {
+      background-size: 600px;
+      height: 175px; } }
+#viewer.top100 .screenshot {
+  background-color: #AEAEAE; }
 
 /*# sourceMappingURL=main.css.map */
