@@ -631,7 +631,12 @@ header {
 	}
 }
 #viewer {
-	.content { padding: 100px 25px; }
+	.content {
+		padding: 100px 25px;
+		@media screen and (max-width: 600px) {
+			padding: 50px 25px;
+		}
+	}
 	.block { margin: 0 25px; }
 	.screenshot {
 		img {
@@ -677,7 +682,7 @@ header {
 		background-attachment: fixed;
 		height: 300px;
 		@media screen and (max-width: 900px) { background-size: 600px; height: 225px; }
-		@media screen and (max-width: 600px) { background-size: 400px; height: 150px; }
+		@media screen and (max-width: 600px) { background-size: 100%; background-attachment: scroll; height: 300px; }
 		@media screen and (max-width: 400px) { background-size: 100%; }
 	}
 	.colorPalette {
@@ -699,6 +704,7 @@ header {
 		background-size: cover;
 		background-attachment: fixed;
 		height: 400px;
+		@media screen and (max-width: 600px) { background-attachment: scroll; }
 	}
 	.screenshot { background-color: #AEAEAE; }
 }
@@ -726,6 +732,7 @@ header {
 		&.poster { background-image: url("../images/projects/mcc_env_poster.jpg"); }
 		&.subway { background-image: url("../images/projects/mcc_env_subway.jpg"); }
 		&.busterminal { background-image: url("../images/projects/mcc_env_busterminal.jpg"); }
+		@media screen and (max-width: 600px) { background-attachment: scroll; }
 	}
 }
 #viewer.couponhound {
@@ -762,6 +769,9 @@ header {
 		@media screen and (max-width: 600px) {
 			background-size: 600px;
 			height: 175px;
+		}
+		@media screen and (max-width: 400px) {
+			background-attachment: scroll;
 		}
 	}
 	.screenshot { background-color: #AEAEAE; }
