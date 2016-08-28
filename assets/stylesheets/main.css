@@ -613,11 +613,11 @@ section.contact .social {
               .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.sitebrain.media-library {
                 background-image: url("../images/screenshot_desktop_sitebrain_03_media_library@2x.jpg");
                 background-size: 101%; } }
-          .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.adziply.home {
-            background-image: url("../images/screenshot_desktop_adziply_01_home.jpg"); }
+          .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.adziply.homepage {
+            background-image: url("../images/screenshot_desktop_adziply_01_homepage.png"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-              .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.adziply.home {
-                background-image: url("../images/screenshot_desktop_adziply_01_home@2x.jpg");
+              .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.adziply.homepage {
+                background-image: url("../images/screenshot_desktop_adziply_01_homepage@2x.png");
                 background-size: 101%; } }
           .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.adziply.about {
             background-image: url("../images/screenshot_desktop_adziply_02_about.jpg"); }
@@ -731,11 +731,11 @@ section.contact .social {
               .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.homefindify.listing {
                 background-image: url("../images/screenshot_iphone_homefindify_03_listing@2x.jpg");
                 background-size: 101%; } }
-          .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.adziply.home {
-            background-image: url("../images/screenshot_iphone_adziply_01_home.jpg"); }
+          .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.adziply.homepage {
+            background-image: url("../images/screenshot_iphone_adziply_01_homepage.jpg"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-              .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.adziply.home {
-                background-image: url("../images/screenshot_iphone_adziply_01_home@2x.jpg");
+              .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.adziply.homepage {
+                background-image: url("../images/screenshot_iphone_adziply_01_homepage@2x.jpg");
                 background-size: 101%; } }
           .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.adziply.about {
             background-image: url("../images/screenshot_iphone_adziply_02_about.jpg"); }

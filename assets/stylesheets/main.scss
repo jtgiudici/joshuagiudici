@@ -518,7 +518,7 @@ section.contact {
 					.slide.sitebrain.adsets { @include retina-image("../images/screenshot_desktop_sitebrain_01_adsets", 101%, jpg, null, "@2x", null); }
 					.slide.sitebrain.media-campaign { @include retina-image("../images/screenshot_desktop_sitebrain_02_media_campaign", 101%, jpg, null, "@2x", null); }
 					.slide.sitebrain.media-library { @include retina-image("../images/screenshot_desktop_sitebrain_03_media_library", 101%, jpg, null, "@2x", null); }
-					.slide.adziply.home { @include retina-image("../images/screenshot_desktop_adziply_01_home", 101%, jpg, null, "@2x", null); }
+					.slide.adziply.homepage { @include retina-image("../images/screenshot_desktop_adziply_01_homepage", 101%, png, null, "@2x", null); }
 					.slide.adziply.about { @include retina-image("../images/screenshot_desktop_adziply_02_about", 101%, jpg, null, "@2x", null); }
 					.slide.adziply.audience { @include retina-image("../images/screenshot_desktop_adziply_03_audience", 101%, jpg, null, "@2x", null); }
 					.slide.adziply.budget { @include retina-image("../images/screenshot_desktop_adziply_04_budget", 101%, jpg, null, "@2x", null); }
@@ -576,7 +576,7 @@ section.contact {
 					.slide.homefindify.homepage { @include retina-image("../images/screenshot_iphone_homefindify_01_home", 101%, jpg, null, "@2x", null); }
 					.slide.homefindify.listings { @include retina-image("../images/screenshot_iphone_homefindify_02_listings", 101%, jpg, null, "@2x", null); }
 					.slide.homefindify.listing { @include retina-image("../images/screenshot_iphone_homefindify_03_listing", 101%, jpg, null, "@2x", null); }
-					.slide.adziply.home { @include retina-image("../images/screenshot_iphone_adziply_01_home", 101%, jpg, null, "@2x", null); }
+					.slide.adziply.homepage { @include retina-image("../images/screenshot_iphone_adziply_01_homepage", 101%, jpg, null, "@2x", null); }
 					.slide.adziply.about { @include retina-image("../images/screenshot_iphone_adziply_02_about", 101%, jpg, null, "@2x", null); }
 					.slide.adziply.audience { @include retina-image("../images/screenshot_iphone_adziply_03_audience", 101%, jpg, null, "@2x", null); }
 					.slide.adziply.budget { @include retina-image("../images/screenshot_iphone_adziply_04_budget", 101%, jpg, null, "@2x", null); }
