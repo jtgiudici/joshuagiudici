@@ -1,99 +1,126 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="assets/images//favicon.ico" type="image/x-icon">
-		<title>JoshuaGiudici.com</title>
-		<meta name="description" content="I design, develop, and create experiences on the web.">
 		<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+		<link rel="stylesheet" type="text/css" href="assets/stylesheets/MyFontsWebfontsKit.css"/>
 		<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
-		<link href='http://fonts.googleapis.com/css?family=Raleway:500,300,200,400,100' rel='stylesheet' type='text/css'></head>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="assets/javascripts/main.js"></script>
 	</head>
-	<body>
+	<body class="home">
 		<header>
-			<a class="icon logo" href="/"></a>
-			<div class="icon menu open"></div>
-			<nav id="nav">
+			<a class="logo"></a>
+			<nav>
+				<a class="icon menu open">
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+				</a>
 				<ul>
-					<li><a href="#work" class="work">Work</a></li>
-					<li><a href="about.html" class="about">About</a></li>
-					<li><a href="about.html#skills" class="skills">Skills</a></li>
-					<li><a href="about.html#contact" class="contact">Contact</a></li>
+					<li><a class="home">Home</a></li>
+					<li><a class="work">Recent Work</a></li>
+					<li><a class="about">About Me</a></li>
+					<li><a class="skills">Skills</a></li>
+					<li><a class="contact">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
-		<div id="hero" class="home bgDark">
-			<div class="logo"></div>
-		</div>
-		<section id="hgroup" class="home bgLight">
+
+		<section id="hero" class="home dark dark-grey">
 			<div class="content">
 				<div class="block">
-					<h1><span>My name is </span>Joshua Giudici</h1>
-					<div class="spacer"></div>
-					<p>I design, develop, and create experiences on the web.</p>
+					<hgroup>
+						<div class="logo"></div>
+						<h1>Joshua Giudici</h1>
+						<h2>Web Design</h2>
+						<div class="triangle"></div>
+					</hgroup>
 				</div>
 			</div>
 		</section>
-		<section id="work" class="bgDark">
-			<div class="column">
-				<a class="thumb rayban" href="projects/rayban.html">
-					<div class="overlay"></div>
-					<h2>Ray Ban</h2>
-				</a>
-			</div>
-			<div class="column">
-				<a class="thumb courseadvisor" href="projects/courseadvisor.html">
-					<div class="overlay"></div>
-					<h2>CourseAdvisor</h2>
-				</a>
-			</div>
-			<div class="column">
-				<a class="thumb homefindify" href="projects/homefindify.html">
-					<div class="overlay"></div>
-					<h2>HomeFindify</h2>
-				</a>
-			</div>
-			<div class="column">
-				<a class="thumb mcc" href="projects/mcc.html">
-					<div class="overlay"></div>
-					<h2>Massachusetts Citizens for Children</h2>
-				</a>
-			</div>
-			<div class="column">
-				<a class="thumb couponhound" href="projects/couponhound.html">
-					<div class="overlay"></div>
-					<h2>CouponHound</h2>
-				</a>
-			</div>
-			<div class="column">
-				<a class="thumb studentadvisor" href="projects/studentadvisor.html">
-					<div class="overlay"></div>
-					<h2>StudentAdvisor</h2>
-				</a>
-			</div>
-			<div class="column">
-				<a class="thumb movieposters" href="projects/movieposters.html">
-					<div class="overlay"></div>
-					<h2>Movie Posters</h2>
-				</a>
-			</div>
-			<div class="column">
-				<a class="thumb top100" href="projects/top100.html">
-					<div class="overlay"></div>
-					<h2>Top 100 Social Media Colleges</h2>
-				</a>
+
+		<section id="work" class="work light">
+			<div class="content">
+				<h1>Recent Work</h1>
+				<ul>
+					<li><a href="projects/sitebrain.html">SiteBrain</a></li>
+					<li><a href="projects/adziply.html">Adziply</a></li>
+					<li><a href="projects/acquisition-labs.html">Acquisition Labs</a></li>
+					<li><a href="projects/homefindify.html">Homefindify</a></li>
+				</ul>
 			</div>
 		</section>
-		<section id="about">
-			
+
+		<section id="about" class="about light light-grey">
+			<div class="content">
+				<h1>About Me</h1>
+				<div class="block">
+					<article>
+						<p><b>My name is Joshua Giudici. <br>I am a Web Designer based in Boston, MA.</b></p>
+						<p>I design and develop user experiences for the web that focus on putting the user first. I am constantly sharpening my skill set and always on the lookout for new strategies to improve my design process. I've had many experiences working in a variety of areas of the design process, including research, sketching, prototyping, design, branding, and front-end development. I'm excited about pursuing projects and experiences that are opportunities to learn and grow.
+					</article>
+				</div>
+			</div>
 		</section>
-		<section id="skills">
-			
+
+		<section id="skills" class="skills light">
+			<div class="content">
+				<h1>Skills</h1>
+				<ul>
+					<li>
+						<span>html5</span>
+						<div class="progress" style="width: 90%;"></div>
+					</li>
+					<li>
+						<span>css3</span>
+						<div class="progress" style="width: 95%;"></div>
+					</li>
+					<li>
+						<span>sass</span>
+						<div class="progress" style="width: 85%;"></div>
+					</li>
+					<li>
+						<span>jquery</span>
+						<div class="progress" style="width: 45%;"></div>
+					</li>
+					<li>
+						<span>Photoshop</span>
+						<div class="progress" style="width: 90%;"></div>
+					</li>
+					<li>
+						<span>Illustrator</span>
+						<div class="progress" style="width: 90%;"></div>
+					</li>
+					<li>
+						<span>Sketch</span>
+						<div class="progress" style="width: 80%;"></div>
+					</li>
+					<li>
+						<span>responisve design</span>
+						<div class="progress" style="width: 85%;"></div>
+					</li>
+					<li>
+						<span>mobile design</span>
+						<div class="progress" style="width: 75%;"></div>
+					</li>
+					<li>
+						<span>prototyping</span>
+						<div class="progress" style="width: 75%;"></div>
+					</li>
+				</ul>
+			</div>
 		</section>
-		<section id="contact">
-			
+
+		<section class="contact dark dark-grey">
+			<div class="content">
+				<h1>Contact</h1>
+				<a href="mailto:jtgiudici@gmail.com" target="_top">jtgiudici@gmail.com</a>
+				<div class="social">
+					<a class="icon linkedin" href="https://www.linkedin.com/in/joshuagiudici" target="_blank"></a>
+					<a class="icon twitter" href="https://twitter.com/joshuagiudici" target="_blank"></a>
+					<a class="icon github" href="https://github.com/jtgiudici" target="_blank"></a>
+				</div>
+			</div>
 		</section>
 	</body>
 </html>
