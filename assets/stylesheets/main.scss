@@ -298,6 +298,19 @@ section {
 			}
 		}
 	}
+	p.disclaimer {
+		color: #7F7F7F;
+		font-family: $helvetica;
+		font-size: 10px;
+		font-style: italic;
+		max-width: 960px;
+		margin: 0 auto;
+		padding: 10px 0 0 0;
+		@media screen and (max-width: 600px) {
+			font-size: 7.5px;
+			padding: 7.5px 0 0 0;
+		}
+	}
 
 	@media screen and (max-width: 600px) {
 		h1 {
