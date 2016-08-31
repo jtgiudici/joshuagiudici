@@ -38,6 +38,7 @@ header {
 	* { @include transition(all 0.25s ease-in-out); }
 	> * { z-index: 10; }
 	.logo {
+		background-size: 60px;
 		@include position(fixed, 25px null null 40px);
 		@include retina-image("../images/logo_header_dark", 60px, png, null, "@2x", null);
 		@include size(60px 75px);
@@ -95,6 +96,7 @@ header {
 	// header - resposive
 	@media screen and (max-width: 600px) {
 		.logo {
+			background-size: 40px;
 			@include position(fixed, 10px null null 20px);
 			@include retina-image("../images/logo_header_dark", 40px, png, null, "@2x", null);
 			@include size(40px 50px);
@@ -167,6 +169,7 @@ header {
 		position: relative;
 		.logo {
 			background-repeat: no-repeat;
+			background-size: 80px;
 			margin: 0 auto 20px auto;
 			position: relative;
 			@include retina-image("../images/logo_hero", 80px, png, null, "@2x", null);
@@ -199,6 +202,7 @@ header {
 		hgroup {
 			height: 170px;
 			.logo {
+				background-size: 60px;
 				margin-bottom: 12px;
 				@include retina-image("../images/logo_hero", 60px, png, null, "@2x", null);
 				@include size(60px 75px);
@@ -442,6 +446,7 @@ section.contact {
 			background-position: 50%;
 			background-repeat: no-repeat;
 			border-radius: 100%;
+			background-size: 20px;
 			float: left;
 			margin-right: 20px;
 			@include size(40px);
@@ -460,6 +465,7 @@ section.contact {
 		.social {
 			@include size(120px 30px);
 			.icon {
+				background-size: 15px;
 				margin-right: 15px;
 				@include size(30px);
 				&.linkedin { @include retina-image("../images/icon_social_linkedin", 15px, png, null, "@2x", null); }
@@ -477,6 +483,7 @@ section.contact {
 		a {
 			background-position: 50%;
 			background-repeat: no-repeat;
+			background-size: 20px;
 			border-radius: 100%;
 			display: block;
 			@include position(absolute, calc(50% - 30px) null null null);
@@ -507,6 +514,7 @@ section.contact {
 			.desktop-frame {
 				background-color: #D5D5D5;
 				background-repeat: no-repeat;
+				background-size: 100%;
 				border-radius: 5px;
 				@include retina-image("../images/frame_desktop", 100%, png, null, "@2x", null);
 				@include size(100% 0);
@@ -528,6 +536,7 @@ section.contact {
 						}
 					}
 					.slide {
+						background-size: 101%;
 						background-position: 50% 0;
 						background-repeat: no-repeat;
 						display: none;
@@ -557,6 +566,7 @@ section.contact {
 		.desktop-wrap.full {
 			width: 100%;
 			.desktop-frame {
+				background-size: 100%;
 				padding-bottom: 62.5%;
 				@include retina-image("../images/frame_desktop_wide", 100%, png, null, "@2x", null);
 				.desktop-screen {
@@ -573,6 +583,7 @@ section.contact {
 			width: 27.08333%;
 			.iphone-frame {
 				background-repeat: no-repeat;
+				background-size: 100%;
 				padding-bottom: 204%;
 				@include size(100% 0);
 				&.black { @include retina-image("../images/frame_iphone_black", 100%, png, null, "@2x", null); }
@@ -591,6 +602,7 @@ section.contact {
 					.slide {
 						background-position: 50% 0;
 						background-repeat: no-repeat;
+						background-size: 101%;
 						display: none;
 						padding-bottom: 178.636363%;
 						width: 100%;
