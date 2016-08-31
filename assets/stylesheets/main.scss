@@ -242,6 +242,16 @@ section {
 		text-align: center;
 		text-transform: lowercase;
 	}
+	h3 {
+		font-size: 18px;
+		margin: 0 0 40px 0;
+		text-align: center;
+		text-transform: lowercase;
+		@media screen and (max-width: 600px) {
+			font-size: 13.5px;
+			margin: 0 0 30px 0;
+		}
+	}
 	.block:last-child  {
 		article {
 			margin-bottom: 0;
@@ -679,6 +689,44 @@ section.contact {
 			&:nth-child(2) { margin: 0 0 30px 0; }
 			&:nth-child(3) { margin: 0 30px 0 0; }
 			&:nth-child(4) { margin: 0 0 0 0; }
+		}
+	}
+}
+.block {
+	.image-wrap.homefindify.user-flow {
+		margin-bottom: 80px;
+		@media screen and (max-width: 600px) {
+			margin: 0 0 60px 0;
+		}
+	}
+	&:last-child {
+		.image-wrap.homefindify.user-flow {
+			margin-bottom: 0;
+		}
+	}
+}
+.image-wrap.homefindify.user-flow {
+	margin: 0 auto;
+	&.sign-up {
+		max-width: 1050px;
+		width: 100%;
+		.image {
+			background-size: 100%;
+			height: 0;
+			width: 100%;
+			padding-bottom: 23.80952%;
+			@include retina-image("../images/user-flow_homefindify_sign-up", 100%, jpg, null, "@2x", null);
+		}
+	}
+	&.search-listings {
+		max-width: 650px;
+		width: 100%;
+		.image {
+			background-size: 100%;
+			height: 0;
+			width: 100%;
+			padding-bottom: 96.875%;
+			@include retina-image("../images/user-flow_homefindify_search-listings", 100%, jpg, null, "@2x", null);
 		}
 	}
 }

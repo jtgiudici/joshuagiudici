@@ -294,6 +294,15 @@ section h2 {
   margin: 0 0 80px 0;
   text-align: center;
   text-transform: lowercase; }
+section h3 {
+  font-size: 18px;
+  margin: 0 0 40px 0;
+  text-align: center;
+  text-transform: lowercase; }
+  @media screen and (max-width: 600px) {
+    section h3 {
+      font-size: 13.5px;
+      margin: 0 0 30px 0; } }
 section .block:last-child article {
   margin-bottom: 0; }
 section article {
@@ -363,7 +372,7 @@ section p.disclaimer {
   @media screen and (max-width: 600px) {
     section p.disclaimer {
       font-size: 7.5px;
-      padding: 7.5 0 0 0; } }
+      padding: 7.5px 0 0 0; } }
 @media screen and (max-width: 600px) {
   section h1 {
     font-size: 20px;
@@ -885,6 +894,43 @@ section.contact .social {
           margin: 0 30px 0 0; }
         .homefindify.color-palette .color:nth-child(4) {
           margin: 0 0 0 0; } }
+
+.block .image-wrap.homefindify.user-flow {
+  margin-bottom: 80px; }
+  @media screen and (max-width: 600px) {
+    .block .image-wrap.homefindify.user-flow {
+      margin: 0 0 60px 0; } }
+.block:last-child .image-wrap.homefindify.user-flow {
+  margin-bottom: 0; }
+
+.image-wrap.homefindify.user-flow {
+  margin: 0 auto; }
+  .image-wrap.homefindify.user-flow.sign-up {
+    max-width: 1050px;
+    width: 100%; }
+    .image-wrap.homefindify.user-flow.sign-up .image {
+      background-size: 100%;
+      height: 0;
+      width: 100%;
+      padding-bottom: 23.80952%;
+      background-image: url("../images/user-flow_homefindify_sign-up.jpg"); }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+        .image-wrap.homefindify.user-flow.sign-up .image {
+          background-image: url("../images/user-flow_homefindify_sign-up@2x.jpg");
+          background-size: 100%; } }
+  .image-wrap.homefindify.user-flow.search-listings {
+    max-width: 650px;
+    width: 100%; }
+    .image-wrap.homefindify.user-flow.search-listings .image {
+      background-size: 100%;
+      height: 0;
+      width: 100%;
+      padding-bottom: 96.875%;
+      background-image: url("../images/user-flow_homefindify_search-listings.jpg"); }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+        .image-wrap.homefindify.user-flow.search-listings .image {
+          background-image: url("../images/user-flow_homefindify_search-listings@2x.jpg");
+          background-size: 100%; } }
 
 .image-wrap.sitebrain.style-guide {
   margin: 0 auto;
