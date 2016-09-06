@@ -907,41 +907,54 @@ section.contact .social {
         .homefindify.color-palette .color:nth-child(4) {
           margin: 0 0 0 0; } }
 
-.block .image-wrap.homefindify.user-flow {
+.block .image-wrap.user-flow {
   margin-bottom: 80px; }
   @media screen and (max-width: 600px) {
-    .block .image-wrap.homefindify.user-flow {
+    .block .image-wrap.user-flow {
       margin: 0 0 60px 0; } }
-.block:last-child .image-wrap.homefindify.user-flow {
+.block:last-child .image-wrap.user-flow {
   margin-bottom: 0; }
 
-.image-wrap.homefindify.user-flow {
+.image-wrap.user-flow {
   margin: 0 auto; }
-  .image-wrap.homefindify.user-flow.sign-up {
+  .image-wrap.user-flow.homefindify.sign-up {
     max-width: 1050px;
     width: 100%; }
-    .image-wrap.homefindify.user-flow.sign-up .image {
+    .image-wrap.user-flow.homefindify.sign-up .image {
       background-size: 100%;
       height: 0;
       width: 100%;
       padding-bottom: 23.80952%;
       background-image: url("../images/user-flow_homefindify_sign-up.jpg"); }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-        .image-wrap.homefindify.user-flow.sign-up .image {
+        .image-wrap.user-flow.homefindify.sign-up .image {
           background-image: url("../images/user-flow_homefindify_sign-up@2x.jpg");
           background-size: 100%; } }
-  .image-wrap.homefindify.user-flow.search-listings {
+  .image-wrap.user-flow.homefindify.search-listings {
     max-width: 650px;
     width: 100%; }
-    .image-wrap.homefindify.user-flow.search-listings .image {
+    .image-wrap.user-flow.homefindify.search-listings .image {
       background-size: 100%;
       height: 0;
       width: 100%;
       padding-bottom: 96.875%;
       background-image: url("../images/user-flow_homefindify_search-listings.jpg"); }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-        .image-wrap.homefindify.user-flow.search-listings .image {
+        .image-wrap.user-flow.homefindify.search-listings .image {
           background-image: url("../images/user-flow_homefindify_search-listings@2x.jpg");
+          background-size: 100%; } }
+  .image-wrap.user-flow.adziply.create-campaign {
+    max-width: 960px;
+    width: 100%; }
+    .image-wrap.user-flow.adziply.create-campaign .image {
+      background-size: 100%;
+      height: 0;
+      width: 100%;
+      padding-bottom: 44.791667%;
+      background-image: url("../images/user-flow_adziply_create-campaign.jpg"); }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+        .image-wrap.user-flow.adziply.create-campaign .image {
+          background-image: url("../images/user-flow_adziply_create-campaign@2x.jpg");
           background-size: 100%; } }
 
 .image-wrap.sitebrain.style-guide {
