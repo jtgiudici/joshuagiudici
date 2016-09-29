@@ -503,6 +503,20 @@ section.contact {
 			display: none;
 		}
 	}
+	.screenshots-display.custom {
+		max-width: 800px;
+		.desktop-wrap {
+			.desktop-frame {
+				padding-bottom: 145.75%;
+				.desktop-screen {
+					.studentadvisor.homepage {
+						@include retina-image("../images/screenshot_desktop_studentadvisor_01_home", 101%, jpg, null, "@2x", null);
+						padding-bottom: 145.75%;
+					}
+				}
+			}
+		}
+	}
 	.screenshots-display {
 		margin: 0 auto;
 		max-width: 960px;
@@ -761,6 +775,70 @@ section.contact {
 		background-size: 100%;
 		@include retina-image("../images/style-guide-image", 100%, png, null, "@2x", null);
 		padding-bottom: 57.894736%;
+		width: 100%;
+	}
+}
+.image-wrap.studentadvisor {
+	border: 1px solid #d5d5d5;
+	border-radius: 7px;
+	margin: 0 auto 80px auto;
+	max-width: 800px;
+	overflow: hidden;
+	width: 100%;
+	.image {
+		background-size: 100%;
+		width: 100%;
+	}
+	&.homepage .image {
+		@include retina-image("../images/screenshot_desktop_studentadvisor_01_home", 100%, jpg, null, "@2x", null);
+		padding-bottom: 150.75%;
+	}
+	&.scholarships01 .image {
+		@include retina-image("../images/screenshot_desktop_studentadvisor_02_scholarships", 100%, jpg, null, "@2x", null);
+		padding-bottom: 185.625%;
+	}
+	&.scholarships02 .image {
+		@include retina-image("../images/screenshot_desktop_studentadvisor_03_scholarships", 100%, jpg, null, "@2x", null);
+		padding-bottom: 164%;
+	}
+}
+
+.image-wrap.courseadvisor {
+	border: 1px solid #d5d5d5;
+	border-radius: 7px;
+	margin: 0 auto 80px auto;
+	max-width: 800px;
+	overflow: hidden;
+	width: 100%;
+	.image {
+		background-size: 100%;
+		padding-bottom: 92.5%;
+		width: 100%;
+	}
+	&.landing-page01 .image { @include retina-image("../images/screenshot_desktop_courseadvisor_01_landing-page", 100%, jpg, null, "@2x", null); }
+	&.landing-page02 .image { @include retina-image("../images/screenshot_desktop_courseadvisor_02_landing-page", 100%, jpg, null, "@2x", null); }
+	&.landing-page03 .image { @include retina-image("../images/screenshot_desktop_courseadvisor_03_landing-page", 100%, jpg, null, "@2x", null); }
+	&.landing-page04 .image { @include retina-image("../images/screenshot_desktop_courseadvisor_04_landing-page", 100%, jpg, null, "@2x", null); }
+}
+.image-wrap.top100.logo {
+	margin: 0 auto;
+	max-width: 400px;
+	width: 100%;
+	.image {
+		background-size: 100%;
+		padding-bottom: 50%;
+		@include retina-image("../images/logo_top100", 100%, png, null, "@2x", null);
+		width: 100%;
+	}
+}
+.image-wrap.top100.layout {
+	margin: 0 auto;
+	max-width: 800px;
+	width: 100%;
+	.image {
+		background-size: 100%;
+		padding-bottom: 133%;
+		@include retina-image("../images/screenshot_top100", 100%, jpg, null, "@2x", null);
 		width: 100%;
 	}
 }
