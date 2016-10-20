@@ -36,8 +36,9 @@ body {
       padding: 120px 10px; } }
 
 a.btn {
-  border: 3px solid #9DD1B2;
+  background-color: #323232;
   clear: both;
+  color: #FFFFFF !important;
   color: #9DD1B2 !important;
   display: table;
   font-family: ZonaBlack-Black;
