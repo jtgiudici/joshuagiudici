@@ -32,6 +32,25 @@ body {
 	padding: 160px 20px;
 	@media screen and (max-width:  600px) { padding: 120px 10px; }
 }
+a.btn {
+	//background-color: $cta;
+	border: 3px solid $cta;
+	clear: both;
+	//color: #FFFFFF !important;
+	color: $cta !important;
+	display: table;
+	font-family: ZonaBlack-Black;
+	font-size: 16px;
+	height: 16px;
+	line-height: 16px;
+	margin: 0 auto;
+	padding: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	&:hover {
+		letter-spacing: 2px;
+	}
+}
 
 ///// HEADER
 header {
@@ -768,7 +787,7 @@ section.contact {
 	}
 }
 .image-wrap.sitebrain.style-guide {
-	margin: 0 auto;
+	margin: 0 auto 80px auto;
 	max-width: 760px;
 	width: 100%;
 	.image {

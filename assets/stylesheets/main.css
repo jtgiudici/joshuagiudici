@@ -35,6 +35,22 @@ body {
     .content {
       padding: 120px 10px; } }
 
+a.btn {
+  border: 3px solid #9DD1B2;
+  clear: both;
+  color: #9DD1B2 !important;
+  display: table;
+  font-family: ZonaBlack-Black;
+  font-size: 16px;
+  height: 16px;
+  line-height: 16px;
+  margin: 0 auto;
+  padding: 20px;
+  text-transform: uppercase;
+  text-align: center; }
+  a.btn:hover {
+    letter-spacing: 2px; }
+
 header * {
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -969,7 +985,7 @@ section.contact .social {
           background-size: 100%; } }
 
 .image-wrap.sitebrain.style-guide {
-  margin: 0 auto;
+  margin: 0 auto 80px auto;
   max-width: 760px;
   width: 100%; }
   .image-wrap.sitebrain.style-guide .image {

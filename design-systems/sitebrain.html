@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pattern Library - Sitebrain</title>
+	<link rel="stylesheet" type="text/css" href="../assets/stylesheets/design-system.css">
+	<link rel="stylesheet" type="text/css" href="../assets/stylesheets/design-system_sitebrain.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("nav#mainNav li:first-child a").addClass("active")
+
+			$("nav#mainNav li a").click(function() {
+				var sectionName = $(this).attr("class");
+				$("#main").animate({
+					scrollTop: $("section#" + sectionName + "").position().top
+				}, 250);
+			});
+
+			$("#main").scroll(function() {
+				var sliderDistance = Math.abs($('.slider').position().top);
+				$("section").each(function() {
+					var sectionDistance = $(this).position().top - 60
+					var sectionHeight = $(this).height()
+					if ( sliderDistance >= sectionDistance && sliderDistance < sectionDistance + sectionHeight) {
+						var sectionName = $(this).attr("id");
+						$("nav#mainNav li a").removeClass("active");
+						$("nav#mainNav li a." + sectionName + "").addClass("active");
+					}
+				});
+			});
+
+			$("#sidebar .sub-menu a.active").each(function() {
+				var el = $(this).parents(".sub-menu").find("ul");
+						curHeight = el.height(),
+						autoHeight = el.css('height', 'auto').height();
+				el.height(curHeight).height(autoHeight);
+				$(this).parents("li").find("a.expand").addClass("open");
+			});
+			$("#sidebar a.expand").click(function() {
+				$("#sidebar .sub-menu ul").css("height", "0");
+				$("#sidebar a.expand").removeClass("open");
+
+				var el = $(this).next(".sub-menu").find("ul");
+						curHeight = el.height(),
+						autoHeight = el.css('height', 'auto').height();
+				el.height(curHeight).height(autoHeight);
+				$(this).addClass("open");
+			});
+		});
+	</script>
+</head>
+<body>
+	<header class="page-header">
+		<div class="content">
+			<h1>Pattern Library - Sitebrain</h1>
+		</div>
+	</header>
+<div style="width: 100%; max-width: 960px; margin: 0 auto;">
+	<div class="content">
+
+			<nav id="mainNav">
+				<ul>
+					<li><a class="colors">Colors</a></li>
+					<li><a class="fonts">Fonts</a></li>
+					<li><a class="buttons">Buttons/Links</a></li>
+					<li><a class="forms">Forms</a></li>
+					<li><a class="tables">Tables</a></li>
+					<li><a class="header">Header</a></li>
+					<li><a class="navigation">Navigation</a></li>
+				</ul>
+			</nav>
+
+			<div id="main">
+				<div class="slider">
+
+					<section id="colors">
+						<h1>Colors</h1>
+						<div class="group">
+							<h2>Brand Colors</h2>
+							<article class="color">
+								<div class="color-block" style="background-color: #546472;"></div>
+								<p>#546472</p>
+							</article>
+							<article class="color">
+								<div class="color-block" style="background-color: #293037;"></div>
+								<p>#293037</p>
+							</article>
+						</div>
+						<div class="group">
+							<h2>Neutral Colors</h2>
+							<article class="color">
+								<div class="color-block" style="background-color: #333333;"></div>
+								<p>#333333</p>
+							</article>
+							<article class="color">
+								<div class="color-block" style="background-color: #7F7F7F;"></div>
+								<p>#7F7F7F</p>
+							</article>
+							<article class="color">
+								<div class="color-block" style="background-color: #C3C3C3;"></div>
+								<p>#C3C3C3</p>
+							</article>
+							<article class="color">
+								<div class="color-block" style="background-color: #D4D4D4;"></div>
+								<p>#D4D4D4</p>
+							</article>
+							<article class="color">
+								<div class="color-block" style="background-color: #EAEAEA;"></div>
+								<p>#EAEAEA</p>
+							</article>
+							<article class="color">
+								<div class="color-block" style="background-color: #F9F9F9;"></div>
+								<p>#F9F9F9</p>
+							</article>
+						</div>
+						<div class="group">
+							<h2>Utility Colors</h2>
+							<article class="color">
+								<div class="color-block" style="background-color: #6699BE;"></div>
+								<p>#7AA7C8</p>
+							</article>
+							<article class="color">
+								<div class="color-block" style="background-color: #4880a9;"></div>
+								<p>#40759C</p>
+							</article>
+							<article class="color">
+								<div class="color-block" style="background-color: #90C078;"></div>
+								<p>#90C078</p>
+							</article>
+							<article class="color">
+								<div class="color-block" style="background-color: #CF6666;"></div>
+								<p>#CF6666</p>
+							</article>
+						</div>
+					</section>
+
+					<section id="fonts">
+						<h1>Fonts</h1>
+						<p>Primary font: "HelveticaNeue", "Helvetica", "Arial", sans-serif;</p>
+						<p><em>Primary font italic: "HelveticaNeue", "Helvetica", "Arial", sans-serif;</em></p>
+						<p><strong>Primary font bold: "HelveticaNeue", "Helvetica", "Arial", sans-serif;</strong></p>
+					</section>
+
+					<section id="buttons">
+						<h1>Buttons / Links</h1>
+						<div class="group">
+							<h2>CTA Buttons</h2>
+							<a class="btn cta">Confirm</a>
+							<a class="btn cta add"><span class="icon"></span>Create New</a>
+							<!-- <div style="clear: both;"></div> -->
+							<a class="btn cta delete"><span class="icon"></span>Delete</a>
+							<a class="btn cta inactive">Inactive</a>
+						</div>
+						<div class="group">
+							<h2>Toggle Buttons</h2>
+							<a class="btn toggle">toggle</a>
+							<a class="btn toggle active">active</a>
+							<a class="btn toggle inactive">inactive</a>
+							<div style="clear: both;"></div>
+							<a class="btn toggle mini">toggle</a>
+							<a class="btn toggle mini active">active</a>
+							<a class="btn toggle mini inactive">inactive</a>
+							<div style="clear: both;"></div>
+							<a class="btn toggle mini clone"><span class="icon"></span></a>
+							<a class="btn toggle mini edit"><span class="icon"></span></a>
+							<a class="btn toggle mini delete delete-items"><span class="icon"></span></a>
+							<div style="clear: both;"></div>
+							<a class="btn toggle mini inactive clone"><span class="icon"></span></a>
+							<a class="btn toggle mini inactive edit"><span class="icon"></span></a>
+							<a class="btn toggle mini inactive delete delete-items"><span class="icon"></span></a>
+						</div>
+						<div class="group">
+							<h2>Links</h2>
+							<a>This is a link</a>
+						</div>
+					</section>
+
+					<section id="forms">
+						<h1>Forms</h1>
+						<div class="group">
+							<h2>Text Inputs</h2>
+							<fieldset>
+								<input type="text" style="max-width: 200px;" />
+							</fieldset>
+							<fieldset>
+								<input type="text" placeholder="here's some placeholder text" style="max-width: 200px;"/>
+							</fieldset>
+						</div>
+						<div class="group">
+							<h2>Select Menu</h2>
+							<span class="select">
+								<select class="order-by">
+									<option>- Please Select - </option>
+									<option>Option 01</option>
+									<option>Option 02</option>
+									<option>Option 03</option>
+								</select>
+							</span>
+						</div>
+						<div class="group">
+							<h2>Checkbox</h2>
+							<label class="checkbox" for="checkbox-01">
+								<input type="checkbox" name="checkbox-01" id="checkbox-01" checked>
+								<span class="box"><span class="check"></span></span>
+								<span class="text">Option 01</span>
+							</label>
+							<label class="checkbox" for="checkbox-02">
+								<input type="checkbox" name="checkbox-02" id="checkbox-02">
+								<span class="box"><span class="check"></span></span>
+								<span class="text">Option 02</span>
+							</label>
+							<label class="checkbox" for="checkbox-03">
+								<input type="checkbox" name="checkbox-03" id="checkbox-03" disabled>
+								<span class="box"><span class="check"></span></span>
+								<span class="text">Disabled</span>
+							</label>
+						</div>
+						<div class="group">
+							<h2>Radio Buttons</h2>
+							<label class="radio" for="radio-01">
+								<input type="radio" name="radios" id="radio-01" checked>
+								<span class="box"><span class="check"></span></span>
+								<span class="text">Option 01</span>
+							</label>
+							<label class="radio" for="radio-02">
+								<input type="radio" name="radios" id="radio-02">
+								<span class="box"><span class="check"></span></span>
+								<span class="text">Option 02</span>
+							</label>
+							<label class="radio" for="radio-03">
+								<input type="radio" name="radios" id="radio-03" disabled>
+								<span class="box"><span class="check"></span></span>
+								<span class="text">Disabled</span>
+							</label>
+						</div>
+						<div class="group">
+							<h2>Tags</h2>
+							<ul class="tag-list">
+								<li>
+									<div class="tag">
+										<span class="text">Here is a tag</span>
+									</div>
+									<div class="tag">
+										<label class="checkbox" for="tag-01">
+											<input type="checkbox" name="tag-01" id="tag-01">
+											<span class="box"><span class="check"></span></span>
+										</label>
+										<span class="text">Here is a selectable tag</span>
+									</div>
+									<div class="tag">
+										<label class="checkbox" for="tag-01">
+											<input type="checkbox" name="tag-01" id="tag-01" checked>
+											<span class="box"><span class="check"></span></span>
+										</label>
+										<span class="text">Here is another selectable tag</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="group">
+							<h2>Media Thumbnails</h2>
+							<div class="media">
+								<label class="name">Birthday Drink - Video</label>
+								<label class="checkbox" for="Free Birthday Drink">
+									<input type="checkbox" name="media-file" id="Free Birthday Drink">
+									<span class="box"><span class="check"></span></span>
+								</label>
+								<a>
+									<div class="thumb" style="background-image: url('../assets/images/design-systems/sitebrain/thumbnail_media_video_birthday-drink.jpg')">
+										<div class="icon type video"></div>
+									</div>
+								</a>
+							</div>
+							<div class="media">
+									<label class="name">Birthday Drink - Image</label>
+									<label class="checkbox" for="Birthday Drink">
+										<input type="checkbox" name="media-file" id="Birthday Drink">
+										<span class="box"><span class="check"></span></span>
+									</label>
+									<a>
+										<div class="thumb" style="background-image: url('../assets/images/design-systems/sitebrain/thumbnail_media_image_birthday-drink.jpg')">
+											<div class="icon type image"></div>
+										</div>
+									</a>
+								</div>
+						</div>
+					</section>
+
+					<section id="tables">
+						<h1>Tables</h1>
+						<div class="table-wrap">
+							<table id="mainTable" class="tablesorter" border="0" cellpadding="0" cellspacing="0">
+								<thead>
+									<tr class="topRow">
+										<th class="checkbox">
+											<label class="checkbox" for="select-all">
+												<input type="checkbox" name="media-campaign" id="select-all">
+												<span class="box"><span class="check"></span></span>
+											</label>
+										</th>
+										<th class="header"></th>
+										<th class="header">Ad Set Status</th>
+										<th class="header">Ad Set</th>
+										<th class="header">last_update</th>
+										<th class="header">Ads</th>
+										<th class="header">Bid(cent)</th>
+										<th class="header">Billing Event</th>
+										<th class="header">oCPM Goal</th>
+										<th class="header">DailyBudget($)</th>
+										<th class="header">Spend</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="checkbox">
+											<label class="checkbox" for="item01">
+												<input type="checkbox" name="item01" id="item01">
+												<span class="box"><span class="check"></span></span>
+											</label>
+										</td>
+										<td><span class="icon info"></span></td>
+										<td>
+											<span class="select">
+												<select>
+													<option value="0">PAUSED</option>
+													<option value="1">FROZEN</option>
+													<option value="2" selected="true">ACTIVE</option>
+													<option value="3">DAY_FROZEN</option>
+												</select>
+											</span>
+										</td>
+										<td><a>Olympics (2016)</a></td>
+										<td>05:10:01</td>
+										<td><a>27</a></td>
+										<td><input type="text" value="3500" /></td>
+										<td>IMPRESSIONS</td>
+										<td>OFFSITE_CONVERSIONS</td>
+										<td><input type="text" value="5000.00"></td>
+										<td>229.45</td>
+									</tr>
+									<tr>
+										<td class="checkbox">
+											<label class="checkbox" for="item02">
+												<input type="checkbox" name="item02" id="item02">
+												<span class="box"><span class="check"></span></span>
+											</label>
+										</td>
+										<td><span class="icon info"></span></td>
+										<td>
+											<span class="select">
+												<select>
+													<option value="0">PAUSED</option>
+													<option value="1">FROZEN</option>
+													<option value="2" selected="true">ACTIVE</option>
+													<option value="3">DAY_FROZEN</option>
+												</select>
+											</span>
+										</td>
+										<td><a>Starbucks Healthcare for US Partners</a></td>
+										<td>05:13:39</td>
+										<td><a>9</a></td>
+										<td><input type="text" value="15000" /></td>
+										<td>IMPRESSIONS</td>
+										<td>OFFSITE_CONVERSIONS</td>
+										<td><input type="text" value="5000.00"></td>
+										<td>138.58</td>
+									</tr>
+									<tr>
+										<td class="checkbox">
+											<label class="checkbox" for="item03">
+												<input type="checkbox" name="item03" id="item03">
+												<span class="box"><span class="check"></span></span>
+											</label>
+										</td>
+										<td><span class="icon info"></span></td>
+										<td>
+											<span class="select">
+												<select>
+													<option value="0" selected="true">PAUSED</option>
+													<option value="1">FROZEN</option>
+													<option value="2">ACTIVE</option>
+													<option value="3">DAY_FROZEN</option>
+												</select>
+											</span>
+										</td>
+										<td><a>Starbucks Partners</a></td>
+										<td>05:10:45</td>
+										<td><a>9</a></td>
+										<td><input type="text" value="9000" /></td>
+										<td>LINK_CLICKS</td>
+										<td>LINK_CLICKS</td>
+										<td><input type="text" value="3000.00"></td>
+										<td>6.91</td>
+									</tr>
+									<tr>
+										<td class="checkbox">
+											<label class="checkbox" for="item04">
+												<input type="checkbox" name="item04" id="item04">
+												<span class="box"><span class="check"></span></span>
+											</label>
+										</td>
+										<td><span class="icon info"></span></td>
+										<td>
+											<span class="select">
+												<select>
+													<option value="0">PAUSED</option>
+													<option value="1" selected="true">FROZEN</option>
+													<option value="2">ACTIVE</option>
+													<option value="3">DAY_FROZEN</option>
+												</select>
+											</span>
+										</td>
+										<td><a>Starbucks Jobs</a></td>
+										<td>05:14:03</td>
+										<td><a>13</a></td>
+										<td><input type="text" value="8500" /></td>
+										<td>LINK_CLICKS</td>
+										<td>LINK_CLICKS</td>
+										<td><input type="text" value="500.00"></td>
+										<td>13.08</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<section id="header">
+						<h1>Header</h1>
+						<header id="top-header" style="position: static;">
+							<div class="icon-menu left close">
+								<div class="bar top"></div>
+								<div class="bar middle"></div>
+								<div class="bar bottom"></div>
+							</div>
+							<div class="logo"></div>
+							<div class="user-status">
+								<a class="sign-out" href="http://logme:out@localhost:8080/sbAdmin/reports">Log Out &raquo;</a>
+							</div>
+						</header>
+					</section>
+
+					<section id="navigation">
+						<h1>Navigation</h1>
+						<div class="group">
+							<h2>Sidebar Navigation</h2>
+							<div id="sidebar" class="preload" style="position: static; height: auto;">
+								<ul>
+									<li><a>Item 01</a></li>
+									<li class="dropdown">
+										<a class="expand open">Item 02<div class="icon"></div></a>
+										<div class="sub-menu">
+											<ul>
+												<li><a><span class="bullet"></span>Sub-Item 01</a></li>
+												<li><a class="active"><span class="bullet"></span>Sub-Item 02</a></li>
+												<li><a><span class="bullet"></span>Sub-Item 03</a></li>
+												<li><a><span class="bullet"></span>Sub-Item 04</a></li>
+												<li><a><span class="bullet"></span>Sub-Item 05</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a class="expand">Item 03<div class="icon"></div></a>
+										<div class="sub-menu">
+											<ul>
+												<li><a><span class="bullet"></span>Sub-Item 01</a></li>
+												<li><a><span class="bullet"></span>Sub-Item 02</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a class="expand">Item 04<div class="icon"></div></a>
+										<div class="sub-menu">
+											<ul>
+												<li><a><span class="bullet"></span>Sub-Item 01</a></li>
+												<li><a><span class="bullet"></span>Sub-Item 02</a></li>
+												<li><a><span class="bullet"></span>Sub-Item 03</a></li>
+												<li><a><span class="bullet"></span>Sub-Item 04</a></li>
+												<li><a><span class="bullet"></span>Sub-Item 05</a></li>
+												<li><a><span class="bullet"></span>Sub-Item 06</a></li>
+											</ul>
+										</div>
+									</li>
+									<li class="dropdown">
+										<a class="expand">Item 05<div class="icon"></div></a>
+										<div class="sub-menu">
+											<ul>
+												<li><a><span class="bullet"></span>Sub-Item 01</a></li>
+												<li><a><span class="bullet"></span>Sub-Item 02</a></li>
+												<li><a><span class="bullet"></span>Sub-Item 03</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="group">
+							<h2>Breadcrumbs</h2>
+							<div id="breadcrumbsNew">
+								<ul>
+									<li>
+										<span class="label">Client:</span>
+										<form class="client-select" id="clientSelect" method="post">
+											<span class="select">
+												<select class="resizing_select" name='site_id'>
+													<option value='0' selected>All Clients</option>
+													<option value='1' selected>Client 01</option>
+													<option value='2' selected>Client 02</option>
+													<option value='3' selected>Client 03</option>
+												</select>
+												<select class="width_tmp_select">
+													<option class="width_tmp_option"></option>
+												</select>
+											</span>
+										</form>
+									</li>
+									<li><span>/</span></li>
+									<li>
+										<span class="label">Account:</span>
+										<form class="account-select" id="accountSelect" method="post">
+											<span class="select">
+												<select class="resizing_select" name='account_id'>
+													<option value='0' selected>All Accounts</option>
+													<option value='1' selected>Account 01</option>
+													<option value='2' selected>Account 02</option>
+													<option value='3' selected>Account 03</option>
+												</select>
+												<select class="width_tmp_select">
+													<option class="width_tmp_option"></option>
+												</select>
+											</span>
+										</form>
+									</li>
+									<li><span>/</span></li>
+									<li>
+										<span>fbadsets</span>
+									</li>
+									<li><span>/</span></li>
+									<li>
+										<span>fbadset 0001</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="group">
+							<h2>Navigation Tabs</h2>
+							<nav class="tabs">
+								<ul>
+									<li><a class="btn toggle mini show-attribution active">attribution</a></li>
+									<li><a class="btn toggle mini show-filters">filters</a></li>
+									<li><a class="btn toggle mini show-columns">columns</a></li>
+								</ul>
+							</nav>
+						</div>
+					</section>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

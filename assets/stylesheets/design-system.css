@@ -1,0 +1,116 @@
+* {
+  color: #323232;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+body {
+  min-width: 960px; }
+
+header.page-header {
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  z-index: 1; }
+  header.page-header h1 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 200;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 10px; }
+  header.page-header .content {
+    height: 20px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    position: static;
+    width: 940px; }
+
+.content {
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: fixed;
+  width: 960px; }
+  .content::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+nav#mainNav {
+  float: left;
+  height: calc(100% - 120px);
+  padding: 120px 0 0 0;
+  margin: 0 10px;
+  position: fixed;
+  width: 140px; }
+  nav#mainNav ul {
+    list-style-type: none; }
+    nav#mainNav ul li {
+      display: block; }
+      nav#mainNav ul li a {
+        cursor: pointer;
+        display: block;
+        font-size: 16px;
+        font-weight: 200;
+        height: 16px;
+        padding: 10px;
+        line-height: 16px; }
+        nav#mainNav ul li a.active {
+          background-color: #EAEAEA; }
+
+#main {
+  float: right;
+  height: calc(100% - 60px);
+  overflow: auto;
+  padding: 60px 0 0 0;
+  position: relative;
+  width: 800px; }
+  #main::-webkit-scrollbar {
+    display: none; }
+  #main .slider {
+    position: relative;
+    padding-bottom: 300px; }
+  #main section {
+    border-bottom: 1px solid #EAEAEA;
+    margin: 0 10px;
+    padding: 60px 0; }
+    #main section:last-of-type {
+      border: 0; }
+    #main section h1 {
+      color: #AEAEAE;
+      font-size: 28px;
+      font-weight: 600;
+      margin: 0 0 40px 0; }
+    #main section .group {
+      margin: 0 0 20px 0; }
+      #main section .group::after {
+        clear: both;
+        content: "";
+        display: table; }
+      #main section .group:last-of-type {
+        margin: 0; }
+      #main section .group > h2 {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0 0 20px 0; }
+  #main section#colors {
+    padding: 60px 0 20px 0; }
+    #main section#colors article.color {
+      float: left;
+      margin: 0 0 20px 0; }
+      #main section#colors article.color .color-block {
+        margin: 0 20px 5px 0;
+        height: 50px;
+        width: 100px; }
+      #main section#colors article.color p {
+        font-size: 12px; }
+  #main section#fonts p {
+    margin: 0 0 10px 0; }
+
+/*# sourceMappingURL=design-system.css.map */
