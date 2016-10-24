@@ -861,3 +861,28 @@ section.contact {
 		width: 100%;
 	}
 }
+
+body.adziply {
+	section.wireframes,
+	section.prototypes {
+		.content { max-width: 800px; }
+		.block { margin-bottom: 40px; }
+		.column {
+			float: left;
+			width: 25%;
+			&:nth-child(4n + 2 ) { clear: both; }
+			a {
+				background-position: 50% 0;
+				background-size: 100%;
+				border: 1px solid #EAEAEA;
+				display: block;
+				padding-bottom: 100%;
+				@include size(100% 0);
+				&:hover { border: 1px solid $cta; }
+			}
+			@media screen and (max-width: 600px) {
+				width: 50%;
+			}
+		}
+	}
+}

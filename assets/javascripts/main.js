@@ -86,4 +86,11 @@ $(document).ready(function() {
 			$('section.skills').scrollView();
 		}
 	});
+
+	$(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none',
+		nextEffect: "none",
+		prevEffect: "none"
+	});
 });
