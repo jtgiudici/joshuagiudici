@@ -59,7 +59,7 @@ header {
 	.logo {
 		background-size: 60px;
 		@include position(fixed, 25px null null 40px);
-		@include retina-image("../images/logo_header_dark", 60px, png, null, "@2x", null);
+		@include retina-image("../images/resources/logo_header_dark", 60px, png, null, "@2x", null);
 		@include size(60px 75px);
 	}
 	nav {
@@ -117,7 +117,7 @@ header {
 		.logo {
 			background-size: 40px;
 			@include position(fixed, 10px null null 20px);
-			@include retina-image("../images/logo_header_dark", 40px, png, null, "@2x", null);
+			@include retina-image("../images/resources/logo_header_dark", 40px, png, null, "@2x", null);
 			@include size(40px 50px);
 		}
 		nav {
@@ -191,7 +191,7 @@ header {
 			background-size: 80px;
 			margin: 0 auto 20px auto;
 			position: relative;
-			@include retina-image("../images/logo_hero", 80px, png, null, "@2x", null);
+			@include retina-image("../images/resources/logo_hero", 80px, png, null, "@2x", null);
 			@include size(80px 100px);
 			z-index: 1;
 		}
@@ -223,7 +223,7 @@ header {
 			.logo {
 				background-size: 60px;
 				margin-bottom: 12px;
-				@include retina-image("../images/logo_hero", 60px, png, null, "@2x", null);
+				@include retina-image("../images/resources/logo_hero", 60px, png, null, "@2x", null);
 				@include size(60px 75px);
 			}
 			h1 {
@@ -475,9 +475,9 @@ section.contact {
 			margin-right: 20px;
 			@include size(40px);
 			&:last-child { margin-right: 0; }
-			&.linkedin { @include retina-image("../images/icon_social_linkedin", 20px, png, null, "@2x", null); }
-			&.twitter { @include retina-image("../images/icon_social_twitter", 20px, png, null, "@2x", null); }
-			&.github { @include retina-image("../images/icon_social_github", 20px, png, null, "@2x", null); }
+			&.linkedin { @include retina-image("../images/resources/icon_social_linkedin", 20px, png, null, "@2x", null); }
+			&.twitter { @include retina-image("../images/resources/icon_social_twitter", 20px, png, null, "@2x", null); }
+			&.github { @include retina-image("../images/resources/icon_social_github", 20px, png, null, "@2x", null); }
 			&:hover { background-color: $cta; }
 		}
 	}
@@ -492,9 +492,9 @@ section.contact {
 				background-size: 15px;
 				margin-right: 15px;
 				@include size(30px);
-				&.linkedin { @include retina-image("../images/icon_social_linkedin", 15px, png, null, "@2x", null); }
-				&.twitter { @include retina-image("../images/icon_social_twitter", 15px, png, null, "@2x", null); }
-				&.github { @include retina-image("../images/icon_social_github", 15px, png, null, "@2x", null); }
+				&.linkedin { @include retina-image("../images/resources/icon_social_linkedin", 15px, png, null, "@2x", null); }
+				&.twitter { @include retina-image("../images/resources/icon_social_twitter", 15px, png, null, "@2x", null); }
+				&.github { @include retina-image("../images/resources/icon_social_github", 15px, png, null, "@2x", null); }
 			}
 		}
 	}
@@ -511,7 +511,7 @@ section.contact {
 			border-radius: 100%;
 			display: block;
 			@include position(absolute, calc(50% - 30px) null null null);
-			@include retina-image("../images/nav_arrow_green", 20px, png, null, "@2x", null);
+			@include retina-image("../images/resources/nav_arrow_green", 20px, png, null, "@2x", null);
 			@include size(40px);
 			@include transition(all 0.25s ease-in-out);
 			z-index: 1;
@@ -534,7 +534,7 @@ section.contact {
 				padding-bottom: 145.75%;
 				.desktop-screen {
 					.studentadvisor.homepage {
-						@include retina-image("../images/screenshot_desktop_studentadvisor_01_home", 101%, jpg, null, "@2x", null);
+						@include retina-image("../images/projects/studentadvisor/studentadvisor_screenshot_desktop_01_home", 101%, jpg, null, "@2x", null);
 						padding-bottom: 145.75%;
 					}
 				}
@@ -554,7 +554,7 @@ section.contact {
 				background-repeat: no-repeat;
 				background-size: 100%;
 				border-radius: 5px;
-				@include retina-image("../images/frame_desktop", 100%, png, null, "@2x", null);
+				@include retina-image("../images/resources/frame_desktop", 100%, png, null, "@2x", null);
 				@include size(100% 0);
 				padding-bottom: 86.84210%;
 				.desktop-screen {
@@ -582,21 +582,21 @@ section.contact {
 						width: 100%;
 						&:first-child { display: block; }
 					}
-					.slide.homefindify.homepage { @include retina-image("../images/screenshot_desktop_homefindify_01_home", 101%, jpg, null, "@2x", null); }
-					.slide.homefindify.listings { @include retina-image("../images/screenshot_desktop_homefindify_02_listings", 101%, jpg, null, "@2x", null); }
-					.slide.homefindify.listing { @include retina-image("../images/screenshot_desktop_homefindify_03_listing", 101%, jpg, null, "@2x", null); }
-					.slide.sitebrain.adsets { @include retina-image("../images/screenshot_desktop_sitebrain_01_adsets", 101%, jpg, null, "@2x", null); }
-					.slide.sitebrain.media-campaign { @include retina-image("../images/screenshot_desktop_sitebrain_02_media_campaign", 101%, jpg, null, "@2x", null); }
-					.slide.sitebrain.media-library { @include retina-image("../images/screenshot_desktop_sitebrain_03_media_library", 101%, jpg, null, "@2x", null); }
-					.slide.adziply.homepage { @include retina-image("../images/screenshot_desktop_adziply_01_homepage", 101%, png, null, "@2x", null); }
-					.slide.adziply.about { @include retina-image("../images/screenshot_desktop_adziply_02_about", 101%, jpg, null, "@2x", null); }
-					.slide.adziply.audience { @include retina-image("../images/screenshot_desktop_adziply_03_audience", 101%, jpg, null, "@2x", null); }
-					.slide.adziply.budget { @include retina-image("../images/screenshot_desktop_adziply_04_budget", 101%, jpg, null, "@2x", null); }
-					.slide.adziply.review { @include retina-image("../images/screenshot_desktop_adziply_05_review", 101%, jpg, null, "@2x", null); }
-					.slide.adziply.billing { @include retina-image("../images/screenshot_desktop_adziply_06_billing", 101%, jpg, null, "@2x", null); }
+					.slide.homefindify.homepage { @include retina-image("../images/projects/homefindify/homefindify_screenshot_desktop_01_home", 101%, jpg, null, "@2x", null); }
+					.slide.homefindify.listings { @include retina-image("../images/projects/homefindify/homefindify_screenshot_desktop_02_listings", 101%, jpg, null, "@2x", null); }
+					.slide.homefindify.listing { @include retina-image("../images/projects/homefindify/homefindify_screenshot_desktop_03_listing", 101%, jpg, null, "@2x", null); }
+					.slide.sitebrain.adsets { @include retina-image("../images/projects/sitebrain/sitebrain_screenshot_desktop_01_adsets", 101%, jpg, null, "@2x", null); }
+					.slide.sitebrain.media-campaign { @include retina-image("../images/projects/sitebrain/sitebrain_screenshot_desktop_02_media_campaign", 101%, jpg, null, "@2x", null); }
+					.slide.sitebrain.media-library { @include retina-image("../images/projects/sitebrain/sitebrain_screenshot_desktop_03_media_library", 101%, jpg, null, "@2x", null); }
+					.slide.adziply.homepage { @include retina-image("../images/projects/adziply/adziply_screenshot_desktop_01_homepage", 101%, png, null, "@2x", null); }
+					.slide.adziply.about { @include retina-image("../images/projects/adziply/adziply_screenshot_desktop_02_about", 101%, jpg, null, "@2x", null); }
+					.slide.adziply.audience { @include retina-image("../images/projects/adziply/adziply_screenshot_desktop_03_audience", 101%, jpg, null, "@2x", null); }
+					.slide.adziply.budget { @include retina-image("../images/projects/adziply/adziply_screenshot_desktop_04_budget", 101%, jpg, null, "@2x", null); }
+					.slide.adziply.review { @include retina-image("../images/projects/adziply/adziply_screenshot_desktop_05_review", 101%, jpg, null, "@2x", null); }
+					.slide.adziply.billing { @include retina-image("../images/projects/adziply/adziply_screenshot_desktop_06_billing", 101%, jpg, null, "@2x", null); }
 					.slide.acquisition-labs.home {
 						padding-top: 273%;
-						@include retina-image("../images/screenshot_desktop_acqlabs_01_home", 101%, jpg, null, "@2x", null);
+						@include retina-image("../images/projects/acqlabs/acqlabs_screenshot_desktop_01_home", 101%, jpg, null, "@2x", null);
 					}
 				}
 			}
@@ -606,7 +606,7 @@ section.contact {
 			.desktop-frame {
 				background-size: 100%;
 				padding-bottom: 62.5%;
-				@include retina-image("../images/frame_desktop_wide", 100%, png, null, "@2x", null);
+				@include retina-image("../images/resources/frame_desktop_wide", 100%, png, null, "@2x", null);
 				.desktop-screen {
 					height: calc(100% - 6.666666%);
 					@include position(absolute, 6.666666% null null null);
@@ -624,8 +624,8 @@ section.contact {
 				background-size: 100%;
 				padding-bottom: 204%;
 				@include size(100% 0);
-				&.black { @include retina-image("../images/frame_iphone_black", 100%, png, null, "@2x", null); }
-				&.white { @include retina-image("../images/frame_iphone_white", 100%, png, null, "@2x", null); }
+				&.black { @include retina-image("../images/resources/frame_iphone_black", 100%, png, null, "@2x", null); }
+				&.white { @include retina-image("../images/resources/frame_iphone_white", 100%, png, null, "@2x", null); }
 				.iphone-screen {
 					background-color: #323232;
 					overflow: hidden;
@@ -646,17 +646,17 @@ section.contact {
 						width: 100%;
 						&:first-child { display: block; }
 					}
-					.slide.homefindify.homepage { @include retina-image("../images/screenshot_iphone_homefindify_01_home", 101%, jpg, null, "@2x", null); }
-					.slide.homefindify.listings { @include retina-image("../images/screenshot_iphone_homefindify_02_listings", 101%, jpg, null, "@2x", null); }
-					.slide.homefindify.listing { @include retina-image("../images/screenshot_iphone_homefindify_03_listing", 101%, jpg, null, "@2x", null); }
-					.slide.adziply.homepage { @include retina-image("../images/screenshot_iphone_adziply_01_homepage", 101%, jpg, null, "@2x", null); }
-					.slide.adziply.about { @include retina-image("../images/screenshot_iphone_adziply_02_about", 101%, jpg, null, "@2x", null); }
-					.slide.adziply.audience { @include retina-image("../images/screenshot_iphone_adziply_03_audience", 101%, jpg, null, "@2x", null); }
-					.slide.adziply.budget { @include retina-image("../images/screenshot_iphone_adziply_04_budget", 101%, jpg, null, "@2x", null); }
-					.slide.adziply.review { @include retina-image("../images/screenshot_iphone_adziply_05_review", 101%, jpg, null, "@2x", null); }
-					.slide.adziply.billing { @include retina-image("../images/screenshot_iphone_adziply_06_billing", 101%, jpg, null, "@2x", null); }
+					.slide.homefindify.homepage { @include retina-image("../images/projects/homefindify/homefindify_screenshot_iphone_01_home", 101%, jpg, null, "@2x", null); }
+					.slide.homefindify.listings { @include retina-image("../images/projects/homefindify/homefindify_screenshot_iphone_02_listings", 101%, jpg, null, "@2x", null); }
+					.slide.homefindify.listing { @include retina-image("../images/projects/homefindify/homefindify_screenshot_iphone_03_listing", 101%, jpg, null, "@2x", null); }
+					.slide.adziply.homepage { @include retina-image("../images/projects/adziply/adziply_screenshot_iphone_01_homepage", 101%, jpg, null, "@2x", null); }
+					.slide.adziply.about { @include retina-image("../images/projects/adziply/adziply_screenshot_iphone_02_about", 101%, jpg, null, "@2x", null); }
+					.slide.adziply.audience { @include retina-image("../images/projects/adziply/adziply_screenshot_iphone_03_audience", 101%, jpg, null, "@2x", null); }
+					.slide.adziply.budget { @include retina-image("../images/projects/adziply/adziply_screenshot_iphone_04_budget", 101%, jpg, null, "@2x", null); }
+					.slide.adziply.review { @include retina-image("../images/projects/adziply/adziply_screenshot_iphone_05_review", 101%, jpg, null, "@2x", null); }
+					.slide.adziply.billing { @include retina-image("../images/projects/adziply/adziply_screenshot_iphone_06_billing", 101%, jpg, null, "@2x", null); }
 					.slide.acquisition-labs.home {
-						@include retina-image("../images/screenshot_iphone_acqlabs_01_home", 101%, jpg, null, "@2x", null);
+						@include retina-image("../images/projects/acqlabs/acqlabs_screenshot_iphone_01_home", 101%, jpg, null, "@2x", null);
 						padding-top: 770%;
 					}
 				}
@@ -685,7 +685,7 @@ section.contact {
 .image-wrap.homefindify.logo-trace {
 	.image {
 		background-size: 100%;
-		@include retina-image("../images/homefindify_logo_trace", 100%, jpg, null, "@2x", null);
+		@include retina-image("../images/projects/homefindify/homefindify_logo_trace", 100%, jpg, null, "@2x", null);
 		@include size(160px);
 		margin: 0 auto 40px auto;
 		@media screen and (max-width: 600px) {
@@ -700,7 +700,7 @@ section.contact {
 	width: 100%;
 	.image {
 		background-size: 100%;
-		@include retina-image("../images/homefindify_logo", 100%, png, null, "@2x", null);
+		@include retina-image("../images/projects/homefindify/homefindify_logo", 100%, png, null, "@2x", null);
 		padding-bottom: 22.142857%;
 		width: 100%;
 	}
@@ -765,7 +765,7 @@ section.contact {
 			height: 0;
 			width: 100%;
 			padding-bottom: 23.80952%;
-			@include retina-image("../images/user-flow_homefindify_sign-up", 100%, jpg, null, "@2x", null);
+			@include retina-image("../images/projects/homefindify/homefindify_user-flow_sign-up", 100%, jpg, null, "@2x", null);
 		}
 	}
 	&.homefindify.search-listings {
@@ -776,7 +776,7 @@ section.contact {
 			height: 0;
 			width: 100%;
 			padding-bottom: 96.875%;
-			@include retina-image("../images/user-flow_homefindify_search-listings", 100%, jpg, null, "@2x", null);
+			@include retina-image("../images/projects/homefindify/homefindify_user-flow_search-listings", 100%, jpg, null, "@2x", null);
 		}
 	}
 	&.adziply.create-campaign {
@@ -787,7 +787,7 @@ section.contact {
 			height: 0;
 			width: 100%;
 			padding-bottom: 44.791667%;
-			@include retina-image("../images/user-flow_adziply_create-campaign", 100%, jpg, null, "@2x", null);
+			@include retina-image("../images/projects/adziply/adziply_user-flow_create-campaign", 100%, jpg, null, "@2x", null);
 		}
 	}
 }
@@ -797,7 +797,7 @@ section.contact {
 	width: 100%;
 	.image {
 		background-size: 100%;
-		@include retina-image("../images/style-guide-image", 100%, png, null, "@2x", null);
+		@include retina-image("../images/projects/sitebrain/sitebrain_style-guide-image", 100%, png, null, "@2x", null);
 		padding-bottom: 57.894736%;
 		width: 100%;
 	}
@@ -814,15 +814,15 @@ section.contact {
 		width: 100%;
 	}
 	&.homepage .image {
-		@include retina-image("../images/screenshot_desktop_studentadvisor_01_home", 100%, jpg, null, "@2x", null);
+		@include retina-image("../images/projects/studentadvisor/studentadvisor_screenshot_desktop_01_home", 100%, jpg, null, "@2x", null);
 		padding-bottom: 150.75%;
 	}
 	&.scholarships01 .image {
-		@include retina-image("../images/screenshot_desktop_studentadvisor_02_scholarships", 100%, jpg, null, "@2x", null);
+		@include retina-image("../images/projects/studentadvisor/studentadvisor_screenshot_desktop_02_scholarships", 100%, jpg, null, "@2x", null);
 		padding-bottom: 185.625%;
 	}
 	&.scholarships02 .image {
-		@include retina-image("../images/screenshot_desktop_studentadvisor_03_scholarships", 100%, jpg, null, "@2x", null);
+		@include retina-image("../images/projects/studentadvisor/studentadvisor_screenshot_desktop_03_scholarships", 100%, jpg, null, "@2x", null);
 		padding-bottom: 164%;
 	}
 }
@@ -839,10 +839,10 @@ section.contact {
 		padding-bottom: 92.5%;
 		width: 100%;
 	}
-	&.landing-page01 .image { @include retina-image("../images/screenshot_desktop_courseadvisor_01_landing-page", 100%, jpg, null, "@2x", null); }
-	&.landing-page02 .image { @include retina-image("../images/screenshot_desktop_courseadvisor_02_landing-page", 100%, jpg, null, "@2x", null); }
-	&.landing-page03 .image { @include retina-image("../images/screenshot_desktop_courseadvisor_03_landing-page", 100%, jpg, null, "@2x", null); }
-	&.landing-page04 .image { @include retina-image("../images/screenshot_desktop_courseadvisor_04_landing-page", 100%, jpg, null, "@2x", null); }
+	&.landing-page01 .image { @include retina-image("../images/projects/courseadvisor/courseadvisor_screenshot_desktop_01_landing-page", 100%, jpg, null, "@2x", null); }
+	&.landing-page02 .image { @include retina-image("../images/projects/courseadvisor/courseadvisor_screenshot_desktop_02_landing-page", 100%, jpg, null, "@2x", null); }
+	&.landing-page03 .image { @include retina-image("../images/projects/courseadvisor/courseadvisor_screenshot_desktop_03_landing-page", 100%, jpg, null, "@2x", null); }
+	&.landing-page04 .image { @include retina-image("../images/projects/courseadvisor/courseadvisor_screenshot_desktop_04_landing-page", 100%, jpg, null, "@2x", null); }
 }
 .image-wrap.top100.logo {
 	margin: 0 auto;
@@ -851,7 +851,7 @@ section.contact {
 	.image {
 		background-size: 100%;
 		padding-bottom: 50%;
-		@include retina-image("../images/logo_top100", 100%, png, null, "@2x", null);
+		@include retina-image("../images/projects/top100/top100_logo", 100%, png, null, "@2x", null);
 		width: 100%;
 	}
 }
@@ -862,7 +862,7 @@ section.contact {
 	.image {
 		background-size: 100%;
 		padding-bottom: 133%;
-		@include retina-image("../images/screenshot_top100", 100%, jpg, null, "@2x", null);
+		@include retina-image("../images/projects/top100/top100_screenshot", 100%, jpg, null, "@2x", null);
 		width: 100%;
 	}
 }

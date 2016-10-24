@@ -63,12 +63,12 @@ header .logo {
   position: fixed;
   top: 25px;
   left: 40px;
-  background-image: url("../images/logo_header_dark.png");
+  background-image: url("../images/resources/logo_header_dark.png");
   height: 75px;
   width: 60px; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
     header .logo {
-      background-image: url("../images/logo_header_dark@2x.png");
+      background-image: url("../images/resources/logo_header_dark@2x.png");
       background-size: 60px; } }
 header nav {
   background-color: #161616;
@@ -142,12 +142,12 @@ header nav {
     position: fixed;
     top: 10px;
     left: 20px;
-    background-image: url("../images/logo_header_dark.png");
+    background-image: url("../images/resources/logo_header_dark.png");
     height: 50px;
     width: 40px; } }
   @media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 1.3), only screen and (max-width: 600px) and (min--moz-device-pixel-ratio: 1.3), only screen and (max-width: 600px) and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (max-width: 600px) and (min-resolution: 125dpi), only screen and (max-width: 600px) and (min-resolution: 1.3dppx) {
     header .logo {
-      background-image: url("../images/logo_header_dark@2x.png");
+      background-image: url("../images/resources/logo_header_dark@2x.png");
       background-size: 40px; } }
 @media screen and (max-width: 600px) {
   header nav {
@@ -226,13 +226,13 @@ header nav {
     background-size: 80px;
     margin: 0 auto 20px auto;
     position: relative;
-    background-image: url("../images/logo_hero.png");
+    background-image: url("../images/resources/logo_hero.png");
     height: 100px;
     width: 80px;
     z-index: 1; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       #hero.home hgroup .logo {
-        background-image: url("../images/logo_hero@2x.png");
+        background-image: url("../images/resources/logo_hero@2x.png");
         background-size: 80px; } }
   #hero.home hgroup h1 {
     margin: 0 0 14px 0;
@@ -264,12 +264,12 @@ header nav {
     #hero.home hgroup .logo {
       background-size: 60px;
       margin-bottom: 12px;
-      background-image: url("../images/logo_hero.png");
+      background-image: url("../images/resources/logo_hero.png");
       height: 75px;
       width: 60px; } }
     @media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 1.3), only screen and (max-width: 600px) and (min--moz-device-pixel-ratio: 1.3), only screen and (max-width: 600px) and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (max-width: 600px) and (min-resolution: 125dpi), only screen and (max-width: 600px) and (min-resolution: 1.3dppx) {
       #hero.home hgroup .logo {
-        background-image: url("../images/logo_hero@2x.png");
+        background-image: url("../images/resources/logo_hero@2x.png");
         background-size: 60px; } }
 @media screen and (max-width: 600px) {
     #hero.home hgroup h1 {
@@ -500,22 +500,22 @@ section.contact .social {
     section.contact .social .icon:last-child {
       margin-right: 0; }
     section.contact .social .icon.linkedin {
-      background-image: url("../images/icon_social_linkedin.png"); }
+      background-image: url("../images/resources/icon_social_linkedin.png"); }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
         section.contact .social .icon.linkedin {
-          background-image: url("../images/icon_social_linkedin@2x.png");
+          background-image: url("../images/resources/icon_social_linkedin@2x.png");
           background-size: 20px; } }
     section.contact .social .icon.twitter {
-      background-image: url("../images/icon_social_twitter.png"); }
+      background-image: url("../images/resources/icon_social_twitter.png"); }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
         section.contact .social .icon.twitter {
-          background-image: url("../images/icon_social_twitter@2x.png");
+          background-image: url("../images/resources/icon_social_twitter@2x.png");
           background-size: 20px; } }
     section.contact .social .icon.github {
-      background-image: url("../images/icon_social_github.png"); }
+      background-image: url("../images/resources/icon_social_github.png"); }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
         section.contact .social .icon.github {
-          background-image: url("../images/icon_social_github@2x.png");
+          background-image: url("../images/resources/icon_social_github@2x.png");
           background-size: 20px; } }
     section.contact .social .icon:hover {
       background-color: #9DD1B2; }
@@ -532,24 +532,24 @@ section.contact .social {
       height: 30px;
       width: 30px; }
       section.contact .social .icon.linkedin {
-        background-image: url("../images/icon_social_linkedin.png"); } }
+        background-image: url("../images/resources/icon_social_linkedin.png"); } }
       @media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 1.3), only screen and (max-width: 600px) and (min--moz-device-pixel-ratio: 1.3), only screen and (max-width: 600px) and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (max-width: 600px) and (min-resolution: 125dpi), only screen and (max-width: 600px) and (min-resolution: 1.3dppx) {
         section.contact .social .icon.linkedin {
-          background-image: url("../images/icon_social_linkedin@2x.png");
+          background-image: url("../images/resources/icon_social_linkedin@2x.png");
           background-size: 15px; } }
 @media screen and (max-width: 600px) {
       section.contact .social .icon.twitter {
-        background-image: url("../images/icon_social_twitter.png"); } }
+        background-image: url("../images/resources/icon_social_twitter.png"); } }
       @media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 1.3), only screen and (max-width: 600px) and (min--moz-device-pixel-ratio: 1.3), only screen and (max-width: 600px) and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (max-width: 600px) and (min-resolution: 125dpi), only screen and (max-width: 600px) and (min-resolution: 1.3dppx) {
         section.contact .social .icon.twitter {
-          background-image: url("../images/icon_social_twitter@2x.png");
+          background-image: url("../images/resources/icon_social_twitter@2x.png");
           background-size: 15px; } }
 @media screen and (max-width: 600px) {
       section.contact .social .icon.github {
-        background-image: url("../images/icon_social_github.png"); } }
+        background-image: url("../images/resources/icon_social_github.png"); } }
       @media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 1.3), only screen and (max-width: 600px) and (min--moz-device-pixel-ratio: 1.3), only screen and (max-width: 600px) and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (max-width: 600px) and (min-resolution: 125dpi), only screen and (max-width: 600px) and (min-resolution: 1.3dppx) {
         section.contact .social .icon.github {
-          background-image: url("../images/icon_social_github@2x.png");
+          background-image: url("../images/resources/icon_social_github@2x.png");
           background-size: 15px; } }
 
 .screenshots {
@@ -562,7 +562,7 @@ section.contact .social {
     display: block;
     position: absolute;
     top: calc(50% - 30px);
-    background-image: url("../images/nav_arrow_green.png");
+    background-image: url("../images/resources/nav_arrow_green.png");
     height: 40px;
     width: 40px;
     -webkit-transition: all 0.25s ease-in-out;
@@ -571,7 +571,7 @@ section.contact .social {
     z-index: 1; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .screenshots nav.controls a {
-        background-image: url("../images/nav_arrow_green@2x.png");
+        background-image: url("../images/resources/nav_arrow_green@2x.png");
         background-size: 20px; } }
     .screenshots nav.controls a.prev {
       left: -40px; }
@@ -590,11 +590,11 @@ section.contact .social {
     .screenshots .screenshots-display.custom .desktop-wrap .desktop-frame {
       padding-bottom: 145.75%; }
       .screenshots .screenshots-display.custom .desktop-wrap .desktop-frame .desktop-screen .studentadvisor.homepage {
-        background-image: url("../images/screenshot_desktop_studentadvisor_01_home.jpg");
+        background-image: url("../images/projects/studentadvisor/studentadvisor_screenshot_desktop_01_home.jpg");
         padding-bottom: 145.75%; }
         @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
           .screenshots .screenshots-display.custom .desktop-wrap .desktop-frame .desktop-screen .studentadvisor.homepage {
-            background-image: url("../images/screenshot_desktop_studentadvisor_01_home@2x.jpg");
+            background-image: url("../images/projects/studentadvisor/studentadvisor_screenshot_desktop_01_home@2x.jpg");
             background-size: 101%; } }
   .screenshots .screenshots-display {
     margin: 0 auto;
@@ -609,13 +609,13 @@ section.contact .social {
         background-repeat: no-repeat;
         background-size: 100%;
         border-radius: 5px;
-        background-image: url("../images/frame_desktop.png");
+        background-image: url("../images/resources/frame_desktop.png");
         height: 0;
         width: 100%;
         padding-bottom: 86.84210%; }
         @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
           .screenshots .screenshots-display .desktop-wrap .desktop-frame {
-            background-image: url("../images/frame_desktop@2x.png");
+            background-image: url("../images/resources/frame_desktop@2x.png");
             background-size: 100%; } }
         .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen {
           background-color: #F7F7F7;
@@ -642,93 +642,93 @@ section.contact .social {
             .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide:first-child {
               display: block; }
           .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.homefindify.homepage {
-            background-image: url("../images/screenshot_desktop_homefindify_01_home.jpg"); }
+            background-image: url("../images/projects/homefindify/homefindify_screenshot_desktop_01_home.jpg"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
               .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.homefindify.homepage {
-                background-image: url("../images/screenshot_desktop_homefindify_01_home@2x.jpg");
+                background-image: url("../images/projects/homefindify/homefindify_screenshot_desktop_01_home@2x.jpg");
                 background-size: 101%; } }
           .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.homefindify.listings {
-            background-image: url("../images/screenshot_desktop_homefindify_02_listings.jpg"); }
+            background-image: url("../images/projects/homefindify/homefindify_screenshot_desktop_02_listings.jpg"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
               .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.homefindify.listings {
-                background-image: url("../images/screenshot_desktop_homefindify_02_listings@2x.jpg");
+                background-image: url("../images/projects/homefindify/homefindify_screenshot_desktop_02_listings@2x.jpg");
                 background-size: 101%; } }
           .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.homefindify.listing {
-            background-image: url("../images/screenshot_desktop_homefindify_03_listing.jpg"); }
+            background-image: url("../images/projects/homefindify/homefindify_screenshot_desktop_03_listing.jpg"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
               .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.homefindify.listing {
-                background-image: url("../images/screenshot_desktop_homefindify_03_listing@2x.jpg");
+                background-image: url("../images/projects/homefindify/homefindify_screenshot_desktop_03_listing@2x.jpg");
                 background-size: 101%; } }
           .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.sitebrain.adsets {
-            background-image: url("../images/screenshot_desktop_sitebrain_01_adsets.jpg"); }
+            background-image: url("../images/projects/sitebrain/sitebrain_screenshot_desktop_01_adsets.jpg"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
               .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.sitebrain.adsets {
-                background-image: url("../images/screenshot_desktop_sitebrain_01_adsets@2x.jpg");
+                background-image: url("../images/projects/sitebrain/sitebrain_screenshot_desktop_01_adsets@2x.jpg");
                 background-size: 101%; } }
           .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.sitebrain.media-campaign {
-            background-image: url("../images/screenshot_desktop_sitebrain_02_media_campaign.jpg"); }
+            background-image: url("../images/projects/sitebrain/sitebrain_screenshot_desktop_02_media_campaign.jpg"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
               .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.sitebrain.media-campaign {
-                background-image: url("../images/screenshot_desktop_sitebrain_02_media_campaign@2x.jpg");
+                background-image: url("../images/projects/sitebrain/sitebrain_screenshot_desktop_02_media_campaign@2x.jpg");
                 background-size: 101%; } }
           .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.sitebrain.media-library {
-            background-image: url("../images/screenshot_desktop_sitebrain_03_media_library.jpg"); }
+            background-image: url("../images/projects/sitebrain/sitebrain_screenshot_desktop_03_media_library.jpg"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
               .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.sitebrain.media-library {
-                background-image: url("../images/screenshot_desktop_sitebrain_03_media_library@2x.jpg");
+                background-image: url("../images/projects/sitebrain/sitebrain_screenshot_desktop_03_media_library@2x.jpg");
                 background-size: 101%; } }
           .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.adziply.homepage {
-            background-image: url("../images/screenshot_desktop_adziply_01_homepage.png"); }
+            background-image: url("../images/projects/adziply/adziply_screenshot_desktop_01_homepage.png"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
               .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.adziply.homepage {
-                background-image: url("../images/screenshot_desktop_adziply_01_homepage@2x.png");
+                background-image: url("../images/projects/adziply/adziply_screenshot_desktop_01_homepage@2x.png");
                 background-size: 101%; } }
           .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.adziply.about {
-            background-image: url("../images/screenshot_desktop_adziply_02_about.jpg"); }
+            background-image: url("../images/projects/adziply/adziply_screenshot_desktop_02_about.jpg"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
               .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.adziply.about {
-                background-image: url("../images/screenshot_desktop_adziply_02_about@2x.jpg");
+                background-image: url("../images/projects/adziply/adziply_screenshot_desktop_02_about@2x.jpg");
                 background-size: 101%; } }
           .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.adziply.audience {
-            background-image: url("../images/screenshot_desktop_adziply_03_audience.jpg"); }
+            background-image: url("../images/projects/adziply/adziply_screenshot_desktop_03_audience.jpg"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
               .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.adziply.audience {
-                background-image: url("../images/screenshot_desktop_adziply_03_audience@2x.jpg");
+                background-image: url("../images/projects/adziply/adziply_screenshot_desktop_03_audience@2x.jpg");
                 background-size: 101%; } }
           .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.adziply.budget {
-            background-image: url("../images/screenshot_desktop_adziply_04_budget.jpg"); }
+            background-image: url("../images/projects/adziply/adziply_screenshot_desktop_04_budget.jpg"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
               .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.adziply.budget {
-                background-image: url("../images/screenshot_desktop_adziply_04_budget@2x.jpg");
+                background-image: url("../images/projects/adziply/adziply_screenshot_desktop_04_budget@2x.jpg");
                 background-size: 101%; } }
           .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.adziply.review {
-            background-image: url("../images/screenshot_desktop_adziply_05_review.jpg"); }
+            background-image: url("../images/projects/adziply/adziply_screenshot_desktop_05_review.jpg"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
               .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.adziply.review {
-                background-image: url("../images/screenshot_desktop_adziply_05_review@2x.jpg");
+                background-image: url("../images/projects/adziply/adziply_screenshot_desktop_05_review@2x.jpg");
                 background-size: 101%; } }
           .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.adziply.billing {
-            background-image: url("../images/screenshot_desktop_adziply_06_billing.jpg"); }
+            background-image: url("../images/projects/adziply/adziply_screenshot_desktop_06_billing.jpg"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
               .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.adziply.billing {
-                background-image: url("../images/screenshot_desktop_adziply_06_billing@2x.jpg");
+                background-image: url("../images/projects/adziply/adziply_screenshot_desktop_06_billing@2x.jpg");
                 background-size: 101%; } }
           .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.acquisition-labs.home {
             padding-top: 273%;
-            background-image: url("../images/screenshot_desktop_acqlabs_01_home.jpg"); }
+            background-image: url("../images/projects/acqlabs/acqlabs_screenshot_desktop_01_home.jpg"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
               .screenshots .screenshots-display .desktop-wrap .desktop-frame .desktop-screen .slide.acquisition-labs.home {
-                background-image: url("../images/screenshot_desktop_acqlabs_01_home@2x.jpg");
+                background-image: url("../images/projects/acqlabs/acqlabs_screenshot_desktop_01_home@2x.jpg");
                 background-size: 101%; } }
     .screenshots .screenshots-display .desktop-wrap.full {
       width: 100%; }
       .screenshots .screenshots-display .desktop-wrap.full .desktop-frame {
         background-size: 100%;
         padding-bottom: 62.5%;
-        background-image: url("../images/frame_desktop_wide.png"); }
+        background-image: url("../images/resources/frame_desktop_wide.png"); }
         @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
           .screenshots .screenshots-display .desktop-wrap.full .desktop-frame {
-            background-image: url("../images/frame_desktop_wide@2x.png");
+            background-image: url("../images/resources/frame_desktop_wide@2x.png");
             background-size: 100%; } }
         .screenshots .screenshots-display .desktop-wrap.full .desktop-frame .desktop-screen {
           height: calc(100% - 6.666666%);
@@ -748,16 +748,16 @@ section.contact .social {
         height: 0;
         width: 100%; }
         .screenshots .screenshots-display .iphone-wrap .iphone-frame.black {
-          background-image: url("../images/frame_iphone_black.png"); }
+          background-image: url("../images/resources/frame_iphone_black.png"); }
           @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
             .screenshots .screenshots-display .iphone-wrap .iphone-frame.black {
-              background-image: url("../images/frame_iphone_black@2x.png");
+              background-image: url("../images/resources/frame_iphone_black@2x.png");
               background-size: 100%; } }
         .screenshots .screenshots-display .iphone-wrap .iphone-frame.white {
-          background-image: url("../images/frame_iphone_white.png"); }
+          background-image: url("../images/resources/frame_iphone_white.png"); }
           @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
             .screenshots .screenshots-display .iphone-wrap .iphone-frame.white {
-              background-image: url("../images/frame_iphone_white@2x.png");
+              background-image: url("../images/resources/frame_iphone_white@2x.png");
               background-size: 100%; } }
         .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen {
           background-color: #323232;
@@ -781,65 +781,65 @@ section.contact .social {
             .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide:first-child {
               display: block; }
           .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.homefindify.homepage {
-            background-image: url("../images/screenshot_iphone_homefindify_01_home.jpg"); }
+            background-image: url("../images/projects/homefindify/homefindify_screenshot_iphone_01_home.jpg"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
               .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.homefindify.homepage {
-                background-image: url("../images/screenshot_iphone_homefindify_01_home@2x.jpg");
+                background-image: url("../images/projects/homefindify/homefindify_screenshot_iphone_01_home@2x.jpg");
                 background-size: 101%; } }
           .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.homefindify.listings {
-            background-image: url("../images/screenshot_iphone_homefindify_02_listings.jpg"); }
+            background-image: url("../images/projects/homefindify/homefindify_screenshot_iphone_02_listings.jpg"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
               .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.homefindify.listings {
-                background-image: url("../images/screenshot_iphone_homefindify_02_listings@2x.jpg");
+                background-image: url("../images/projects/homefindify/homefindify_screenshot_iphone_02_listings@2x.jpg");
                 background-size: 101%; } }
           .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.homefindify.listing {
-            background-image: url("../images/screenshot_iphone_homefindify_03_listing.jpg"); }
+            background-image: url("../images/projects/homefindify/homefindify_screenshot_iphone_03_listing.jpg"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
               .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.homefindify.listing {
-                background-image: url("../images/screenshot_iphone_homefindify_03_listing@2x.jpg");
+                background-image: url("../images/projects/homefindify/homefindify_screenshot_iphone_03_listing@2x.jpg");
                 background-size: 101%; } }
           .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.adziply.homepage {
-            background-image: url("../images/screenshot_iphone_adziply_01_homepage.jpg"); }
+            background-image: url("../images/projects/adziply/adziply_screenshot_iphone_01_homepage.jpg"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
               .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.adziply.homepage {
-                background-image: url("../images/screenshot_iphone_adziply_01_homepage@2x.jpg");
+                background-image: url("../images/projects/adziply/adziply_screenshot_iphone_01_homepage@2x.jpg");
                 background-size: 101%; } }
           .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.adziply.about {
-            background-image: url("../images/screenshot_iphone_adziply_02_about.jpg"); }
+            background-image: url("../images/projects/adziply/adziply_screenshot_iphone_02_about.jpg"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
               .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.adziply.about {
-                background-image: url("../images/screenshot_iphone_adziply_02_about@2x.jpg");
+                background-image: url("../images/projects/adziply/adziply_screenshot_iphone_02_about@2x.jpg");
                 background-size: 101%; } }
           .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.adziply.audience {
-            background-image: url("../images/screenshot_iphone_adziply_03_audience.jpg"); }
+            background-image: url("../images/projects/adziply/adziply_screenshot_iphone_03_audience.jpg"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
               .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.adziply.audience {
-                background-image: url("../images/screenshot_iphone_adziply_03_audience@2x.jpg");
+                background-image: url("../images/projects/adziply/adziply_screenshot_iphone_03_audience@2x.jpg");
                 background-size: 101%; } }
           .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.adziply.budget {
-            background-image: url("../images/screenshot_iphone_adziply_04_budget.jpg"); }
+            background-image: url("../images/projects/adziply/adziply_screenshot_iphone_04_budget.jpg"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
               .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.adziply.budget {
-                background-image: url("../images/screenshot_iphone_adziply_04_budget@2x.jpg");
+                background-image: url("../images/projects/adziply/adziply_screenshot_iphone_04_budget@2x.jpg");
                 background-size: 101%; } }
           .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.adziply.review {
-            background-image: url("../images/screenshot_iphone_adziply_05_review.jpg"); }
+            background-image: url("../images/projects/adziply/adziply_screenshot_iphone_05_review.jpg"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
               .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.adziply.review {
-                background-image: url("../images/screenshot_iphone_adziply_05_review@2x.jpg");
+                background-image: url("../images/projects/adziply/adziply_screenshot_iphone_05_review@2x.jpg");
                 background-size: 101%; } }
           .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.adziply.billing {
-            background-image: url("../images/screenshot_iphone_adziply_06_billing.jpg"); }
+            background-image: url("../images/projects/adziply/adziply_screenshot_iphone_06_billing.jpg"); }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
               .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.adziply.billing {
-                background-image: url("../images/screenshot_iphone_adziply_06_billing@2x.jpg");
+                background-image: url("../images/projects/adziply/adziply_screenshot_iphone_06_billing@2x.jpg");
                 background-size: 101%; } }
           .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.acquisition-labs.home {
-            background-image: url("../images/screenshot_iphone_acqlabs_01_home.jpg");
+            background-image: url("../images/projects/acqlabs/acqlabs_screenshot_iphone_01_home.jpg");
             padding-top: 770%; }
             @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
               .screenshots .screenshots-display .iphone-wrap .iphone-frame .iphone-screen .slide.acquisition-labs.home {
-                background-image: url("../images/screenshot_iphone_acqlabs_01_home@2x.jpg");
+                background-image: url("../images/projects/acqlabs/acqlabs_screenshot_iphone_01_home@2x.jpg");
                 background-size: 101%; } }
   .screenshots nav.dots {
     margin: 0 auto;
@@ -863,13 +863,13 @@ section.contact .social {
 
 .image-wrap.homefindify.logo-trace .image {
   background-size: 100%;
-  background-image: url("../images/homefindify_logo_trace.jpg");
+  background-image: url("../images/projects/homefindify/homefindify_logo_trace.jpg");
   height: 160px;
   width: 160px;
   margin: 0 auto 40px auto; }
   @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
     .image-wrap.homefindify.logo-trace .image {
-      background-image: url("../images/homefindify_logo_trace@2x.jpg");
+      background-image: url("../images/projects/homefindify/homefindify_logo_trace@2x.jpg");
       background-size: 100%; } }
   @media screen and (max-width: 600px) {
     .image-wrap.homefindify.logo-trace .image {
@@ -883,12 +883,12 @@ section.contact .social {
   width: 100%; }
   .image-wrap.homefindify.logo .image {
     background-size: 100%;
-    background-image: url("../images/homefindify_logo.png");
+    background-image: url("../images/projects/homefindify/homefindify_logo.png");
     padding-bottom: 22.142857%;
     width: 100%; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .image-wrap.homefindify.logo .image {
-        background-image: url("../images/homefindify_logo@2x.png");
+        background-image: url("../images/projects/homefindify/homefindify_logo@2x.png");
         background-size: 100%; } }
   @media screen and (max-width: 600px) {
     .image-wrap.homefindify.logo {
@@ -959,10 +959,10 @@ section.contact .social {
       height: 0;
       width: 100%;
       padding-bottom: 23.80952%;
-      background-image: url("../images/user-flow_homefindify_sign-up.jpg"); }
+      background-image: url("../images/projects/homefindify/homefindify_user-flow_sign-up.jpg"); }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
         .image-wrap.user-flow.homefindify.sign-up .image {
-          background-image: url("../images/user-flow_homefindify_sign-up@2x.jpg");
+          background-image: url("../images/projects/homefindify/homefindify_user-flow_sign-up@2x.jpg");
           background-size: 100%; } }
   .image-wrap.user-flow.homefindify.search-listings {
     max-width: 650px;
@@ -972,10 +972,10 @@ section.contact .social {
       height: 0;
       width: 100%;
       padding-bottom: 96.875%;
-      background-image: url("../images/user-flow_homefindify_search-listings.jpg"); }
+      background-image: url("../images/projects/homefindify/homefindify_user-flow_search-listings.jpg"); }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
         .image-wrap.user-flow.homefindify.search-listings .image {
-          background-image: url("../images/user-flow_homefindify_search-listings@2x.jpg");
+          background-image: url("../images/projects/homefindify/homefindify_user-flow_search-listings@2x.jpg");
           background-size: 100%; } }
   .image-wrap.user-flow.adziply.create-campaign {
     max-width: 960px;
@@ -985,10 +985,10 @@ section.contact .social {
       height: 0;
       width: 100%;
       padding-bottom: 44.791667%;
-      background-image: url("../images/user-flow_adziply_create-campaign.jpg"); }
+      background-image: url("../images/projects/adziply/adziply_user-flow_create-campaign.jpg"); }
       @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
         .image-wrap.user-flow.adziply.create-campaign .image {
-          background-image: url("../images/user-flow_adziply_create-campaign@2x.jpg");
+          background-image: url("../images/projects/adziply/adziply_user-flow_create-campaign@2x.jpg");
           background-size: 100%; } }
 
 .image-wrap.sitebrain.style-guide {
@@ -997,12 +997,12 @@ section.contact .social {
   width: 100%; }
   .image-wrap.sitebrain.style-guide .image {
     background-size: 100%;
-    background-image: url("../images/style-guide-image.png");
+    background-image: url("../images/projects/sitebrain/sitebrain_style-guide-image.png");
     padding-bottom: 57.894736%;
     width: 100%; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .image-wrap.sitebrain.style-guide .image {
-        background-image: url("../images/style-guide-image@2x.png");
+        background-image: url("../images/projects/sitebrain/sitebrain_style-guide-image@2x.png");
         background-size: 100%; } }
 
 .image-wrap.studentadvisor {
@@ -1016,25 +1016,25 @@ section.contact .social {
     background-size: 100%;
     width: 100%; }
   .image-wrap.studentadvisor.homepage .image {
-    background-image: url("../images/screenshot_desktop_studentadvisor_01_home.jpg");
+    background-image: url("../images/projects/studentadvisor/studentadvisor_screenshot_desktop_01_home.jpg");
     padding-bottom: 150.75%; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .image-wrap.studentadvisor.homepage .image {
-        background-image: url("../images/screenshot_desktop_studentadvisor_01_home@2x.jpg");
+        background-image: url("../images/projects/studentadvisor/studentadvisor_screenshot_desktop_01_home@2x.jpg");
         background-size: 100%; } }
   .image-wrap.studentadvisor.scholarships01 .image {
-    background-image: url("../images/screenshot_desktop_studentadvisor_02_scholarships.jpg");
+    background-image: url("../images/projects/studentadvisor/studentadvisor_screenshot_desktop_02_scholarships.jpg");
     padding-bottom: 185.625%; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .image-wrap.studentadvisor.scholarships01 .image {
-        background-image: url("../images/screenshot_desktop_studentadvisor_02_scholarships@2x.jpg");
+        background-image: url("../images/projects/studentadvisor/studentadvisor_screenshot_desktop_02_scholarships@2x.jpg");
         background-size: 100%; } }
   .image-wrap.studentadvisor.scholarships02 .image {
-    background-image: url("../images/screenshot_desktop_studentadvisor_03_scholarships.jpg");
+    background-image: url("../images/projects/studentadvisor/studentadvisor_screenshot_desktop_03_scholarships.jpg");
     padding-bottom: 164%; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .image-wrap.studentadvisor.scholarships02 .image {
-        background-image: url("../images/screenshot_desktop_studentadvisor_03_scholarships@2x.jpg");
+        background-image: url("../images/projects/studentadvisor/studentadvisor_screenshot_desktop_03_scholarships@2x.jpg");
         background-size: 100%; } }
 
 .image-wrap.courseadvisor {
@@ -1049,28 +1049,28 @@ section.contact .social {
     padding-bottom: 92.5%;
     width: 100%; }
   .image-wrap.courseadvisor.landing-page01 .image {
-    background-image: url("../images/screenshot_desktop_courseadvisor_01_landing-page.jpg"); }
+    background-image: url("../images/projects/courseadvisor/courseadvisor_screenshot_desktop_01_landing-page.jpg"); }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .image-wrap.courseadvisor.landing-page01 .image {
-        background-image: url("../images/screenshot_desktop_courseadvisor_01_landing-page@2x.jpg");
+        background-image: url("../images/projects/courseadvisor/courseadvisor_screenshot_desktop_01_landing-page@2x.jpg");
         background-size: 100%; } }
   .image-wrap.courseadvisor.landing-page02 .image {
-    background-image: url("../images/screenshot_desktop_courseadvisor_02_landing-page.jpg"); }
+    background-image: url("../images/projects/courseadvisor/courseadvisor_screenshot_desktop_02_landing-page.jpg"); }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .image-wrap.courseadvisor.landing-page02 .image {
-        background-image: url("../images/screenshot_desktop_courseadvisor_02_landing-page@2x.jpg");
+        background-image: url("../images/projects/courseadvisor/courseadvisor_screenshot_desktop_02_landing-page@2x.jpg");
         background-size: 100%; } }
   .image-wrap.courseadvisor.landing-page03 .image {
-    background-image: url("../images/screenshot_desktop_courseadvisor_03_landing-page.jpg"); }
+    background-image: url("../images/projects/courseadvisor/courseadvisor_screenshot_desktop_03_landing-page.jpg"); }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .image-wrap.courseadvisor.landing-page03 .image {
-        background-image: url("../images/screenshot_desktop_courseadvisor_03_landing-page@2x.jpg");
+        background-image: url("../images/projects/courseadvisor/courseadvisor_screenshot_desktop_03_landing-page@2x.jpg");
         background-size: 100%; } }
   .image-wrap.courseadvisor.landing-page04 .image {
-    background-image: url("../images/screenshot_desktop_courseadvisor_04_landing-page.jpg"); }
+    background-image: url("../images/projects/courseadvisor/courseadvisor_screenshot_desktop_04_landing-page.jpg"); }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .image-wrap.courseadvisor.landing-page04 .image {
-        background-image: url("../images/screenshot_desktop_courseadvisor_04_landing-page@2x.jpg");
+        background-image: url("../images/projects/courseadvisor/courseadvisor_screenshot_desktop_04_landing-page@2x.jpg");
         background-size: 100%; } }
 
 .image-wrap.top100.logo {
@@ -1080,11 +1080,11 @@ section.contact .social {
   .image-wrap.top100.logo .image {
     background-size: 100%;
     padding-bottom: 50%;
-    background-image: url("../images/logo_top100.png");
+    background-image: url("../images/projects/top100/top100_logo.png");
     width: 100%; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .image-wrap.top100.logo .image {
-        background-image: url("../images/logo_top100@2x.png");
+        background-image: url("../images/projects/top100/top100_logo@2x.png");
         background-size: 100%; } }
 
 .image-wrap.top100.layout {
@@ -1094,11 +1094,11 @@ section.contact .social {
   .image-wrap.top100.layout .image {
     background-size: 100%;
     padding-bottom: 133%;
-    background-image: url("../images/screenshot_top100.jpg");
+    background-image: url("../images/projects/top100/top100_screenshot.jpg");
     width: 100%; }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
       .image-wrap.top100.layout .image {
-        background-image: url("../images/screenshot_top100@2x.jpg");
+        background-image: url("../images/projects/top100/top100_screenshot@2x.jpg");
         background-size: 100%; } }
 
 body.adziply section.wireframes .content,
