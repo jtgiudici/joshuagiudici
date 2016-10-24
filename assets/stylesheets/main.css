@@ -350,6 +350,12 @@ section article {
     @media screen and (max-width: 600px) {
       section article p {
         margin-bottom: 15px; } }
+section article.sub-article {
+  margin-bottom: 40px; }
+  section article.sub-article h3 {
+    margin: 0; }
+  section article.sub-article p {
+    font-size: 10px; }
 section .columns-2 {
   margin: 0 auto;
   max-width: 800px;
@@ -1098,6 +1104,17 @@ section.contact .social {
 body.adziply section.wireframes .content,
 body.adziply section.prototypes .content {
   max-width: 800px; }
+body.adziply section.wireframes .gallery,
+body.adziply section.prototypes .gallery {
+  margin-bottom: 40px; }
+  body.adziply section.wireframes .gallery::after,
+  body.adziply section.prototypes .gallery::after {
+    clear: both;
+    content: "";
+    display: table; }
+  body.adziply section.wireframes .gallery:last-of-type,
+  body.adziply section.prototypes .gallery:last-of-type {
+    margin-bottom: 0; }
 body.adziply section.wireframes .block,
 body.adziply section.prototypes .block {
   margin-bottom: 40px; }
@@ -1105,9 +1122,6 @@ body.adziply section.wireframes .column,
 body.adziply section.prototypes .column {
   float: left;
   width: 25%; }
-  body.adziply section.wireframes .column:nth-child(4n + 2),
-  body.adziply section.prototypes .column:nth-child(4n + 2) {
-    clear: both; }
   body.adziply section.wireframes .column a,
   body.adziply section.prototypes .column a {
     background-position: 50% 0;
@@ -1123,6 +1137,6 @@ body.adziply section.prototypes .column {
   @media screen and (max-width: 600px) {
     body.adziply section.wireframes .column,
     body.adziply section.prototypes .column {
-      width: 50%; } }
+      width: 33.333334%; } }
 
 /*# sourceMappingURL=main.css.map */
