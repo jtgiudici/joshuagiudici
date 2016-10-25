@@ -1101,29 +1101,29 @@ section.contact .social {
         background-image: url("../images/projects/top100/top100_screenshot@2x.jpg");
         background-size: 100%; } }
 
-body.adziply section.wireframes .content,
-body.adziply section.prototypes .content {
+section.wireframes .content,
+section.prototypes .content {
   max-width: 800px; }
-body.adziply section.wireframes .gallery,
-body.adziply section.prototypes .gallery {
+section.wireframes .gallery,
+section.prototypes .gallery {
   margin-bottom: 40px; }
-  body.adziply section.wireframes .gallery::after,
-  body.adziply section.prototypes .gallery::after {
+  section.wireframes .gallery::after,
+  section.prototypes .gallery::after {
     clear: both;
     content: "";
     display: table; }
-  body.adziply section.wireframes .gallery:last-of-type,
-  body.adziply section.prototypes .gallery:last-of-type {
+  section.wireframes .gallery:last-of-type,
+  section.prototypes .gallery:last-of-type {
     margin-bottom: 0; }
-body.adziply section.wireframes .block,
-body.adziply section.prototypes .block {
+section.wireframes .block,
+section.prototypes .block {
   margin-bottom: 40px; }
-body.adziply section.wireframes .column,
-body.adziply section.prototypes .column {
+section.wireframes .column,
+section.prototypes .column {
   float: left;
   width: 25%; }
-  body.adziply section.wireframes .column a,
-  body.adziply section.prototypes .column a {
+  section.wireframes .column a,
+  section.prototypes .column a {
     background-position: 50% 0;
     background-size: 100%;
     border: 1px solid #EAEAEA;
@@ -1131,12 +1131,12 @@ body.adziply section.prototypes .column {
     padding-bottom: 100%;
     height: 0;
     width: 100%; }
-    body.adziply section.wireframes .column a:hover,
-    body.adziply section.prototypes .column a:hover {
+    section.wireframes .column a:hover,
+    section.prototypes .column a:hover {
       border: 1px solid #9DD1B2; }
   @media screen and (max-width: 600px) {
-    body.adziply section.wireframes .column,
-    body.adziply section.prototypes .column {
+    section.wireframes .column,
+    section.prototypes .column {
       width: 33.333334%; } }
 
 /*# sourceMappingURL=main.css.map */
