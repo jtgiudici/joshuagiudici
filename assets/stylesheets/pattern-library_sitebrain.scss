@@ -35,11 +35,11 @@
 			background-color: #EAEAEA;
 			border: 1px solid #D4D4D4;
 		}
-		&.add { .icon { @include retina-image("../images/design-systems/sitebrain/icon_add_white", 10px, png, null, "@2x"); }}
+		&.add { .icon { @include retina-image("../images/pattern-libraries/sitebrain/icon_add_white", 10px, png, null, "@2x"); }}
 		&.delete {
 			background-color: #CF6666;
 			border: 1px solid darken(#CF6666, 5%);
-			.icon { @include retina-image("../images/design-systems/sitebrain/icon_trash_white", 10px, png, null, "@2x"); }
+			.icon { @include retina-image("../images/pattern-libraries/sitebrain/icon_trash_white", 10px, png, null, "@2x"); }
 		}
 	}
 
@@ -64,28 +64,28 @@
 			border: 1px solid #EAEAEA;
 			color: #EAEAEA;
 			&:hover { background-color: #FFFFFF; }
-			&.edit { .icon { @include retina-image("../images/design-systems/sitebrain/icon_edit_inactive", 10px, png, null, "@2x"); }}
-			&.clone { .icon { @include retina-image("../images/design-systems/sitebrain/icon_clone_inactive", 10px, png, null, "@2x"); }}
+			&.edit { .icon { @include retina-image("../images/pattern-libraries/sitebrain/icon_edit_inactive", 10px, png, null, "@2x"); }}
+			&.clone { .icon { @include retina-image("../images/pattern-libraries/sitebrain/icon_clone_inactive", 10px, png, null, "@2x"); }}
 		}
 		&.active {
 			background-color: #9cbdd5;
 			color: #FFFFFF;
 		}
-		&.edit { .icon { @include retina-image("../images/design-systems/sitebrain/icon_edit", 10px, png, null, "@2x"); }}
-		&.clone { .icon { @include retina-image("../images/design-systems/sitebrain/icon_clone", 10px, png, null, "@2x"); }}
+		&.edit { .icon { @include retina-image("../images/pattern-libraries/sitebrain/icon_edit", 10px, png, null, "@2x"); }}
+		&.clone { .icon { @include retina-image("../images/pattern-libraries/sitebrain/icon_clone", 10px, png, null, "@2x"); }}
 	}
 
 	a.btn.toggle.delete {
 		background-color: #FFFFFF;
 		border: 1px solid #CF6666;
 		color: #CF6666;
-		.icon { @include retina-image("../images/design-systems/sitebrain/icon_trash", 10px, png, null, "@2x"); }
+		.icon { @include retina-image("../images/pattern-libraries/sitebrain/icon_trash", 10px, png, null, "@2x"); }
 		&:hover { background-color: lighten(#CF6666, 35%); }
 		&.inactive {
 			background-color: transparent;
 			border: 1px solid #EAEAEA;
 			color: #AEAEAE;
-			.icon { @include retina-image("../images/design-systems/sitebrain/icon_trash_inactive", 10px, png, null, "@2x"); }
+			.icon { @include retina-image("../images/pattern-libraries/sitebrain/icon_trash_inactive", 10px, png, null, "@2x"); }
 		}
 	}
 
@@ -131,7 +131,7 @@
 		display: block;
 		float: left;
 		height: 18px;
-		@include retina-image('../images/design-systems/sitebrain/icon_dropdown_gray', 10px, png, null, '@2x');
+		@include retina-image('../images/pattern-libraries/sitebrain/icon_dropdown_gray', 10px, png, null, '@2x');
 		select {
 			@include appearance(none);
 			background-color: transparent;
@@ -180,7 +180,7 @@
 				.check {
 					background-size: 8px;
 					display: none;
-					@include retina-image("../images/design-systems/sitebrain/icon_check", 8px, png, null, "@2x");
+					@include retina-image("../images/pattern-libraries/sitebrain/icon_check", 8px, png, null, "@2x");
 					@include size(8px);
 				}
 			}
@@ -307,12 +307,12 @@
 				&.video {
 					background-color: rgba(0,0,0,0.35);
 					background-size: 8px;
-					@include retina-image("../images/design-systems/sitebrain/icon_media-video", 8px, png, null, "@2x");
+					@include retina-image("../images/pattern-libraries/sitebrain/icon_media-video", 8px, png, null, "@2x");
 				}
 				&.image {
 					background-color: rgba(0,0,0,0.35);
 					background-size: 14px 9px;
-					@include retina-image("../images/design-systems/sitebrain/icon_media-image", 14px, png, null, "@2x");
+					@include retina-image("../images/pattern-libraries/sitebrain/icon_media-image", 14px, png, null, "@2x");
 				}
 			}
 		}
@@ -403,7 +403,7 @@
 						cursor: pointer;
 						display: block;
 						@include size(10px);
-						@include retina-image("../images/design-systems/sitebrain/icon_info", 10px, png, null, "@2x");
+						@include retina-image("../images/pattern-libraries/sitebrain/icon_info", 10px, png, null, "@2x");
 					}
 					img { display:none; }
 					&:hover img { display:block; }
@@ -451,7 +451,7 @@
 			background-size: 134px 20px;
 			background-repeat: no-repeat;
 			float: left;
-			@include retina-image("../images/design-systems/sitebrain/logo_acqlabs_white", 134px, png, null, "@2x");
+			@include retina-image("../images/pattern-libraries/sitebrain/logo_acqlabs_white", 134px, png, null, "@2x");
 			@include size(134px 20px);
 		}
 		.user-status {
@@ -511,7 +511,7 @@
 						display: block;
 						@include size(10px 14px);
 						float: right;
-						@include retina-image("../images/design-systems/sitebrain/icon_dropdown_white", 10px, png, null, "@2x");
+						@include retina-image("../images/pattern-libraries/sitebrain/icon_dropdown_white", 10px, png, null, "@2x");
 						background-position: 50%;
 						background-repeat: no-repeat;
 						@include transition(transform 0.25s ease-in-out);
@@ -568,8 +568,8 @@
 				background-repeat: no-repeat;
 				//@include filter(grayscale(100%));
 				@include size(20px);
-				&.facebook { @include retina-image('../images/design-systems/sitebrain/icon_facebook', 20px, png, null, '@2x'); }
-				&.google { @include retina-image('../images/design-systems/sitebrain/icon_google', 20px, png, null, '@2x'); }
+				&.facebook { @include retina-image('../images/pattern-libraries/sitebrain/icon_facebook', 20px, png, null, '@2x'); }
+				&.google { @include retina-image('../images/pattern-libraries/sitebrain/icon_google', 20px, png, null, '@2x'); }
 			}
 		}
 		span.select {
@@ -583,7 +583,7 @@
 			display: block;
 			float: left;
 			height: 18px;
-			@include retina-image('../images/design-systems/sitebrain/icon_dropdown_gray', 10px, png, null, '@2x');
+			@include retina-image('../images/pattern-libraries/sitebrain/icon_dropdown_gray', 10px, png, null, '@2x');
 			select {
 				@include appearance(none);
 				background-color: transparent;
@@ -665,7 +665,7 @@
 					height: 12px;
 					max-width: 70px;
 					padding: 3px 9px;
-					@include retina-image('../images/design-systems/sitebrain/icon_dropdown_gray', 10px, png, null, '@2x');
+					@include retina-image('../images/pattern-libraries/sitebrain/icon_dropdown_gray', 10px, png, null, '@2x');
 				}
 				span.to {
 					font-size: 10px;
@@ -676,7 +676,7 @@
 				}
 			}
 			a.view-options {
-				@include retina-image("../images/design-systems/sitebrain/icon_view-options", 8px, png, null, "@2x");
+				@include retina-image("../images/pattern-libraries/sitebrain/icon_view-options", 8px, png, null, "@2x");
 				border: 1px solid #C3C3C3;
 				background-position: 10px 50%;
 				background-repeat: no-repeat;
