@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+		<link rel="stylesheet" type="text/css" href="../assets/stylesheets/main.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400italic,600italic,700italic,400,600,700,800,900">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="../assets/javascripts/main.js" ></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	</head>
+	<body class="project-page global-search">
+		<div class="grid">
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+		</div>
+		<header>
+			<a class="logo" href="../index.html"></a>
+			<a class="resume" href="../documents/resume_joshua-giudici.pdf" target="_blank">Resume</a>
+		</header>
+		<section class="hero">
+			<div class="wrapper">
+				<div class="content">
+					<h1>Global search refresh</h1>
+					<p>Finding things faster.</p>
+				</div>
+			</div>
+		</section>
+		<div class="wrapper">
+			<div class="side-scroll">
+				<nav>
+					<div class="indicator"></div>
+					<a class="overview active">Overview</a>
+					<a class="discovery">Discovery</a>
+					<a class="problem-definition">Problem definition</a>
+					<a class="design">Design</a>
+					<a class="validation">Validation</a>
+					<a class="final-design">Final Design</a>
+				</nav>
+			</div>
+			<section class="project overview" id="overview">
+				<div class="content">
+					<h3>Problem</h3>
+					<p>With a finite number of search results returned on each search query, a lack of options to refine search results, and leveraging only some of the types of data users were looking for, Buildium's global search feature fell short of user expectation and hindered their ability to find what they were looking for.</p>
+					<h3>Solution</h3>
+					<p>Deliver a search experience that can support large amounts of results, faster and more successful searches and matches the user's mental model of modern web search experiences.</p>
+					<h4>Team</h4>
+					<p>Product owner, Software engineers (3), Senior UX Designer (Me), UX Content Designer, UX Researcher</p>
+					<h4>Client</h4>
+					<p>Buildium</p>
+				</div>
+			</section>
+			<a class="cta secondary jump-to-design" href="#final-design">Jump to final design</a>
+			<section class="project discovery" id="discovery">
+				<div class="content">
+					<h2>Discovery<span class="border"></span></h2>
+					<p>Without a dedicated team responsible, Buildium's search experience fell by the wayside. It suffered from experience issues as well as backend functionality that limited its ability to meet user expectations and desires.</p>
+					<h3>Current state</h3>
+					<p>Conducting an initial investigation which involved crafting baseline user flows and taking rigorous notes, I was able to assess the current state of our search experience. Right off the bat there I uncovered some glaring issues with our search.</p>
+					<img class="lg" src="../assets/images/projects/global-search_discovery_current-state.png">
+					<ul>
+						<li><b>Results were limited to only 10 results.</b> No matter how many actual matches there were, only the first 10 were shown, with no way to see all the results.</li>
+						<li><b>Within the 10 results, a max of only 5 properties (rentals, associations, units) and 5 people (tenants, association owners, rental owner, vendors, applicants) were displayed.</b>  For example, even if there were more "people" that matched versus "properties", a user would still only ever display a max of 5 each.</li>
+					</ul>
+					<p>These two issues alone were preventing many search results from ever being found by the user.</p>
+					<h3>Customer insight</h3>
+					<p>Leveraging a tool called UserVoice, that allows our users to submit feature and improvement requests, we were able to find a lot of inquiries for search related updates. Expanding on the searchable database to include things like tasks, transactions, and vehicles, were some of the most common themes amongst the requests we found.</p>
+					<h3>Industry analysis</h3>
+					<p>There is an abundance of search experiences on the web and users are very familiar with how they work. Doing some industry analysis, we were able to gain a sense of how search experiences compare across a variety of apps. Looking at the search experiences for web applications such as GSuite, Asana, Salesforce, Slack and more, we were able to quickly see the current table-stakes standards and the differentiators that set them apart.</p>
+				</div>
+			</section>
+			<section class="project problem-definition" id="problem-definition">
+				<div class="content">
+					<h2>Problem definition<span class="border"></span></h2>
+					<p>With initial discovery research in hand, we had a better sense of our current users' expectations and how our current global search stacked up. Users were looking for something that met the standards of a modern web experience with an ever scaling database of searchable data that made searching a breeze. Our existing search experience made searching for things a difficult and painstaking process due to an outdated interface that limited both the number of results returned and the types of results users were expecting to find.</p>
+				</div>
+			</section>
+			<section class="project design" id="design">
+				<div class="content">
+					<h2>Design<span class="border"></span></h2>
+					<h3>Ideation and lofi design</h3>
+					<p>Grabbing some dry erase markers, I brainstormed ideas with my scrum team's product owner and dev lead on possible solutions. We knew that users were having trouble finding results that they searched for. However, we also knew that users were looking for categories that didn't exist yet in the searchable database. If we decided to expand the list of categories that would mean there would be more possible matches, thus making it harder to find things. We'd need a solution that made finding things easier, but could also scale to accommodate more results. Some of the ideas we generated in that session:</p>
+					<!-- <img class="sm" style="padding-bottom: 20%; background-color: #aeaeae;">
+					<img class="sm" style="padding-bottom: 20%; background-color: #aeaeae;">
+					<img class="sm" style="padding-bottom: 20%; background-color: #aeaeae;">
+					<img class="sm" style="padding-bottom: 20%; background-color: #aeaeae;">
+					<img class="sm" style="padding-bottom: 20%; background-color: #aeaeae;">
+					<img class="sm" style="padding-bottom: 20%; background-color: #aeaeae;"> -->
+					<ul>
+						<li><b>Remove default sorting</b> of 5 properties and 5 people and let the results sort themselves based on relevance.</li>
+						<li>Use <b>iconography</b> to indicate a result type.</li>
+						<li>Add a <b>filter by category</b> feature to allow filtering on the fly and improve the likelihood that a user would see the correct result in the initial 10 results.</li>
+						<li>Add a <b>"Results" page</b> that a users could visit if what they were looking for wasn't returned in the initial 10 results.</li>
+					</ul>
+					<p>From these ideas I was able to generate an initial low fidelity mockup that confirmed the efficacy of our ideas. This prototype became an artifact that we could then use to get feedback amongst our peers and to share our direction with product stakeholders.</p>
+					<h3>High fidelity design</h3>
+					<!-- <img class="lg" style="padding-bottom: 66.666667%; background-color: #aeaeae;"> -->
+					<p>Users are very familiar with search experiences and are able to move through them very fast when they are working correctly. If something was off, users would know it. The delivery of my design to my engineering counterparts needed to not just be pixel perfect, but also needed to clearly outline the microinteractions involved in this experience. I made sure that my design file had proper specifications and guidance for engineers.</p>
+				</div>
+			</section>
+			<section class="project validation" id="validation">
+				<div class="content">
+					<h2>Validation<span class="border"></span></h2>
+					<h3>Beta launch &amp; Usability testing</h3>
+					<p>Normally, I prefer to conduct usability testing earlier in the process with a design prototype. However, the complexity involved with being able to test a search experience made us decide to do a usability test with a live beta. We flipped the new experience on for customers during the test, so that they could search for their data and have full functionality available. This allowed us to conduct an accurate test of the workflow. The results of the test were positive. Our new experience was well received and easy to use. Customers were also able provide some minor feedback that we were able to roll into the final experience when we went live.</p>
+				</div>
+			</section>
+			<section class="project final-design" id="final-design">
+				<div class="content">
+					<h2>Final Design<span class="border"></span></h2>
+
+					<h4>Dedicated modal experience</h4>
+					<p>Due to a lack of top level navigation real estate available to dedicate to search, we converted the previously restricting text input and dropdown search experience to live in a modal that appeared when the search icon was clicked. With a dedicated modal, the search experience could comfortably accommodate more information and would easily scale to new search-related features.</p>
+					<img class="lg" src="../assets/images/projects/global-search_final-design_modal-experience.png">
+
+					<h4>Results page</h4>
+					<p>When the initial list of results a user gets doesn't include what they'll looking for, hitting RETURN on their keyboard or clicking a "View all" link brings them to a Results page with a cohesive list of results organized and filterable by category.</p>
+					<img class="lg" src="../assets/images/projects/global-search_final-design_results-page.png">
+
+					<h4>Search by category</h4>
+					<p>Users can refine results on the fly by selecting categories to filter their search, so that they're only seeing the types of results they want. Thus, making what they're actually looking for that much easier to find.</p>
+					<img class="lg" src="../assets/images/projects/global-search_final-design_categories.png">
+
+					<h4>Keyboard navigation</h4>
+					<p>For keyboard-centric users we built in new keyboard shortcuts to allow users to take full advantage of the search experience without ever having to reach for their mouse.</p>
+					<img class="lg" src="../assets/images/projects/global-search_final-design_keyboard-nav.png">
+
+					<h4>More result categories</h4>
+					<p>With a more scalable approach we could now safely add in new categories. Out of the gate we expanded to 4 new categories with plans to slowly roll out new categories over time.</p>
+					<img class="lg" src="../assets/images/projects/global-search_final-design_additional cards.png">
+
+				</div>
+			</section>
+			<section class="project">
+				<div class="content">
+					<h2>More projects<span class="border"></span></h2>
+					<a class="project-block announcements" href="announcements.html">
+						<div class="image"></div>
+						<div class="summary">
+							<h3>Announcements</h3>
+							<p class="description">Getting property manager's urgent messages read by their residents.</p>
+							<p class="client-info">Client: Buildium</p>
+						</div>
+					</a>
+					<a class="project-block batched-reports" href="batched-reports.html">
+						<div class="image"></div>
+						<div class="summary">
+							<h3>Batched reports</h3>
+							<p class="description">A reporting featuring that gives time back.</p>
+							<p class="client-info">Client: Buildium</p>
+						</div>
+					</a>
+				</div>
+			</section>
+			<footer>
+				<span class="border"></span>
+				<p>This website was designed and hand-coded by yours truly.</p>
+				<a class="logo"></a>
+			</footer>
+		</div>
+	</body>
+</html>
+<script> </script>

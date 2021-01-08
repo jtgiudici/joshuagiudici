@@ -1,140 +1,73 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>JoshuaGiudici.com</title>
-		<link rel="icon" href="assets/images/resources/favicon.ico" type="image/x-icon">
 		<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
-		<link rel="stylesheet" type="text/css" href="assets/stylesheets/MyFontsWebfontsKit.css"/>
 		<link rel="stylesheet" type="text/css" href="assets/stylesheets/main.css">
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="assets/javascripts/main.js"></script>
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-85527593-1', 'auto');
-			ga('send', 'pageview');
-
-		</script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400italic,600italic,700italic,400,600,700,800,900">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="assets/javascripts/main.js" ></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 	</head>
 	<body class="home">
+		<div class="grid">
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+		</div>
 		<header>
 			<a class="logo"></a>
-			<nav>
-				<a class="icon menu open">
-					<div class="bar"></div>
-					<div class="bar"></div>
-					<div class="bar"></div>
-				</a>
-				<ul>
-					<li><a class="home">Home</a></li>
-					<li><a class="work">Work</a></li>
-					<li><a class="about">About Me</a></li>
-					<li><a class="skills">Skills</a></li>
-					<li><a class="contact">Contact</a></li>
-				</ul>
-			</nav>
+			<a class="resume" href="documents/resume_joshua-giudici.pdf" target="_blank">Resume</a>
 		</header>
-
-		<section id="hero" class="home dark dark-grey">
-			<div class="content">
-				<div class="block">
-					<hgroup>
-						<div class="logo"></div>
-						<h1>Joshua Giudici</h1>
-						<h2>Web Design</h2>
-						<div class="triangle"></div>
-					</hgroup>
+		<div class="wrapper">
+			<section class="intro">
+				<div class="content">
+					<h1>Hi, I'm Josh</h1>
+					<p>A Boston-based product designer solving complex web experience problems by crafting user driven solutions.</p>
 				</div>
-			</div>
-		</section>
-
-		<section id="work" class="work light">
-			<div class="content">
-				<h1>Work</h1>
-				<ul>
-					<li><a href="projects/sitebrain.html">SiteBrain</a></li>
-					<li><a href="projects/adziply.html">Adziply</a></li>
-					<li><a href="projects/acquisition-labs.html">Acquisition Labs</a></li>
-					<li><a href="projects/homefindify.html">Homefindify</a></li>
-					<li><a href="projects/studentadvisor.html">StudentAdvisor</a></li>
-					<li><a href="projects/courseadvisor.html">CourseAdvisor</a></li>
-				</ul>
-			</div>
-		</section>
-
-		<section id="about" class="about light light-grey">
-			<div class="content">
-				<h1>About Me</h1>
-				<div class="block">
-					<article>
-						<p><b>My name is Joshua Giudici. <br>I am a Web Designer based in Boston, MA.</b></p>
-						<p>I design and develop user experiences for the web that focus on putting the user first. I am constantly sharpening my skill set and always on the lookout for new strategies to improve my design process. I've had many experiences working in a variety of areas of the design process, including research, sketching, prototyping, design, branding, and front-end development. I'm excited about pursuing projects and experiences that are opportunities to learn and grow.
-					</article>
+			</section>
+			<section class="projects">
+				<div class="content">
+					<a class="project-block announcements" href="projects/announcements.html">
+						<div class="image"></div>
+						<div class="summary">
+							<h3>Announcements</h3>
+							<p class="description">Getting property manager's urgent messages read by their residents.</p>
+							<p class="client-info">Client: Buildium</p>
+						</div>
+					</a>
+					<a class="project-block global-search" href="projects/global-search.html">
+						<div class="image"></div>
+						<div class="summary">
+							<h3>Global search</h3>
+							<p class="description">Enabling property managers to find what their looking for more quickly.</p>
+							<p class="client-info">Client: Buildium</p>
+						</div>
+					</a>
+					<a class="project-block batched-reports" href="projects/batched-reports.html">
+						<div class="image"></div>
+						<div class="summary">
+							<h3>Batched reports</h3>
+							<p class="description">A reporting featuring that gives time back.</p>
+							<p class="client-info">Client: Buildium</p>
+						</div>
+					</a>
 				</div>
-			</div>
-		</section>
-
-		<section id="skills" class="skills light">
-			<div class="content">
-				<h1>Skills</h1>
-				<ul>
-					<li>
-						<span>html5</span>
-						<div class="progress" style="width: 90%;"></div>
-					</li>
-					<li>
-						<span>css3</span>
-						<div class="progress" style="width: 95%;"></div>
-					</li>
-					<li>
-						<span>sass</span>
-						<div class="progress" style="width: 85%;"></div>
-					</li>
-					<li>
-						<span>jquery</span>
-						<div class="progress" style="width: 45%;"></div>
-					</li>
-					<li>
-						<span>Photoshop</span>
-						<div class="progress" style="width: 90%;"></div>
-					</li>
-					<li>
-						<span>Illustrator</span>
-						<div class="progress" style="width: 90%;"></div>
-					</li>
-					<li>
-						<span>Sketch</span>
-						<div class="progress" style="width: 80%;"></div>
-					</li>
-					<li>
-						<span>responisve design</span>
-						<div class="progress" style="width: 85%;"></div>
-					</li>
-					<li>
-						<span>mobile design</span>
-						<div class="progress" style="width: 75%;"></div>
-					</li>
-					<li>
-						<span>prototyping</span>
-						<div class="progress" style="width: 75%;"></div>
-					</li>
-				</ul>
-			</div>
-		</section>
-
-		<section class="contact dark dark-grey">
-			<div class="content">
-				<h1>Contact</h1>
-				<a href="mailto:jtgiudici@gmail.com" target="_top">jtgiudici@gmail.com</a>
-				<div class="social">
-					<a class="icon linkedin" href="https://www.linkedin.com/in/joshuagiudici" target="_blank"></a>
-					<a class="icon twitter" href="https://twitter.com/joshuagiudici" target="_blank"></a>
-					<a class="icon github" href="https://github.com/jtgiudici" target="_blank"></a>
-				</div>
-			</div>
-		</section>
+			</section>
+			<footer>
+				<span class="border"></span>
+				<p>This website was designed and hand-coded by yours truly.</p>
+				<a class="logo"></a>
+			</footer>
+		</div>
 	</body>
 </html>
+<script> </script>

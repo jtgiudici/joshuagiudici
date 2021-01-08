@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+		<link rel="stylesheet" type="text/css" href="../assets/stylesheets/main.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400italic,600italic,700italic,400,600,700,800,900">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="../assets/javascripts/main.js" ></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	</head>
+	<body class="project-page batched-reports">
+		<div class="grid">
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+			<div class="column span1"><div class="block"></div></div>
+		</div>
+		<header>
+			<a class="logo" href="../index.html"></a>
+			<a class="resume" href="../documents/resume_joshua-giudici.pdf" target="_blank">Resume</a>
+		</header>
+		<section class="hero">
+			<div class="wrapper">
+				<div class="content">
+					<h1>Batched reports</h1>
+					<p>All the reports you need. All at once.</p>
+				</div>
+			</div>
+		</section>
+		<div class="wrapper">
+			<div class="side-scroll">
+				<nav>
+					<div class="indicator"></div>
+					<!-- <h2>Announcements</h2> -->
+					<a class="overview active">Overview</a>
+					<a class="project-background">Project Background</a>
+					<a class="discovery">Discovery</a>
+					<a class="design">Design</a>
+					<a class="design-validation">Design &amp; validation</a>
+					<a class="final-design">Final Design</a>
+				</nav>
+			</div>
+			<section class="project overview" id="overview">
+				<div class="content">
+					<h3>Problem</h3>
+					<p>Property managers of Home Owner Associations (HOAs) are tasked with gathering various documents, primarily reports, for "Board member packets" ahead of monthly board meetings. Without an efficient workflow to export reports, property managers face a time consuming process riddled with frustration and fatigue.</p>
+					<h3>Solution</h3>
+					<p>Deliver a solution that enables users to export several reports, for several properties at once.</p>
+					<h4>Team</h4>
+					<p>Product owner, Software developers (4), UX Copywriter, UX Designer (Me)</p>
+					<h4>Client</h4>
+					<p>Buildium</p>
+				</div>
+			</section>
+			<a class="cta secondary jump-to-design" href="#final-design">Jump to final design</a>
+			<section class="project project-background" id="project-background">
+				<div class="content">
+					<h2>Project background<span class="border"></span></h2>
+					<p>This project was already in-flight when I joined the assigned scrum team. There had been much back and forth on a solution amongst team members and stakeholders prior to my involvement. The team was already speeding down the path toward crafting a solution that would automatically send reports to homeowner association board members on a monthly schedule. However, without a problem statement in place and no customer insight gathered it wasn't yet clear if this was an effective solution.</p>
+				</div>
+			</section>
+			<section class="project discovery" id="discovery">
+				<div class="content">
+					<h2>Discovery<span class="border"></span></h2>
+					<h3>Connecting with customers</h3>
+					<p>To get a clearer picture of the pain points we were dealing with, I collaborated with the team's Product Owner and UX Copywriter to craft a call script that would gain some customer perspective.</p>
+					<p>Speaking to customers very quickly revealed some interesting insights. "Board member packets" were a very tedious process for property managers. We were hearing things like "it's my least favorite thing to do" and "It's the worst part of my month". Gathering reports was a particularly difficult part of this process. To export the proper reports, property managers needed to navigate to each report and export them one at a time for a property. This time consuming process was then perpetuated by the fact that users needed to export these same reports multiple times for other properties, thus multiplying their frustration.</p>
+					<p>Digging into the concept of "automatically sending reports to homeowner association board members on a monthly schedule", the previously assumed solution, we met even more interesting results. The customers we spoke to were not interested in that solution, since there were more documents required for "Board member packets" besides reports.</p>
+					<p>It seemed the previously held direction was not prepared to deliver a proper solution.</p>
+					<h3>Problem definition</h3>
+					<p>With a much better sense of what customers were dealing with, we were able to define a problem statement that we could rally the team around and ensure that our efforts led to a solution:</p>
+					<p>"Creating board member packets every month is a very time consuming process for property managers of homeowners associations, due to the highly manual and labor-intensive process of running and exporting several reports one by one across several properties."</p>
+				</div>
+			</section>
+			<section class="project design" id="design">
+				<div class="content">
+					<h2>Design<span class="border"></span></h2>
+					<h3>Ideation</h3>
+					<p>Collaborating with the team Product Owner and UX copywriter we started brainstorming ideas that rallied around giving time back to our users. It proved difficult to create an all-in-one solution for these Board Member Packets, since there were other documents besides reports that needed to be included. However, there was definitely an opportunity to save our customers time.</p>
+					<p>What we came up with was a new bulk reporting feature called "Batched reports". A user would be able to select which properties they wanted to run reports for, select the reports to include, adjust the report filters, and then choose their export option (grouped or ungrouped pdfs). This feature would allow for running several reports nearly as fast as running one.</p>
+					<h3>High fidelity design</h3>
+					<p>Based on our ideation exercises, I took our initial concepts and translated them into a high fidelity prototype via Sketch and Invision.</p>
+					<h3>Time savings</h3>
+					<p>Conducting a time on task analysis between the old workflow customers were using, with our new "Batched reports" solution, we were seeing some staggering time savings.</p>
+					<table>
+						<thead>
+							<tr>
+								<td></td>
+								<td>Old flow</td>
+								<td>New flow</td>
+								<td class="speed">Increase/decrease</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Running 1 report for 1 property</td>
+								<td>21s</td>
+								<td>24s</td>
+								<td class="speed decrease">12% slower</td>
+							</tr>
+							<tr>
+								<td>Running 1 report for 5 properties</td>
+								<td>1m 17s</td>
+								<td>32s</td>
+								<td class="speed increase">240% faster</td>
+							</tr>
+							<tr>
+								<td>Running 1 report for 10 properties</td>
+								<td>2m 42s</td>
+								<td>37s</td>
+								<td class="speed increase">438% faster</td>
+							</tr>
+							<tr>
+								<td>Running 5 reports for 10 properties</td>
+								<td>13m 30s</td>
+								<td>1m 4s</td>
+								<td class="speed increase">1,265% faster</td>
+							</tr>
+							<tr>
+								<td>Running 10 reports for 10 properties</td>
+								<td>27m</td>
+								<td>1m 24s</td>
+								<td class="speed increase">1,928% faster</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>This data revealed significant time savings for users running reports. This flow was exponentially more impactful for instances, like "Board Member Packets", when users were running several reports for several properties at once.</p>
+				</div>
+			</section>
+			<section class="project final-design" id="final-design">
+				<div class="content">
+					<h2>Final Design<span class="border"></span></h2>
+					<h3>4-step wizard experience</h3>
+					<p>We designed a new modal experience that featured a wizard stepper for this workflow. The wizard stepper rolled all the functionality that users had been doing 1 by 1 for each report into one streamlined experience.</p>
+					<h4>1. Select properties</h4>
+					<p>Since the available reports can change from one property type to the next, making sure users chose their properties upfront made sure that ineligible reports were filtered out later in the flow.</p>
+					<img class="lg" src="../assets/images/projects/batched-reports_final-design_wizard-step-01.png">
+					<h4>2. Add reports</h4>
+					<p>Users can add available reports to their list and drag and drop to arrange them in the order they want them in for their outputed PDF. This invloved designing a new drag and drop interaction and other microinteractions that I drafted in an application called Principle.</p>
+					<img class="lg" src="../assets/images/projects/batched-reports_final-design_wizard-step-02.png">
+					<h4>3. Adjust filters</h4>
+					<p>Instead of visiting several individual pages one by one, users are able to adjust filters for each report at the same time.</p>
+					<img class="lg" src="../assets/images/projects/batched-reports_final-design_wizard-step-03.png">
+					<h4>4. Export options</h4>
+					<p>Using illustration to help articulate functionality, users are offered the ability to export their pdfs as one consolidated pdf per property, or we'd generate a pdf for each report and organize them into folders named after each property. I hand crafted these illustrations using illustration guidelines that I helped define as part of a separate UX Team initiative.</p>
+					<img class="lg" src="../assets/images/projects/batched-reports_final-design_wizard-step-04.png">
+					<h3>Generating queue</h3>
+					<p>These batched reporting processes can take a long time due to the high amount of reports multiplied by the number of properties being generated. Users were provided an option to view an active queue to gain insight into their status. When a batched report process was completed, users would be notified via email.</p>
+					<img class="lg" src="../assets/images/projects/batched-reports_final-design_recently-batched-reports.png">
+				</div>
+			</section>
+			<section class="project">
+				<div class="content">
+					<h2>More projects<span class="border"></span></h2>
+					<a class="project-block announcements" href="announcements.html">
+						<div class="image"></div>
+						<div class="summary">
+							<h3>Announcements</h3>
+							<p class="description">Getting property manager's urgent messages read by their residents.</p>
+							<p class="client-info">Client: Buildium</p>
+						</div>
+					</a>
+					<a class="project-block global-search" href="global-search.html">
+						<div class="image"></div>
+						<div class="summary">
+							<h3>Global search</h3>
+							<p class="description">Enabling property managers to find what their looking for more quickly.</p>
+							<p class="client-info">Client: Buildium</p>
+						</div>
+					</a>
+				</div>
+			</section>
+			<footer>
+				<span class="border"></span>
+				<p>This website was designed and hand-coded by yours truly.</p>
+				<a class="logo"></a>
+			</footer>
+		</div>
+	</body>
+</html>
+<script> </script>

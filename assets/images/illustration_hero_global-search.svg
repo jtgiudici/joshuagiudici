@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1480px" height="500px" viewBox="0 0 1480 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>illustration_hero_global-search</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="40" cy="40" r="20"></circle>
+        <ellipse id="path-3" cx="25.7142857" cy="25" rx="12.8571429" ry="12.5"></ellipse>
+        <circle id="path-5" cx="40" cy="40" r="20"></circle>
+        <ellipse id="path-7" cx="25.7142857" cy="25" rx="12.8571429" ry="12.5"></ellipse>
+        <circle id="path-9" cx="100" cy="100" r="100"></circle>
+        <circle id="path-11" cx="20" cy="20" r="20"></circle>
+    </defs>
+    <g id="illustration_hero_global-search" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" opacity="0.25" transform="translate(-200.000000, -60.000000)">
+            <rect id="Rectangle" fill="#303C4D" x="1400" y="400" width="280" height="80"></rect>
+            <rect id="Rectangle" fill="#303C4D" x="1100" y="470" width="280" height="80"></rect>
+            <rect id="Rectangle" fill="#293241" x="1599" y="500" width="280" height="80"></rect>
+            <rect id="Rectangle" fill="#3E5264" x="1200" y="300" width="280" height="80"></rect>
+            <g id="Group-2" transform="translate(1200.000000, 300.000000)"></g>
+            <rect id="Rectangle" fill="#3E5264" x="600" y="440" width="280" height="80"></rect>
+            <rect id="Rectangle" fill="#475D70" x="900" y="370" width="280" height="80"></rect>
+            <rect id="Rectangle" fill="#293241" x="980" y="390" width="180" height="20"></rect>
+            <rect id="Rectangle" fill="#293241" x="980" y="420" width="120" height="10"></rect>
+            <rect id="Rectangle" fill="#293241" x="1500" y="230" width="280" height="80"></rect>
+            <rect id="Rectangle" fill="#475D70" x="1000" y="200" width="280" height="80"></rect>
+            <rect id="Rectangle" fill="#3E5264" x="400" y="340" width="280" height="80"></rect>
+            <rect id="Rectangle" fill="#3E5264" x="700" y="270" width="280" height="80"></rect>
+            <rect id="Rectangle" fill="#303C4D" x="1300" y="130" width="280" height="80"></rect>
+            <rect id="Rectangle" fill="#303C4D" x="1100" y="30" width="280" height="80"></rect>
+            <g id="Group-2" transform="translate(1101.000000, 30.000000)">
+                <rect id="Rectangle" fill="#293241" x="80" y="20" width="180" height="20"></rect>
+                <rect id="Rectangle" fill="#293241" x="80" y="50" width="120" height="10"></rect>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#293241" xlink:href="#path-1"></use>
+            </g>
+            <rect id="Rectangle" fill="#293241" x="1600" y="60" width="280" height="80"></rect>
+            <rect id="Rectangle" fill="#293241" x="1400" y="500" width="180" height="50"></rect>
+            <rect id="Rectangle" fill="#293241" x="1200" y="400" width="180" height="50"></rect>
+            <rect id="Rectangle" fill="#3E5264" x="900" y="470" width="180" height="50"></rect>
+            <rect id="Rectangle" fill="#3E5264" x="1500" y="330" width="180" height="50"></rect>
+            <rect id="Rectangle" fill="#475D70" x="1000" y="300" width="180" height="50"></rect>
+            <rect id="Rectangle" fill="#303C4D" x="400" y="440" width="180" height="50"></rect>
+            <g id="Group-2" transform="translate(401.000000, 440.000000)">
+                <rect id="Rectangle" fill="#293241" x="51.4285714" y="12.5" width="115.714286" height="12.5"></rect>
+                <rect id="Rectangle" fill="#293241" x="51.4285714" y="31.25" width="77.1428571" height="6.25"></rect>
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <use id="Mask" fill="#293241" xlink:href="#path-3"></use>
+            </g>
+            <rect id="Rectangle" fill="#475D70" x="700" y="370" width="180" height="50"></rect>
+            <rect id="Rectangle" fill="#475D70" x="800" y="100" width="280" height="80"></rect>
+            <rect id="Rectangle" fill="#303C4D" x="200" y="240" width="280" height="80"></rect>
+            <g id="Group-2" transform="translate(201.000000, 240.000000)">
+                <rect id="Rectangle" fill="#293241" x="80" y="20" width="180" height="20"></rect>
+                <rect id="Rectangle" fill="#293241" x="80" y="50" width="120" height="10"></rect>
+                <mask id="mask-6" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <use id="Mask" fill="#293241" xlink:href="#path-5"></use>
+            </g>
+            <rect id="Rectangle" fill="#3E5264" x="500" y="170" width="280" height="80"></rect>
+            <rect id="Rectangle" fill="#293241" x="100" y="410" width="280" height="80"></rect>
+            <rect id="Rectangle" fill="#475D70" x="800" y="200" width="180" height="50"></rect>
+            <rect id="Rectangle" fill="#303C4D" x="200" y="340" width="180" height="50"></rect>
+            <rect id="Rectangle" fill="#293241" x="500" y="270" width="180" height="50"></rect>
+            <rect id="Rectangle" fill="#3E5264" x="600" y="0" width="280" height="80"></rect>
+            <rect id="Rectangle" fill="#293241" x="0" y="140" width="280" height="80"></rect>
+            <rect id="Rectangle" fill="#303C4D" x="300" y="70" width="280" height="80"></rect>
+            <rect id="Rectangle" fill="#303C4D" x="600" y="100" width="180" height="50"></rect>
+            <rect id="Rectangle" fill="#303C4D" x="300" y="170" width="180" height="50"></rect>
+            <rect id="Rectangle" fill="#303C4D" x="1300" y="230" width="180" height="50"></rect>
+            <g id="Group-2" transform="translate(1298.000000, 230.000000)">
+                <rect id="Rectangle" fill="#293241" x="51.4285714" y="12.5" width="115.714286" height="12.5"></rect>
+                <rect id="Rectangle" fill="#293241" x="51.4285714" y="31.25" width="77.1428571" height="6.25"></rect>
+                <mask id="mask-8" fill="white">
+                    <use xlink:href="#path-7"></use>
+                </mask>
+                <use id="Mask" fill="#293241" xlink:href="#path-7"></use>
+            </g>
+            <rect id="Rectangle" fill="#293241" x="1100" y="130" width="180" height="50"></rect>
+            <rect id="Rectangle" fill="#303C4D" x="900" y="30" width="180" height="50"></rect>
+            <rect id="Rectangle" fill="#293241" x="1600" y="160" width="180" height="50"></rect>
+            <rect id="Rectangle" fill="#293241" x="1400" y="60" width="180" height="50"></rect>
+            <rect id="Rectangle" fill="#303C4D" x="800" y="540" width="280" height="80"></rect>
+            <rect id="Rectangle" fill="#293241" x="600" y="540" width="180" height="50"></rect>
+            <rect id="Rectangle" fill="#293241" x="100" y="70" width="180" height="50"></rect>
+            <rect id="Rectangle" fill="#303C4D" x="300" y="510" width="280" height="80"></rect>
+            <rect id="Rectangle" fill="#293241" x="100" y="510" width="180" height="50"></rect>
+        </g>
+        <g id="Mask" transform="translate(640.000000, 250.000000)">
+            <mask id="mask-10" fill="white">
+                <use xlink:href="#path-9"></use>
+            </mask>
+            <g></g>
+            <rect id="Rectangle" fill="#648AA2" mask="url(#mask-10)" x="-240" y="130" width="280" height="80"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" mask="url(#mask-10)" x="60" y="60" width="280" height="80"></rect>
+            <rect id="Rectangle" fill="#C7D9E3" mask="url(#mask-10)" x="140" y="80" width="180" height="20"></rect>
+            <rect id="Rectangle" fill="#C7D9E3" mask="url(#mask-10)" x="140" y="110" width="120" height="10"></rect>
+            <g id="Oval-+-Oval-Mask" mask="url(#mask-10)">
+                <g transform="translate(80.000000, 80.000000)">
+                    <mask id="mask-12" fill="white">
+                        <use xlink:href="#path-11"></use>
+                    </mask>
+                    <use id="Mask" stroke="none" fill="#73BA8E" fill-rule="evenodd" xlink:href="#path-11"></use>
+                    <circle id="Oval" stroke="none" fill="#55836F" fill-rule="evenodd" mask="url(#mask-12)" cx="20" cy="19.0909091" r="6.36363636"></circle>
+                    <circle id="Oval" stroke="none" fill="#55836F" fill-rule="evenodd" mask="url(#mask-12)" cx="20" cy="40" r="12.7272727"></circle>
+                </g>
+            </g>
+            <rect id="Rectangle" fill="#C7D9E3" mask="url(#mask-10)" x="-140" y="-40" width="280" height="80"></rect>
+            <rect id="Rectangle" fill="#C7D9E3" mask="url(#mask-10)" x="60" y="160" width="180" height="50"></rect>
+            <rect id="Rectangle" fill="#8FB3C7" mask="url(#mask-10)" x="160" y="-10" width="180" height="50"></rect>
+            <rect id="Rectangle" fill="#8FB3C7" mask="url(#mask-10)" x="-140" y="60" width="180" height="50"></rect>
+        </g>
+        <circle id="Oval" stroke="#73A0BA" stroke-width="20" cx="740" cy="350" r="110"></circle>
+        <rect id="Rectangle" fill="#73A0BA" transform="translate(620.504311, 474.495689) rotate(-315.000000) translate(-620.504311, -474.495689) " x="600.504311" y="403.995689" width="40" height="141"></rect>
+    </g>
+</svg>
