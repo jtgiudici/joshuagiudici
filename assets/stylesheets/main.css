@@ -382,6 +382,40 @@ section.hero p {
 		font-size: 16px;
 	}
 }
+section#about h2 {
+	font-size: 34px;
+	text-align: center;
+	margin-bottom: 60px;
+	padding-bottom: 18px;
+	padding-top: 40px;
+}
+section#about h2 span.border {
+	background-color: #85BCD8;
+	display: block;
+	height: 3px;
+	margin: 0 auto;
+	position: relative;
+	top: 18px;
+	width: 80px;
+}
+section#about .avatar {
+	border-radius: 100%;
+	display: block;
+	height: 170px;
+	margin: 0 auto 40px auto;
+	width: 170px;
+}
+section#about .content {
+	max-width: 720px;
+}
+section#about p {
+	font-size: 18px;
+	margin: 0 auto 20px auto;
+	text-align: center;
+}
+section#about p:last-child {
+	margin-bottom: 0;
+}
 section.project h2 {
 	font-size: 34px;
 	text-align: center;
